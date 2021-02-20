@@ -1,0 +1,393 @@
+# 颜色模式可选 light | dark | auto | time
+mode: auto
+
+#头像
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😃
+    message: 欢迎光临桃子的露天仓库！
+
+#文字交错的首页
+banner:
+  enable: true
+  title: 万亿及秭
+  src: /js/ui/banner.js
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+#背景图片
+bg_image:
+  enable: true
+  url: /images/blurlight.jpg
+  dark: /images/blurdark.jpg
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.8
+
+#搜索背景
+search:
+  modal: true
+  bg_image: /images/light.jpg
+  dark_bg_image: /images/dark.jpg
+  # placeholder:
+
+#随即多边形背景
+trianglify:
+  enable: false
+  cellSize: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+#背景颜色
+colors:
+  primary: "#3cab00"
+  # bg: "#F5F5F5"
+  selection_bg: "#3cab00" # 选取文字时的背景色
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+
+#代码高亮
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
+
+#分享版权
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+  clipboard: false
+
+#网页icon
+favicon: /images/favicon.ico
+
+#点击的烟花效果
+fireworks:
+  enable: true
+  colors:
+    - "88, 171, 43"
+    - "153, 204, 153"
+    - "57, 111, 28"
+
+#页脚
+
+footer:
+  since: 2020
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#3cab00"
+  powered:
+    enable: true
+    version: true
+    color: "#3cab00"
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix: <(￣︶￣)>
+    start_time: "2020-01-19T00:00:00"
+
+head:
+  css:
+    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
+  js:
+    defer:
+      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/load-aplayer.js
+
+#公式
+# ---
+# title: xxx
+# katex: true
+# ---
+katex:
+  copy_tex: true
+  global: true
+
+#图片懒加载
+lazyload:
+  enable: true
+
+#导航
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: 你猜
+  custom:
+    title: 留言板
+    path: /about
+    icon: icon-clipboard-line
+
+#默哀日期，网站变灰：月-日
+mourn:
+  enable: false
+  days:
+    - "4-4"
+
+#评论
+# enable: 默认开启（代表整体的评论区块，你开启任意类型评论系统都须保持其开启）
+# tips: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
+# candidates: 候选评论系统，默认不启用。配置后可切换多个评论系统，默认第一位为默认显示的评论。（你须确保 candidates 中的评论对应 enable 已开启）
+comment:
+  enable: true
+  tips:
+    - 可以使用Markdown写评论，可以输入数学公式。
+    - 若您想及时得到回复，请直接在左侧边栏点击邮箱。
+  candidates:
+    - minivaline
+    
+minivaline:
+  enable: true
+  mversion: latest
+  appId: 5Hnzahxh49Ww4Ycj8OH9ycWp-MdYXbMMI # 你的 leancloud application appid
+  appKey: HjqrcbLC5SxvuTztFYyKNwn3 # 你的 leancloud application appkey
+  mode: DesertsP # DesertsP 或 xCss 演示 -> https://minivaline.js.org/demo.html
+  # 注意数组在这里面是yaml格式不是json格式，底下是表情数组的例子
+  emoticonUrl:
+    - https://cdn.jsdelivr.net/npm/alus@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+  # 更多表情配置细节->https://minivaline.js.org/docs/en/#/Options?id=emoticonurl-string-array
+  cdn: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
+
+#公告
+notice:
+  enable: true
+  content: 欢迎光临桃子的露天仓库！
+
+#标签和目录的颜色
+tags:
+  VSCode: "#007bff"
+  Julia: "#ffae00"
+  Windows: "#1100ad"
+  Python: "#a400f0"
+  Materials: "#abc900"
+  LAMMPS: "#0400ff"
+  GUI: "#bd0202"
+  Linux: "#2577b1"
+
+categories:
+  软件: "#00b7ff"
+  其他: black
+  理论: "#c9d400"
+
+#页面链接
+pages:
+
+#文章内容卡片
+# ---
+# title: xxx
+# type: bilibili
+# url: https://www.bilibili.com/video/av8153395/
+# hide: true
+# # hide: index
+# sitemap: false
+# indexing: false
+# ---
+    # hide:
+    # index: 设置为 index 时，将只在首页隐藏，归档中仍然展示。（譬如放一些没有必要放在首页的笔记，并在归档中方便自己查看。）
+    # true: 当设置为 true 时，该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片与归档中。
+post_card:
+  opacity: 0.8
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+
+#文章信息展示
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+  
+#文章目录深度
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+  collapse: false
+
+#预加载
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/utils.js
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  script:
+    - /js/sidebar.js
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+
+#打赏
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 求各位看官有钱的捧个钱场(>▽<)
+  methods:
+    - name: 支付宝
+      path: /images/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: /images/qqpay-qrcode.jpg
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: /images/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+
+#随机展示一句话
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: false
+
+#卡片与图片滚动浮现效果
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
+
+#侧边栏背景
+sidebar:
+  bg_image: /images/blurlight.jpg
+  dark_bg_image: /images/blurdark.jpg
+  bg_position: bottom 1rem center
+  tagcloud:
+    enable: true
+    amount: 20
+
+#社交
+social:
+  - name: GitHub
+    link: https://github.com/peachrl
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:peachrl@aliyun.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+#   - name: 微博
+#     link: https://weibo.com/2786787623/profile?rightmod=1&wvr=6&mod=personinfo
+#     icon: icon-weibo-line
+#     color: "#E6162D"
+#   - name: 豆瓣
+#     link: https://www.douban.com/people/232900436/
+#     icon: icon-douban-line
+#     color: "#007722"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/32878755/dynamic
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+
+#词语计数
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+#标签云：使用彩色词云替代原生标签云
+wordcloud:
+  enable: true
+  height: 350
+
+github_issues:
+  enable: false
+
+github_discussions:
+  enable: false
+
+#关闭跳转搜索，开启本地搜索
+engine_search:
+  enable: false
+# search
+# https://github.com/wzpan/hexo-generator-search
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+albums:
+  enable: false
+
+cursor:
+  enable: true
+
+baidu_push: true

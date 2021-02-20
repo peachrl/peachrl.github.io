@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ABLabWordCloud文字云小程序第1版使用说明</title>
+      <link href="2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+      <url>2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
+      
+        <content type="html"><![CDATA[<p>该程序是继上一程序之后再一次尝试用Python代码生成GUI界面。</p><a id="more"></a><h1 id="ABLabWordCloud文字云小程序v2021-01-20-第1版"><a href="#ABLabWordCloud文字云小程序v2021-01-20-第1版" class="headerlink" title="ABLabWordCloud文字云小程序v2021.01.20(第1版)"></a><a href="https://github.com/peachRL/ABLabWordCloud_GUI">ABLabWordCloud文字云小程序v2021.01.20(第1版)</a></h1><p><a href="https://github.com/peachRL/ABLabWordCloud_GUI"><img src="https://img.shields.io/badge/ABLabWordCloud-v2021.01.20-brightgreen.svg?style=flat-square" alt="standard-readme compliant"></a></p><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>ABLabWordCloud小程序为ABLab实验室2020年终报告合集提供了文字云图。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>该项目使用Python编写，有图形化界面但无exe版本。请在windows系统中运行ABLabWordCloud_GUI.py使用。</p><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p><strong>首先进入requirements文件夹，将requirements.txt中的包都装上。</strong></p><pre><code class="shell">pip install -r requirements.txt</code></pre><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>按照程序的条目依次输入，然后点“开始”即可。“开始”分为<strong>普通版</strong>和<strong>专业版</strong>，区别在于专业版去除了一些生活词，两者的输出文件分别为“ABLab_WordCloud_conventional”和“ABLab_WordCloud_professional”。</p><h3 id="界面和ico"><a href="#界面和ico" class="headerlink" title="界面和ico"></a>界面和ico</h3><p>界面由PySimpleGUI生成，没有ico。</p><img src="https://img.imgdb.cn/item/600e87503ffa7d37b3f79806.png" alt="界面" style="zoom:50%;"><h2 id="维护者"><a href="#维护者" class="headerlink" title="维护者"></a>维护者</h2><p><a href="https://github.com/peachrl">@peachRL</a></p><h2 id="使用许可"><a href="#使用许可" class="headerlink" title="使用许可"></a>使用许可</h2><p><a href="LICENSE">MIT</a> © peachRL</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> GUI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ABLabPickME抽奖小程序第0版使用说明</title>
+      <link href="2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+      <url>2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
+      
+        <content type="html"><![CDATA[<p>之所以称为第0版，是因为里面还有很多很多bug，只是时间有限的潦草之作。可能我写代码也比较少，有点写到哪儿算哪儿的感觉，没有在写之前理清逻辑，因此这个程序不按照说明操作会出问题。主要还是想借这个程序尝试一下Python代码打包成.exe程序以及生成GUI界面，顺便根据实验室年会需求实现抽奖的功能。所以就先这样叭（，具体问题明年年会再改🤣）</p><a id="more"></a><h1 id="ABLabPickME抽奖小程序v2021-01-16-第0版"><a href="#ABLabPickME抽奖小程序v2021-01-16-第0版" class="headerlink" title="ABLabPickME抽奖小程序v2021.01.16(第0版)"></a><a href="https://github.com/peachRL/ABLabPickME">ABLabPickME抽奖小程序v2021.01.16(第0版)</a></h1><p><a href="https://github.com/peachRL/ABLabPickME"><img src="https://img.shields.io/badge/ABLabPickME-v2021.01.16-brightgreen.svg?style=flat-square" alt="standard-readme compliant"></a></p><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>ABLabPickME小程序基于ABLab实验室年会随机报告的需求，对实验室成员进行随机抽奖。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>该项目使用Python编写，使用Pyinstaller打包成exe，在<strong>gist</strong>文件夹中。仅在windows系统使用。</p><p>本小程序不需要安装啦！直接双击ABLabPickME_GUI.exe使用。</p><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><h3 id="储存"><a href="#储存" class="headerlink" title="储存"></a>储存</h3><p>ABLabPickME的数据储存在./data文件夹中。若从上次储存的结果开始，则不需要输入文件；若选择重新开始，需输入一个命名为namelist.txt的文件，示例在./data文件夹中有。</p><p>ABLabPickME使用自动储存，可用于每次抽取一人排除一人；使用不自动储存，则每次都会从同一名单抽取。</p><p>默认选项为“从上次储存开始”、“自动保存结果”。</p><h3 id="抽取范围"><a href="#抽取范围" class="headerlink" title="抽取范围"></a>抽取范围</h3><p>包括老师组以及各年级组。默认选项为2015-2020年级组。重新选择范围的话请重新开始。</p><h3 id="界面和ico"><a href="#界面和ico" class="headerlink" title="界面和ico"></a>界面和ico</h3><p>界面由PySimpleGUI生成，ico为随手打的。</p><img src="https://img.imgdb.cn/item/6002e98b3ffa7d37b303e1e6.png" alt="界面" style="zoom:50%;"><img src="https://img.imgdb.cn/item/6002e9bf3ffa7d37b303fafb.png" alt="ico" style="zoom:25%;"><h2 id="维护者"><a href="#维护者" class="headerlink" title="维护者"></a>维护者</h2><p><a href="https://github.com/peachrl">@peachRL</a></p><h2 id="使用许可"><a href="#使用许可" class="headerlink" title="使用许可"></a>使用许可</h2><p><a href="LICENSE">MIT</a> © peachRL</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> GUI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用shell脚本做计算</title>
+      <link href="2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/"/>
+      <url>2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<p>因为一个困扰我好几天的问题最终发现只是单位换算错了，于是我“一怒之下”把它写成了脚本。</p><a id="more"></a><pre><code class="shell">#!/bin/bash#If we know the transitional energy, we know the transitional velocity.#The kineti energy for an atom is mv^2/2.#1kJ/mol = 1.0364e-2 eV.#1m = 10^10\AA; 1s = 10^12ps.#By peachrltransitional_energy_in_eV=$1transitional_energy="Transitional energy "eV=" eV corresponds to velocity "ms=" m/s, which equals to "echo -e "${transitional_energy}${transitional_energy_in_eV}${eV}\c"v=`bc &lt;&lt;- EOF    scale = 5    ans = sqrt(${transitional_energy_in_eV} * 2 * 1000 * 1000 / 1.0364 / 0.01 / 39.948)    print ansEOF`echo -e "${v}${ms}\c"AAps=" \AA/ps."bc &lt;&lt;- EOF    scale = 5    ans = ${v} * 10^10 / 10^12    print ansEOFecho "${AAps}"</code></pre><p>运行结果：</p><pre><code class="shell">peachrl@peachrlPC:~$ ./tranEng2vel_eV2ms.sh 14.1Transitional energy 14.1 eV corresponds to velocity 8253.02824 m/s, which equals to 82.53028 \AA/ps.</code></pre><p>顺便强烈推荐一下《Linux命令行大全》这本书，初学读起来很舒服，节奏合理，易于食用，干货满满。以上脚本是看了2天书后的学习成果。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Julia在win10环境的安装和解微分方程的例子</title>
+      <link href="2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/"/>
+      <url>2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Julia的安装"><a href="#Julia的安装" class="headerlink" title="Julia的安装"></a>Julia的安装</h2><blockquote><p>Julia 语言扮演了这样一个角色：它是一门灵活的动态语言，适合用于科学计算和数值计算，并且性能可与传统的静态类型语言媲美。</p></blockquote><a id="more"></a><h3 id="Julia官网下载安装包"><a href="#Julia官网下载安装包" class="headerlink" title="Julia官网下载安装包"></a>Julia官网下载安装包</h3><ol><li><p><a href="https://julialang.org/downloads/">https://julialang.org/downloads/</a></p></li><li><p>将安装路径加入path</p></li></ol><h3 id="在vscode中安装Julia插件"><a href="#在vscode中安装Julia插件" class="headerlink" title="在vscode中安装Julia插件"></a>在vscode中安装Julia插件</h3><ol><li><p><a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></p></li><li><p>如果插件没有自动找到Julia的位置而报错，到设置里Julia: Executable Path输入安装路径，要详细到\\bin\\julia.exe。（\用\\）</p></li></ol><h2 id="安装扩展包"><a href="#安装扩展包" class="headerlink" title="安装扩展包"></a>安装扩展包</h2><h3 id="安装General-注册表"><a href="#安装General-注册表" class="headerlink" title="安装General 注册表"></a>安装General 注册表</h3><ol><li>安装了注册表才能安装General 注册表中记录的扩展包</li><li>打开julia.exe（或者在vscode中按F1,输入Julia: start REPL），按]，出现<code>(@v1.4) pkg&gt;</code></li><li>输入<code>registry add https://mirrors.bfsu.edu.cn/git/julia-general.git</code>（这是使用的BFSU北外镜像站安装，比从原始地址(Github)安装和更新要快一些）</li><li>安装完成<img src="https://pic.downk.cc/item/5f170a6714195aa594f1c043.png" alt="image-20200720235009760"></li><li>General 的更新会走对应的镜像，而其他数据的下载则通过官方服务器(Pkg server：<a href="https://pkg.julialang.org/">https://pkg.julialang.org</a>)</li></ol><h3 id="安装DifferentialEquations扩展包"><a href="#安装DifferentialEquations扩展包" class="headerlink" title="安装DifferentialEquations扩展包"></a>安装DifferentialEquations扩展包</h3><ol><li>DifferentialEquations.jl是个解微分方程的扩展包：<a href="https://diffeq.sciml.ai/dev/">https://diffeq.sciml.ai/dev/</a></li><li>输入<code>add DifferentialEquations</code></li><li>安装<img src="https://pic.downk.cc/item/5f170a6714195aa594f1c049.png" alt="image-20200721102807619"></li><li>安装完成<img src="https://pic.downk.cc/item/5f170a6714195aa594f1c04d.png" alt="image-20200721102933940"></li></ol><h3 id="安装DiffEqFlux扩展包"><a href="#安装DiffEqFlux扩展包" class="headerlink" title="安装DiffEqFlux扩展包"></a>安装DiffEqFlux扩展包</h3><ol><li>DiffEqFlux.jl也是个解微分方程的扩展包：<a href="https://diffeqflux.sciml.ai/dev/">https://diffeqflux.sciml.ai/dev/</a></li><li>输入<code>add DuffEqFlux</code></li><li>安装<img src="https://pic.downk.cc/item/5f170a6714195aa594f1c045.png" alt="image-20200720235749070"></li><li>很长..很久之后…</li><li>安装完成<img src="https://pic.downk.cc/item/5f170a6714195aa594f1c047.png" alt="image-20200721100926196"></li></ol><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>如果跑代码的时候还报错说缺啥就补啥，总之扩展包都是在pkg模式下用<code>add …</code>，如果不小心断网又重装，可能导致没完全装好，用<code>build …</code></p><h2 id="Julia的使用"><a href="#Julia的使用" class="headerlink" title="Julia的使用"></a>Julia的使用</h2><h3 id="Julia解Lotka-Volterra方程组"><a href="#Julia解Lotka-Volterra方程组" class="headerlink" title="Julia解Lotka-Volterra方程组"></a>Julia解Lotka-Volterra方程组</h3><p>$$<br>\frac{d x}{d t}=\alpha x-\beta x y<br>$$</p><p>$$<br>\frac{d y}{d t}=-\delta y+\gamma x y<br>$$</p><p>文件Lotka-Volterra.jl：</p><pre><code class="julia">using DifferentialEquations, Flux, Optim, DiffEqFlux, DiffEqSensitivityfunction lotka_volterra!(du, u, p, t)  x, y = u  α, β, δ, γ = p  du[1] = dx = α*x - β*x*y  du[2] = dy = -δ*y + γ*x*yend# Initial conditionu0 = [1.0, 1.0]# Simulation interval and intermediary pointstspan = (0.0, 10.0)tsteps = 0.0:0.1:10.0# LV equation parameter. p = [α, β, δ, γ]p = [1.5, 1.0, 3.0, 1.0]# Setup the ODE problem, then solveprob_ode = ODEProblem(lotka_volterra!, u0, tspan, p)sol_ode = solve(prob_ode, Tsit5())# Plot the solutionusing Plotsplot(sol_ode)savefig("LV_ode.svg")</code></pre><p>可以在vscode或者cmd中输入<code>julia Lotka-Volterra</code>，或者在julia REPL中输入julia&gt; <code>include("Lotka-Volterra.jl")</code>。</p><p><img src="https://pics.images.ac.cn/image/5f170ff5072f6.html" alt="LV_ode"></p><h3 id="Julia解-Lorenz方程组"><a href="#Julia解-Lorenz方程组" class="headerlink" title="Julia解 Lorenz方程组"></a>Julia解 Lorenz方程组</h3><p>$$<br>\frac{d x}{d t}=\sigma(y-x)<br>$$</p><p>$$<br>\frac{d y}{d t}=x(\rho-z)-y<br>$$</p><p>$$<br>\frac{d z}{d t}=x y-\beta z<br>$$</p><p>文件Lorenz2.jl：</p><pre><code class="julia">using DifferentialEquations, Plotsfunction parameterized_lorenz!(du,u,p,t)    x,y,z = u    σ,ρ,β = p    du[1] = dx = σ*(y-x)    du[2] = dy = x*(ρ-z) - y    du[3] = dz = x*y - β*zendu0 = [1.0,0.0,0.0]tspan = (0.0,100.0)p = [10.0,28.0,8/3]prob = ODEProblem(parameterized_lorenz!,u0,tspan,p)sol = solve(prob)plot(sol,vars=(1,2,3))savefig("L2_ode.svg")</code></pre><p>可以在vscode或者cmd中输入<code>julia Lorenz2</code>，或者在julia REPL中输入julia&gt; <code>include("Lorenz2.jl")</code>。</p><p>运行环境为笔记本电脑，win10专业版，64位，CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz，8核，RAM 8G，Julia Version 1.4.2，运行时长大约110s左右。</p><pre><code class="powershell">[Running] julia "e:\Julia\Lorenz2.jl"[Done] exited with code=0 in 114.155 seconds</code></pre><p><img src="https://pic.downk.cc/item/5f170ed814195aa594f3304b.png" alt="L2_ode"></p><h3 id="Julia解二阶常微分方程"><a href="#Julia解二阶常微分方程" class="headerlink" title="Julia解二阶常微分方程"></a>Julia解二阶常微分方程</h3><p>$$<br>\ddot{\theta}+\frac{g}{L} \sin (\theta)=0<br>$$</p><pre><code class="julia"># Simple Pendulum Problemusing OrdinaryDiffEq, Plots#Constantsconst g = 9.81L = 1.0#Initial Conditionsu₀ = [0,π/2]tspan = (0.0,6.3)#Define the problemfunction simplependulum(du,u,p,t)    θ = u[1]    dθ = u[2]    du[1] = dθ    du[2] = -(g/L)*sin(θ)end#Pass to solversprob = ODEProblem(simplependulum, u₀, tspan)sol = solve(prob,Tsit5())#Plotplot(sol,linewidth=2,title ="Simple Pendulum Problem", xaxis = "Time", yaxis = "Height", label = ["\\theta" "d\\theta"])savefig("2nd-Order.svg")p = plot(sol,vars = (1,2), xlims = (-9,9), title = "Phase Space Plot", xaxis = "Velocity", yaxis = "Position", leg=false)function phase_plot(prob, u0, p, tspan=2pi)    _prob = ODEProblem(prob.f,u0,(0.0,tspan))    sol = solve(_prob,Vern9()) # Use Vern9 solver for higher accuracy    plot!(p,sol,vars = (1,2), xlims = nothing, ylims = nothing)endfor i in -4pi:pi/2:4π    for j in -4pi:pi/2:4π        phase_plot(prob, [j,i], p)    endendplot(p,xlims = (-9,9))savefig("2nd-Order2.svg")</code></pre><pre><code class="powershell">[Running] julia "e:\Julia\2nd-Order.jl"[Done] exited with code=0 in 84.122 seconds</code></pre><p><img src="https://pic.downk.cc/item/5f170ed814195aa594f3303c.png" alt="2nd-Order"></p><p><img src="https://pic.downk.cc/item/5f170ed814195aa594f3303f.png" alt="2nd-Order2"></p><h3 id="Julia解Henon-Heiles方程组"><a href="#Julia解Henon-Heiles方程组" class="headerlink" title="Julia解Hénon_Heiles方程组"></a>Julia解Hénon_Heiles方程组</h3><p>$$<br>\frac{d^{2} x}{d t^{2}}=-\frac{\partial V}{\partial x}<br>$$</p><p>$$<br>\frac{d^{2} y}{d t^{2}}=-\frac{\partial V}{\partial y}<br>$$</p><p>其中<br>$$<br>V(x, y)=\frac{1}{2}\left(x^{2}+y^{2}+2 x^{2} y-\frac{2}{3} y^{3}\right)<br>$$</p><pre><code class="julia">using OrdinaryDiffEq, Plots#Setupinitial = [0.,0.1,0.5,0]tspan = (0,100.)#Remember, V is the potential of the system and T is the Total Kinetic Energy, thus E will#the total energy of the system.V(x,y) = 1//2 * (x^2 + y^2 + 2x^2*y - 2//3 * y^3)#Define the functionfunction Hénon_Heiles(du,u,p,t)    x  = u[1]    y  = u[2]    dx = u[3]    dy = u[4]    du[1] = dx    du[2] = dy    du[3] = -x - 2x*y    du[4] = y^2 - y -x^2end#Pass to solversprob = ODEProblem(Hénon_Heiles, initial, tspan)sol = solve(prob, Vern9(), abs_tol=1e-16, rel_tol=1e-16);# Plot the orbitplot(sol, vars=(1,2), title = "The orbit of the Hénon-Heiles system", xaxis = "x", yaxis = "y", leg=false)savefig("HH_ode.svg")</code></pre><pre><code class="powershell">[Running] julia "e:\Julia\Hénon-Heiles.jl"[Done] exited with code=0 in 68.487 seconds</code></pre><p><img src="https://pic.downk.cc/item/5f170ed814195aa594f33045.png" alt="HH_ode"></p><p>以上例子出自：</p><ul><li><a href="https://diffeq.sciml.ai/dev/">https://diffeq.sciml.ai/dev/</a></li><li><a href="https://diffeqflux.sciml.ai/dev/">https://diffeqflux.sciml.ai/dev/</a></li><li><a href="https://tutorials.sciml.ai/html/models/01-classical_physics.html">https://tutorials.sciml.ai/html/models/01-classical_physics.html</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Julia </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LAMMPS中安装和使用KIM（Knowledgebase of Interatomic Models）</title>
+      <link href="2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/"/>
+      <url>2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>OpenKIM is an interatomic potential repository and an online framework for making molecular simulations reliable, reproducible, and portable. </p></blockquote><a id="more"></a><p>以上说明来自网址：<a href="https://openkim.org/">OpenKIM</a></p><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>已安装LAMMPS</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="查看安装方法"><a href="#查看安装方法" class="headerlink" title="查看安装方法"></a>查看安装方法</h3><p>在LAMMPS的文件夹/home/peachrl/LAMMPS/lammps-3Mar20/lib/kim中，阅读README，得知将通过cmake进行安装。</p><h3 id="安装cmake"><a href="#安装cmake" class="headerlink" title="安装cmake"></a>安装cmake</h3><ol><li><p>在<a href="https://cmake.org/download/">CMake</a>下载安装包。</p><p><img src="https://pic.downk.cc/item/5ef847b714195aa594ba7425.png" alt="1593324256673"></p></li><li><p>将安装包解压，进入cmake-3.18.0-rc2文件夹。</p></li><li><p>终端输入<code>./bootstrap</code></p><ul><li>若出现<code>Could NOT find OpenSSL</code>问题，根据提示安装OpenSSL ：<code>apt-get install libssl-dev</code></li></ul></li><li><p><code>make -j4</code></p></li><li><p><code>sudo make -j4 install</code></p></li><li><p>查看安装情况<code>cmake --version</code></p></li></ol><p><img src="https://pic.downk.cc/item/5ef84a0814195aa594bb159c.png" alt="image-20200628154236953"></p><h3 id="安装kim-api"><a href="#安装kim-api" class="headerlink" title="安装kim-api"></a>安装kim-api</h3><ol><li><p>进入LAMMPS中/home/peachrl/LAMMPS/lammps-3Mar20/lib/kim文件夹。</p></li><li><p>下载<a href="https://s3.openkim.org/kim-api/kim-api-2.1.3.txz">kim-api-2.1.3</a>。（有不同版本，具体见<a href="https://openkim.org/doc/usage/obtaining-models/">Obtaining KIM Models</a>）</p></li><li><p>解压到当前文件夹。</p></li><li><p><code>$ cd kim-api-2.1.3</code></p></li><li><p><code>$ mkdir build &amp;&amp; cd build</code></p></li><li><p><code>$ cmake ..  -DCMAKE_INSTALL_PREFIX=${PWD}/../../installed-kim-api-2.1.3</code></p><ul><li>若出现<code>No CMAKE_Fortran_COMPILER could be found.</code>，安装gfortran：<code>$ sudo apt install gfortran</code></li></ul></li><li><p><code>$ make -j4</code></p></li><li><p><code>$ make -j4 install</code></p></li><li><p>现在可以删除压缩包和安装包了</p><pre><code>$ cd ../../$ rm -rf kim-api-2.1.3$ rm -rf kim-api-2.1.3.txz</code></pre><h3 id="build-LAMMPS-with-the-KIM-package-installed"><a href="#build-LAMMPS-with-the-KIM-package-installed" class="headerlink" title="build LAMMPS with the KIM package installed"></a>build LAMMPS with the KIM package installed</h3></li></ol><ul><li>进入/home/peachrl/LAMMPS/lammps-3Mar20/src文件夹，重新make ubuntu（之前make过的）：<pre><code>$ make yes-kim$ sudo make ubuntu -j4</code></pre></li><li>移动和改个名：<pre><code>$ mv lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4RMSPm.kim</code></pre><h3 id="添加path"><a href="#添加path" class="headerlink" title="添加path"></a>添加path</h3></li></ul><p><code>export PATH=/home/peachrl/LAMMPS/lammps-3Mar20/lib/kim/installed-kim-api-2.1.3/bin:$PATH</code></p><p><img src="https://pic.downk.cc/item/5ef847b714195aa594ba7427.png" alt="1593327313369"></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>==<strong>测试算例</strong>：LAMMPS自带的算例/home/peachrl/LAMMPS/lammps-3Mar20/examples/reax/CHO，将其改为使用OpenKIM。==</p><h3 id="安装所需的KIM-Model"><a href="#安装所需的KIM-Model" class="headerlink" title="安装所需的KIM Model"></a>安装所需的KIM Model</h3><p>在OpenKIM网站上找到需要的势：<a href="https://openkim.org/id/Sim_LAMMPS_ReaxFF_ChenowethVanDuinGoddard_2008_CHO__SM_584143153761_001">Sim_LAMMPS_ReaxFF_ChenowethVanDuinGoddard_2008_CHO__SM_584143153761_001</a></p><pre><code>$ source kim-api-activate $ kim-api-collections-management install user Sim_LAMMPS_ReaxFF_ChenowethVanDuinGoddard_2008_CHO__SM_584143153761_001</code></pre><p><img src="https://pic.downk.cc/item/5ef847b714195aa594ba7429.png" alt="1593328174261"></p><h3 id="改写in文件"><a href="#改写in文件" class="headerlink" title="改写in文件"></a>改写in文件</h3><pre><code># KIM potential for CHO system# .....kim_init  Sim_LAMMPS_ReaxFF_ChenowethVanDuinGoddard_2008_CHO__SM_584143153761_001  realread_data    data.CHOkim_interactions H C Oneighbor    2 binneigh_modify    every 10 delay 0 check nofix        1 all nvefix             3 all temp/berendsen 500.0 500.0 100.0timestep    0.25#dump        1 all atom 30 dump.reax.chorun        3000</code></pre><p><img src="https://pic.downk.cc/item/5ef847b714195aa594ba742c.png" alt="1593328480356"></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p><img src="https://pic.downk.cc/item/5ef847b714195aa594ba742e.png" alt="1593328870265"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>晶体表示方法</title>
+      <link href="2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/"/>
+      <url>2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>由结构基元（原子、离子、分子等）进行三维长程有序排列而构成的一切固体物质都是<strong>晶体</strong>。晶体与非晶体之间的主要差别在于它们是否有三维长程点阵结构。</p><a id="more"></a><p>晶体可以有<strong>单形</strong>和<strong>聚形</strong>两种理想外形。单形是由形状、大小、面指数相同的晶面构成的晶体外形，如六面体（氯化钠） 、正八面体（明矶）等（见图1 - 1 a和b) 。晶体共有47种单形。聚形是由两种或两种以上的晶面构成的晶体外形，如方柱多面体（水合硫酸镁，见图1 - 1 c) 。</p><center><img src="https://pic.downk.cc/item/5eecd80d14195aa5946eb856.png" alt="image-20200612205129646" style="zoom:80%;"></center><p>平行六面体是空间三维物体周期性重复的基本单元，或称<strong>单胞</strong>；决定该单胞的基本参数是平行六面体的三个边长a 、b、c和三边间的夹角α、β、γ。</p><center><img src="https://pic.downk.cc/item/5eecd83f14195aa5946f3351.png" alt="image-20200618153857142" style="zoom: 67%;"></center><h3 id="米勒指数-Miller-index"><a href="#米勒指数-Miller-index" class="headerlink" title="米勒指数(Miller index)"></a>米勒指数(Miller index)</h3><p>晶体中的<strong>晶面</strong>表示含有多于三个质点的平面。假如一个晶面与X，Y，Z轴相交的长度r, s, t; 分别取其倒数1/r, 1/s, 1/t，并对这三个分数进行通分；通分后三个分数的分子就是这个晶面的晶面指数h k l，也称米勒指数。（当晶面和晶轴平行时，该数值为0；当晶面与某一晶轴的负方向相交，则相应的指数上加一个 $ \bar{} $ ）</p><div align="center"><img src="https://pic.downk.cc/item/5eecd85214195aa5946f4be6.gif" alt="八面体" style="zoom:100%;"></div><center><img src="https://pic.downk.cc/item/5eecd86114195aa5946f5eeb.gif" alt="立方体1" style="zoom:100%;"></center><center><img src="https://pic.downk.cc/item/5eecd8fd14195aa5947034b3.png" alt="立方体2" style="zoom: 67%;"></center><p>若考虑到晶体所具有的对称性，有许多不平行的晶面上也具有相同的质点分布。这些晶面是彼此等同的，我们把它们称作一个<strong>晶面族</strong>，记做{h k l}。例如在立方晶系中，{1 0 0}包含 $ (100) $ 、 $ (010) $ 、 $ (001) $ 、 $ (\bar100) $ 、 $ (0\bar10) $ 、 $ (00\bar1) $ 共六种晶面。</p><p><strong>晶向</strong>是指在晶体中任何一条穿过许多质点的直线方向。晶体中不同的晶向，常常具有不同的线密度等不同属性。为区分晶体这些晶向，结晶学上人们引入晶向指数，用[m n w]表示晶向上某质点原子坐标的最简整数比。</p><p>考虑晶体对称性，也有若干个晶向常常是等同的。它们构成一个<strong>晶向族</strong>，用&lt;m n w&gt;来表示这一系列的晶向。例如：对于立方晶系，&lt;100&gt;包含六个晶向： $ [100] $ 、 $ [010] $ 、 $ [\bar100] $  、$ [0\bar10] $ 、 $ [001] $ 、 $ [00\bar1] $ ；在立方晶系中，由于晶胞参数(a, b, c)的特殊关系， 某一晶面(h k l)与指数相同的晶向[h k l]恰好垂直。</p><blockquote><ul><li>中括号[]表示的是晶体中的<strong>晶向</strong></li><li>尖括号&lt;&gt;表示的是<strong>晶向族</strong></li><li>圆括号（）表示的是晶面的<strong>密勒指数（晶面指数；Miller指数）</strong></li><li>花括号｛｝表示的是<strong>晶面族</strong></li></ul></blockquote><h2 id="晶体的基本对称性"><a href="#晶体的基本对称性" class="headerlink" title="晶体的基本对称性"></a>晶体的基本对称性</h2><p>人们定义使各原子的位置发生变换，变换后晶体的结构状态与变换前正好相同的操作称为<strong>对称操作</strong>。晶体基本的对称操作有点操作和平移操作。</p><p>在一般的对称操作过程中，空间有许多点在动，且操作前后状态一样。但点操作要求操作中至少有一个点不动。在对称操作过程中保持空间至少有一个不动点的操作称为<strong>点对称操作</strong>。具体的点对称操作有恒等操作、平面反映操作、旋转操作、反演操作和旋转反演操作，其中平面反映和旋转反演操作属于复合操作。旋转轴只能是1次、2次、3次、4次和6次的；平面反映操作也称为镜面操作 $ m $ ，它等同于一个2次旋转反演操作 $ \bar2 $ 。反演操作为 $ \bar1 $ ，其他的旋转反演操作可为 $ \bar3 $ 、 $ \bar4 $ 、 $ \bar6 $ 。相对应的对称操作元素分别为镜面、旋转轴、反演中心、旋转反演轴等，恒等操作没有对称操作元素。在三维空间内若能通过旋转把一个位置转换到另一位置，则这两个位置彼此<strong>同宇</strong>。</p><center><img src="https://pic.downk.cc/item/5eecd91614195aa594705ee2.png" alt="5种点对称操作" style="zoom:67%;"></center><center><img src="https://pic.downk.cc/item/5eecd92314195aa5947071e5.png" alt="点对称操作的表示方法" style="zoom:67%;"></center><p>在三维空间内若能通过旋转把一个位置转换到另一位置，则这两个位置彼此同宇。否则这两个位置是不同宇的，不同宇的两个位置间一定经历了奇数个反演操作。这里可以借助左、右手的关系理解同宇的概念。旋转操作作用于左手时，不论怎样的旋转都不能把左手转成右手；而带有一次反演的操作则可以把左手转变成右手，如平面反映就可以把左手转变成右手。左手和右手呈镜面对称，是不同宇的。</p><p>已知在晶体学中只允许有5种旋转对称操作， 其转角为 $ \frac{2\pi}{n} $ ，且有n=1,2,3,4,6；相应的熊夫利斯符号为 $ C_1(E) $ 、 $ C_2 $ 、 $ C_3 $ 、 $ C_4 $ 和 $ C_6 $ 。其他的晶体旋转不能适当地填满空间。由于n值的限制，可能的旋转反演对称操作也只能有了 $ \bar1 $ （反演）、 $ \bar2 $ （m,平面反映）、 $ \bar3 $ 、 $ \bar4 $ 和 $ \bar6 $ ；相应的熊夫利斯符号为 $ i $ 、 $ \sigma $ 、 $ S_6 $ 、 $ S_4 $ 和 $ C_{3h} $ 。</p><blockquote><p>分子对称性可分成5种对称元素。</p><ul><li><strong>旋转轴：</strong>分子绕轴旋转 $ \frac{360^\circ}{n} $ 度角后与原分子重合，此轴也称为n重旋转轴，简写为$C_n$。例如水分子是 $ C_2 $ 而氨是 $ C_3 $ 。一个分子可以拥有多个旋转轴；有最大n值的称为主轴，为直角坐标系的z轴，较小的则称为副轴。n≥3的轴称高次轴。</li><li><strong>对称面：</strong>一个平面反映分子后和原分子一样时，此平面称为对称面。对称面也称为镜面，**记为$σ$**。水分子有两个对称面：一个是分子本身的平面，另一个是垂直于分子中心的平面。包含主轴，与分子平面垂直的对称面称为垂直镜面，记为 $ σ_v $ ；而垂直于主轴的对称面则称为水平镜面，记为 $ σ_h $ 。等分两个相邻副轴夹角的镜面称等分镜面，记作 $ σ_d $ 。一个对称面可以笛卡尔坐标系识别，例如(xz)或(yz)。</li><li><strong>对称中心：</strong>从分子中任一原子到分子中心连直线，若延长至中心另一侧相等距离处有一个相同原子，且对所有原子都成立，则该中心称为对称中心，<strong>用 $ i $ 表示</strong>。对称中心可以有原子，也可以是假想的空间位置。例如四氟化氙（ $ XeF_4 $ ）的对称中心位于Xe原子，而苯（ $ C_6H_6 $ ）的对称中心则位于环的中心。</li><li><strong>旋转反映轴：</strong>分子绕轴旋转 $ \frac{360^{\circ}}{n} $ 度，再相对垂直于轴的平面进行反映后分子进入等价图形，记为 $ S_n $ 。该操作是旋转与反映的复合操作，例子有四面体型的含有三个 $ S_4 $ 轴的四氟化硅，以及有一个 $ S_6 $ 轴的乙烷的交叉式构象。</li><li><strong>恒等元素：</strong>简写为E，取自德语的Einheit，意思为“一”。恒等操作即分子旋转360°不变化的操作，存在于每个分子中。这个元素似乎不重要，但此条件对群论机制和分子分类却是必要的。</li></ul></blockquote><h2 id="7种晶系"><a href="#7种晶系" class="headerlink" title="7种晶系"></a>7种晶系</h2><p>根据实际晶体主要的点对称特征可以把所有晶体划分成7种晶系。</p><p>表中表示对称性的符号是国际符号，括号内符号则是相应的熊夫利斯符号。特别要注意的是，边、角关系中不等号＂≠＂的意思是指对称条件不要求这里是等号，并不是说不允许相等。</p><p>晶体所具有的<strong>点对称性决定了晶体所属的晶系</strong>，而不是其单胞的边角关系。</p><center><img src="https://pic.downk.cc/item/5eecd93614195aa594708bee.png" alt="image-20200612224059718" style="zoom: 50%;"></center><center><img src="https://pic.downk.cc/item/5eecd94414195aa59470a02a.png" alt="image-20200615185311460" style="zoom:67%;"></center><center><img src="https://pic.downk.cc/item/5eecd95314195aa59470b56e.png" alt="image-20200615185345776" style="zoom:67%;"></center><center><img src="https://pic.downk.cc/item/5eecd96514195aa59470cce0.png" alt="image-20200615185541998" style="zoom:67%;"></center><center><img src="https://pic.downk.cc/item/5eecd97314195aa59470df7d.png" alt="image-20200615185622819" style="zoom:67%;"></center><img src="https://pic.downk.cc/item/5eecd98014195aa59470f14e.png" alt="image-20200615185652962" style="zoom:67%;"><img src="https://pic.downk.cc/item/5eecd98c14195aa59471013b.png" alt="image-20200615185716838" style="zoom:67%;"><img src="https://pic.downk.cc/item/5eecd99814195aa5947114c4.png" alt="image-20200615185859371" style="zoom:67%;"><h2 id="14种布拉菲点阵"><a href="#14种布拉菲点阵" class="headerlink" title="14种布拉菲点阵"></a>14种布拉菲点阵</h2><p>在空间中由几何点即阵点排列成的无限阵列，其中每一点与其他所有的这种点有完全相同的环境，这种阵列称为<strong>点阵(Lattice)**。所有晶体都具有平移不变性，或称</strong>平移对称性<strong>。借助点的平移可产生这种点阵。晶体被定义为原子的三维长程有序排列，即周期性排列。所谓周期性就是平移对称性。平移对称性可理解为点平移后其环境不变。三维空间内单位平移矢量构成的平行六面体即为点阵的单胞。若单胞只含有一个阵点则称为</strong>初基单胞**。</p><p><strong>7 种晶系是从点对称性的角度出发对所有晶体做粗略划分。若从晶体的平移对称特性出发，则所有晶体可能具有14 种不同的点阵</strong>，或称为14 种以法国晶体学家<em>A.Bravais</em>命名的布拉菲点阵。</p><p>设有某一点阵，若用其初基单胞即可反映出该点阵的平移对称性，又可反映出相应晶系所具有的点对称特征对初基单胞边角关系的限制，则这种点阵称为<strong>初基点阵</strong>。初基点阵所展示的平移矢董为初基平移矢量。参照前文表1-1所示各晶系单胞边角关系，可以得出7种初基布拉菲点阵，每种晶系对应一个初基点阵。应注意的是，三方晶系取六角坐标系时与六方晶系的平移对称性相同，因此它们对应的点阵是等价的；这些初基点阵用P作为标记。P也代表它们的初基单胞或称P单胞。对三方晶系还存在一种菱形单胞的初基点阵，用R作为标记(R表示菱面体， Rhombohedron)。另外，还有其他7种布拉菲点阵。这7种点阵是在原初基点阵内加人一些新的阵点，通过点阵有心化而获得。阵点不能随意加人，加人新阵点后，首先要看新的阵点排列是否还构成点阵，即这一点阵是否可以形成无限阵列并且所有阵点都有完全相同的环境；同时所得到的点阵还应确实是一个新的点阵。这类新点阵的单胞变成了多个阵点的<strong>复式单胞</strong>，属于非初基单胞。这种单胞形式也能够体现出相应晶系所具有的点对称特征对其单胞边角关系的限制。</p><p>在讨论上述7种初基点阵以外的其他布拉菲点阵时，使用这种复式单胞很方便，所以常被人们采纳，被称为<strong>惯用单胞</strong>。在这种点阵划分方法中，一方面，凡属于同一晶系的空间点阵都选用相同的参考轴，所以全部惯用的复式单胞都可以表现出与相应的初基点阵单胞相同的点对称特征和相应的平移对称性； 另一方面，由复式单胞构成的新点阵中仍可找出只有一个阵点的初基单胞，并且可以通过该初基单胞的点阵矢董平移将整个空间点阵再现出来。但是这种单胞本身不能以简洁清晰的方式反映出晶系主要的点对称特征对其单胞边角关系的限制。点对称性对于晶体结构分析十分重要，需要从单胞上直接反映出来，以使入们很容易想像出晶体的结构特征，所以研究晶体结构时对有心点阵通常不选用其初基单胞，而选用复式单胞。但有心点阵的初基平移矢量仍取其初基单胞的平移矢量。下表给出了描述晶体平移对称性的14种布拉菲点阵，其中初基P和R点阵的单胞只有一个阵点，体心I点阵的单胞有两个阵点，面心F点阵的单胞有四个阵点，底心C或B点阵的单胞有两个阵点。</p><center><img src="https://pic.downk.cc/item/5eecd9b114195aa594713bef.png" alt="image-20200615182903171" style="zoom: 80%;"></center><center><img src="https://pic.downk.cc/item/5eecd9bd14195aa594714e90.png" alt="image-20200615184356769" style="zoom: 50%;"></center><center><img src="https://pic.downk.cc/item/5eecd9cc14195aa5947167f0.png" alt="image-20200618232118138" style="zoom: 50%;"></center><p>点阵所表达的晶体平移对称性包括晶体内每一个原子的平移对称性，也包括各原子间每一个空隙位置的平移对称性。因此，点阵是实际晶体所具备的平移对称性的高度抽象和概括，点阵内阵点与阵点之间的关系等同于实际晶体内所具有相应平移对称性几何点之间的关系。切忌把阵点只是简单地理解成真实晶体中原子的位置。实际上，有很多种晶体单胞在其所对应的点阵单胞的阵点位置上并没有原子。</p><blockquote><ul><li><p>a–anorthic, m–monoclinic, o–orthorhombic, h–hexagonal(rhombohedral &amp; hexagonal), t–tetragonal ,c–cubic.</p><center><img src="https://pic.downk.cc/item/5eecd9dd14195aa594717c5c.png" alt="image-20200618190406654" style="zoom:67%;"></center></li><li><p>简单P(Primitive)，底心S或C或B或A(Base-centered)，体心I(Body-centered)，面心F(Face-centered)</p><center><img src="https://pic.downk.cc/item/5eecd9eb14195aa594718b6d.png" alt="image-20200618190047060" style="zoom:80%;"></center><ul><li><p><strong>fcc</strong>：face-centered cubic structure 面心立方结构</p></li><li><p><strong>hcp</strong>：hexagonal close-packed structure 密排六方结构</p></li><li><p><strong>bcc</strong>：body-centered cubic structure 体心立方结构</p><center><img src="https://pic.downk.cc/item/5eecd9fa14195aa594719aa2.jpg" alt="HCP&amp;FCC" style="zoom:67%;"></center></li></ul></li></ul></blockquote><h2 id="晶体学点群"><a href="#晶体学点群" class="headerlink" title="晶体学点群"></a>晶体学点群</h2><p>经典晶体学认为，点对称操作的组合可以描述所有规则几何外形单晶体所具备的点对称性。但许多金属单晶体虽然不一定具备规则的几何外形，但它们相应的点对称性却仍然存在。因此近代晶体学出现之后，人们认识到晶体的点对称性实质上反映了晶体内部结构的点对称性，只有在特定的单晶生长条件下晶体的点对称性才反映在几何外形上。</p><p>点对称操作的集合符合群的条件。群内对称操作的个数为群的阶，用h表示。对称操作组合在一起操作时， 空间几乎所有点都在变动，但至少有一个点（如原点）在全部对称操作过程中始终保持不变。它也是所有对称元素的一个公共点。所以把点对称操作的集合所构成的群称为点群。通常，阶数越高的点群其对称性越高。<strong>点群</strong>以高度的数学抽象方式表述了实际晶体的点对称性。</p><p>1830 年以后，人们才发现晶体共有32 种晶类，每一种晶类对应着一种点群。</p><p>可以用不同的方法推导32种点群：(1)从7种晶系的主要点对称特征出发外延推演，可以推导出32种点群。这种推导方法的优点在于点群与晶系的对应关系十分明确。(2)旋转群推导法，即先推导11种纯旋转晶体学点群，然后与反演操作组合可得11种中心对称的晶体学点群，再推导出另外10种非中心对称的点群，共得32种点群。这种方法的优点在于可以很快完成推导。(3)循环群推导法，是先确定5 种循环群 $ 1(C_1) $ , $ 2(C_2) $ , $ 3(C_3) $ , $ 4(C_4) $ 和 $ 6(C_6) $ ，再在每种循环群上加进各种新对称操作，或用 $ \bar{n} $ 取代 $ n $ 轴，这样也可以推导出32种点群。其优点在于通过推导可以更为透彻地了解各种点群的对称操作。</p><blockquote><p>熊夫利斯符号表示点群：</p><ul><li> $ C_n $ （循环群）表示该群有一根n次旋转轴。 $ C_{nh} $ 是 $ C_n $ 加上一个与旋转轴垂直的镜面（反映）对称元素。 $ C_{nv} $ 则是 $ C_n $ 加上一个与旋转轴平行的镜面对称元素。</li><li> $ S_{2n} $ （源自德语Spiegel，意思是镜面）表示一根只含有2n次旋转反映轴（简称映轴）。</li><li> $ D_n $ （二面体群）表示这个群只有一根n次旋转轴和n根垂直于这根主轴的二重轴。 $ D_{nh} $ 是加上一个与n次旋转轴垂直的镜面。 $ D_{nd} $ 则是 $ D_n $ 是加上n个与n次旋转轴平行的镜面。</li><li>字母 $ T $ （四面体）表示这个群有四面体的对称性。 $ T_d $ 则包括了旋转反映操作， $ T $ 群本身则不包含旋转反映操作， $ T_h $ 则是 $ T $ 群加上与旋转轴垂直的镜面。</li><li>字母 $ O $ （八面体）表示该群具有八面体或者立方体的对称性，可能包括（ $ O_h $ ）或不包括（ $ O $ ）旋转反映操作。</li></ul></blockquote><center><img src="https://pic.downk.cc/item/5eecda2714195aa59471cc0e.png" alt="image-20200615192915842"></center><center><img src="https://pic.downk.cc/item/5eecda3314195aa59471dbb7.png" alt="image-20200615192928474"></center><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p><a href="https://ocw.nagoya-u.jp/files/109/lecnote_04.pdf">晶体的结构及表示方法</a></p><p><a href="https://struchem.nankai.edu.cn/zyk/chap7/32pg/32pg.htm">晶体的宏观对称性—32种晶体学点群</a></p><h2 id="本文内容载自"><a href="#本文内容载自" class="headerlink" title="本文内容载自:"></a>本文内容载自:</h2><p>[1]毛卫民 - &lt;材料的晶体结构原理&gt;</p><p>[2]周公度 - &lt;结构化学基础&gt;</p><p>[3]<a href="http://chemistry.bd.psu.edu/jircitano/6symmetry.pdf">http://chemistry.bd.psu.edu/jircitano/6symmetry.pdf</a></p><p>[4]<a href="https://zh.wikipedia.org/wiki/%E5%88%86%E5%AD%90%E5%AF%B9%E7%A7%B0%E6%80%A7">https://zh.wikipedia.org/wiki/%E5%88%86%E5%AD%90%E5%AF%B9%E7%A7%B0%E6%80%A7</a></p><p>[5]<a href="https://zh.wikipedia.org/zh-hans/%E6%99%B6%E4%BD%93%E5%AD%A6%E7%82%B9%E7%BE%A4#cite_note-3">https://zh.wikipedia.org/zh-hans/%E6%99%B6%E4%BD%93%E5%AD%A6%E7%82%B9%E7%BE%A4#cite_note-3</a></p><p>[6]<a href="https://en.wikipedia.org/wiki/Crystal_structure">https://en.wikipedia.org/wiki/Crystal_structure</a></p><p>[7]<a href="https://ja.wikipedia.org/wiki/%E7%B5%90%E6%99%B6%E6%A7%8B%E9%80%A0">https://ja.wikipedia.org/wiki/%E7%B5%90%E6%99%B6%E6%A7%8B%E9%80%A0</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 理论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Materials </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win10系统中在vscode配置mpi开发环境</title>
+      <link href="2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+      <url>2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>已安装vscode</p><a id="more"></a><h2 id="安装msmpi"><a href="#安装msmpi" class="headerlink" title="安装msmpi"></a>安装msmpi</h2><h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="https://www.microsoft.com/en-us/download/details.aspx?id=100593">https://www.microsoft.com/en-us/download/details.aspx?id=100593</a></p><p><img src="https://pic.downk.cc/item/5ed769f4c2a9a83be5630ec8.png" alt="image-20200603145823402.png"></p><p>两种安装包二选一即可。</p><h3 id="安装提示"><a href="#安装提示" class="headerlink" title="安装提示"></a>安装提示</h3><ol><li>打开cmd，输入</li></ol><pre><code class="shell">set MSMPI</code></pre><ol start="2"><li>显示如下图，则说明安装成功。后面所有相关目录均为安装后set MSMPI显示的相关目录，会根据安装时选择的文件夹而不同。</li></ol><p><img src="https://pic.downk.cc/item/5ed769f4c2a9a83be5630ecb.png" alt="image-20200603150143671"></p><h2 id="配置vscode"><a href="#配置vscode" class="headerlink" title="配置vscode"></a>配置vscode</h2><h3 id="在-vscode文件夹中添加includePath"><a href="#在-vscode文件夹中添加includePath" class="headerlink" title="在.vscode文件夹中添加includePath"></a>在.vscode文件夹中添加includePath</h3><pre><code class="json">"D:/Microsoft SDKs/MPI/Include"</code></pre><p><img src="https://pic.downk.cc/item/5ed769f4c2a9a83be5630ecd.png" alt="image-20200603150700159"></p><h2 id="测试C-代码"><a href="#测试C-代码" class="headerlink" title="测试C++代码"></a>测试C++代码</h2><h3 id="C-代码："><a href="#C-代码：" class="headerlink" title="C++代码："></a>C++代码：</h3><pre><code class="c++">#include &lt;stdint.h&gt;#include &lt;mpi.h&gt;#include &lt;iostream&gt;int main(int argc,char* argv[]){    int myid, numprocs;    int  namelen;    char processor_name[MPI_MAX_PROCESSOR_NAME];    MPI_Init(&amp;argc,&amp;argv);    MPI_Comm_rank(MPI_COMM_WORLD,&amp;myid);    MPI_Comm_size(MPI_COMM_WORLD,&amp;numprocs);    MPI_Get_processor_name(processor_name,&amp;namelen);    std::cout &lt;&lt; "Hello World! Process "&lt;&lt; myid &lt;&lt;" of "&lt;&lt; numprocs &lt;&lt;" on "&lt;&lt; processor_name &lt;&lt; std::endl;    MPI_Finalize();    return 0;}</code></pre><h3 id="在终端中编译运行，结果如下图："><a href="#在终端中编译运行，结果如下图：" class="headerlink" title="在终端中编译运行，结果如下图："></a>在终端中编译运行，结果如下图：</h3><p><img src="https://pic.downk.cc/item/5ed76ccac2a9a83be566863f.png" alt="image-20200603172554787"></p><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="在终端中编译运行的命令："><a href="#在终端中编译运行的命令：" class="headerlink" title="在终端中编译运行的命令："></a>在终端中编译运行的命令：</h3><ol><li>编译<br>C语言：</li></ol><pre><code class="powershell">gcc 源文件文件名 -o 可执行文件文件名 -fopenmp -l msmpi -L "D:\Microsoft SDKs\MPI\Lib\x64" -I "D:\Microsoft SDKs\MPI\Include"</code></pre><p>C++：</p><pre><code class="powdershell">g++ 源文件文件名 -o 可执行文件文件名 -fopenmp -l msmpi -L "D:\Microsoft SDKs\MPI\Lib\x64" -I \"D:\Microsoft SDKs\MPI\Include" </code></pre><ol start="2"><li>再执行：</li></ol><pre><code class="shell">mpiexec -n 进程数 可执行文件文件名</code></pre><h3 id="可配置Code-Runner扩展（对于C-C-）："><a href="#可配置Code-Runner扩展（对于C-C-）：" class="headerlink" title="可配置Code Runner扩展（对于C/C++）："></a>可配置Code Runner扩展（对于C/C++）：</h3><ol><li>打开扩展设置：</li></ol><p><img src="https://pic.downk.cc/item/5ed769f4c2a9a83be5630ed2.png" alt="image-20200603151703517"></p><ol start="2"><li>找到Executor Map，在settings.json中编辑：</li></ol><p><img src="https://pic.downk.cc/item/5ed76a2ac2a9a83be56361ef.png" alt="image-20200603151828983"></p><ol start="3"><li>在“code-runner.executorMap”中添加：</li></ol><p><img src="https://pic.downk.cc/item/5ed76a2ac2a9a83be56361f1.png" alt="image-20200603151948873"></p><pre><code class="json">"c": "cd $dir &amp;&amp; gcc $fileName -o $fileNameWithoutExt -fopenmp -l msmpi -L \"D:\\Microsoft SDKs\\MPI\\Lib\\x64\" -I \"D:\\Microsoft SDKs\\MPI\\Include\" &amp;&amp; mpiexec -n 4 $fileNameWithoutExt","cpp": "cd $dir &amp;&amp; g++ $fileName -o $fileNameWithoutExt -fopenmp -l msmpi -L \"D:\\Microsoft SDKs\\MPI\\Lib\\x64\" -I \"D:\\Microsoft SDKs\\MPI\\Include\" &amp;&amp; mpiexec -n 4 $fileNameWithoutExt",</code></pre><p>上面最后的<code>mpiexec -n 4 $fileNameWithoutExt</code>中4是进程数，可自行设置。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VSCode </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用reaxff势给石墨建模</title>
+      <link href="2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/"/>
+      <url>2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="LAMMPS-USER-REAXC-MOLECULE-packages"><a href="#LAMMPS-USER-REAXC-MOLECULE-packages" class="headerlink" title="LAMMPS + USER-REAXC  + MOLECULE packages"></a>LAMMPS + USER-REAXC  + MOLECULE packages</h3><a id="more"></a><h3 id="安装msi2lmp"><a href="#安装msi2lmp" class="headerlink" title="安装msi2lmp"></a>安装msi2lmp</h3><p><img src="https://pic.downk.cc/item/5eabf81ec2a9a83be565e510.png" alt="1588299887184"></p><p>安装完成在src出现msi2lmp.exe，用于将从Materials Studio等软件生成的模型中得到lammps需要的data文件。</p><h2 id="data文件"><a href="#data文件" class="headerlink" title="data文件"></a>data文件</h2><h3 id="在Materials-Studio中建模"><a href="#在Materials-Studio中建模" class="headerlink" title="在Materials Studio中建模"></a>在Materials Studio中建模</h3><img src="https://pic.downk.cc/item/5eabf81ec2a9a83be565e517.png" alt="1588300254517" style="zoom: 67%;"><img src="https://pic.downk.cc/item/5eabf81ec2a9a83be565e519.png" alt="1588300275226" style="zoom:80%;"><h4 id="在Modules→Forcite→Calculation中设置势函数："><a href="#在Modules→Forcite→Calculation中设置势函数：" class="headerlink" title="在Modules→Forcite→Calculation中设置势函数："></a>在Modules→Forcite→Calculation中设置势函数：</h4><p><img src="https://pic.downk.cc/item/5eabf874c2a9a83be5663384.png" alt="1588300406711"></p><p>不需要Run，直接关闭窗口。</p><h4 id="导出成car格式："><a href="#导出成car格式：" class="headerlink" title="导出成car格式："></a>导出成car格式：</h4><p>会生成car和mdf两个文件。</p><p><img src="https://pic.downk.cc/item/5eabf874c2a9a83be5663388.png" alt="1588300531058"></p><h3 id="用msi2lmp转换："><a href="#用msi2lmp转换：" class="headerlink" title="用msi2lmp转换："></a>用msi2lmp转换：</h3><pre><code class="shell">./msi2lmp.exe graphite -p o -frc cvff -i -n &gt; data.graphite</code></pre><p>生成data.graphite和graphite.data两个文件，其中graphite.data就是需要的文件。</p><pre><code>LAMMPS data file. msi2lmp v3.9.9 / 05 Nov 2018 / CGCMM for graphite    100 atoms    150 bonds    300 angles    600 dihedrals    100 impropers   1 atom types   1 bond types   1 angle types   1 dihedral types   1 improper types    -6.150000000     6.150000000 xlo xhi    -5.326056233     5.326056233 ylo yhi    -3.400000000     3.400000000 zlo zhi    -6.150000000     0.000000000     0.000000000 xy xz yzMasses   1   12.0107 # xxAtoms # full      1      1   1  0.000000     0.000000000     0.000000000     1.700000000   0   0   0 # xx      2      1   1  0.000000     0.000000000    -0.000000000    -1.700000000   0   0   1 # xx......</code></pre><h2 id="势文件"><a href="#势文件" class="headerlink" title="势文件"></a>势文件</h2><p>examples→reax→FC→ffield.reax.FC</p><h2 id="input脚本"><a href="#input脚本" class="headerlink" title="input脚本"></a>input脚本</h2><pre><code>boundary     p p punits        real #用reaxff势需要选real单位atom_style   full #看生成的data文件里写了要用full，这需要安装MOLECULE packageread_data     graphite.data#mass        *   12.0107pair_style    reax/c NULL #要用reaxff势，需要安装USER-REAXCpair_coeff    * * ffield.reax.FC Cneighbor     2. bin #截断半径，与单位有关，详细见附录neigh_modify    every 10 delay 0 check no #截断半径的刷新频率#Langevin random seedvariable     dt equal 2e-3variable     r  equal 57085variable     T  equal 300variable     dT equal "v_dt * 100"# initializevelocity     all create $T 28459 rot yes dist gaussian mom yesfix          1 all langevin $T $T ${dT} 73504 zero yesfix        2 all nvefix             3 all qeq/reax 1 0.0 10.0 1e-6 reax/c #用reaxff必须要有电荷守恒条件timestep    0.25#dump    1 all movie 10 reaxff.mp4 type typedump   2 all xyz 10 dump.reaxff.xyzrun                 1000</code></pre><h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><iframe src="//player.bilibili.com/player.html?aid=455404859&amp;bvid=BV1a5411x7ZG&amp;cid=185652449&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="截断半径"><a href="#截断半径" class="headerlink" title="截断半径"></a>截断半径</h3><blockquote><p>0.3 bin for units = lj, skin = 0.3 sigma</p><p>2.0 bin for units = real or metal, skin = 2.0 Angstroms</p><p>0.001 bin for units = si, skin = 0.001 meters = 1.0 mm</p><p>0.1 bin for units = cgs, skin = 0.1 cm = 1.0 mm</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用airebo/morse势给石墨烯建模</title>
+      <link href="2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/"/>
+      <url>2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p>LAMMPS+MANYBODY package</p><a id="more"></a><h2 id="data文件"><a href="#data文件" class="headerlink" title="data文件"></a>data文件</h2><p>来自examples→USER→phonon→4-Graphene→data.pos</p><pre><code># Graphene cell with dimension 10 x 10 x 1 and a = 2.522       200  atoms         1  atom types 0.    25.22000000000000  xlo xhi 0.    21.84116068344354  ylo yhi-10.   10.00000000000000  zlo zhi   12.61000000000000     0.00000000000000     0.00000000000000 xy xz yzAtoms1 1     0.00000000000000     0.00000000000000     0.000000000000002 1     1.26100000000000     0.72803868944812     0.000000000000003 1     2.52200000000000     0.00000000000000     0.000000000000004 1     3.78300000000000     0.72803868944812     0.000000000000005 1     5.04400000000000     0.00000000000000     0.000000000000006 1     6.30500000000000     0.72803868944812     0.000000000000007 1     7.56600000000000     0.00000000000000     0.00000000000000......</code></pre><h2 id="势文件"><a href="#势文件" class="headerlink" title="势文件"></a>势文件</h2><p>来自examples→airebo→CH.airebo-m</p><p>注：airebo/morse势是AIREBO的变形，将其中LJ势部分改用Morse势。</p><pre><code># DATE: 2016-03-15 CONTRIBUTOR: T.C. O'Connor CITATION: O'Connor, Andzelm, Robbins,  J. Chem. Phys. 142, 024903 (2015)# AIREBO-M of T.C. O'Connor, J.W. Andzelm, M.O. Robbins (2015)# Citation: J. Chem. Phys. 142, 024903 (2015); http://dx.doi.org/10.1063/1.4905549 # Based on AIREBO of S.J. Stuart, A.B. Tutein, J.A. Harrison (2000) # Citation: J. Chem. Phys. 112, 6472 (2000); http://dx.doi.org/10.1063/1.481208 1.7      rcmin_CC 1.3      rcmin_CH 1.1      rcmin_HH 2.0      rcmax_CC 1.8      rcmax_CH 1.7      rcmax_HH 2.0      rcmaxp_CC 1.6      rcmaxp_CH 1.7      rcmaxp_HH 0.1      smin 2.0      Nmin 3.0      Nmax 3.2      NCmin 3.7      NCmax 0.3134602960832605     Q_CC 0.3407757282257080     Q_CH 0.370     Q_HH 4.746539060659529    alpha_CC 4.102549828548784    alpha_CH ......</code></pre><h2 id="input脚本"><a href="#input脚本" class="headerlink" title="input脚本"></a>input脚本</h2><pre><code>boundary     p p p #周期边界units        metal #单位，具体见备注atom_style   atomic #原子类型为默认值read_data     data.pos #读取data文件mass        *   12.0107 #C原子质量pair_style          airebo/morse 3.0 1 1 #势函数类型，3.0是截断半径；0/1表示打开或关闭Morse项；0/1表示打开或关闭扭转项，AIREBO势的各项见备注pair_coeff          * * CH.airebo-m C #用到的势文件中的Cvelocity            all create 300.0 761341 #针对所有原子，300温度，随机赋予速度fix                 1 all nve #每一步更新组内原子的位置和速度。V是体积，E是能量，二者保持恒定。timestep            0.0005 #步长dump   2 all xyz 10 dump.airebom.xyz #输出记录化学体系结构的.xyz文件run                 1000 #运行1000步</code></pre><h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><iframe src="https://player.bilibili.com/player.html?aid=752940447&amp;bvid=BV16k4y1r7eh&amp;cid=185315710&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><h3 id="units单位："><a href="#units单位：" class="headerlink" title="units单位："></a>units单位：</h3><blockquote><p>For style <em>metal</em>, these are the units:</p><ul><li>mass = grams/mole</li><li>distance = Angstroms</li><li>time = picoseconds</li><li>energy = eV</li><li>velocity = Angstroms/picosecond</li><li>force = eV/Angstrom</li><li>torque = eV</li><li>temperature = Kelvin</li><li>pressure = bars</li><li>dynamic viscosity = Poise</li><li>charge = multiple of electron charge (1.0 is a proton)</li><li>dipole = charge*Angstroms</li><li>electric field = volts/Angstrom</li><li>density = gram/cm^dim</li></ul></blockquote><h3 id="AIREBO势的三个项："><a href="#AIREBO势的三个项：" class="headerlink" title="AIREBO势的三个项："></a>AIREBO势的三个项：</h3><p>$$<br>\begin{split}E &amp; = \frac{1}{2} \sum_i \sum_{j \neq i}<br>\left[ E^{\text{REBO}}<em>{ij} + E^{\text{LJ}}</em>{ij} +<br> \sum_{k \neq i,j} \sum_{l \neq i,j,k} E^{\text{TORSION}}_{kijl} \right] \\end{split}<br>$$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>虚拟机中设置共享文件夹</title>
+      <link href="2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+      <url>2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</url>
+      
+        <content type="html"><![CDATA[<p><strong>前提：在vmware中设置共享文件夹，会共享在 /mnt/hgfs里。本文针对找不到 /mnt/hgfs的情况。</strong></p><a id="more"></a><ul><li>物理机系统：win10</li><li>虚拟机系统：deepin 15</li><li>VMware：15，已安装VMware Tools</li></ul><h2 id="在vmware设置共享文件夹"><a href="#在vmware设置共享文件夹" class="headerlink" title="在vmware设置共享文件夹"></a>在vmware设置共享文件夹</h2><p><img src="https://pic.downk.cc/item/5ea95371c2a9a83be53aa939.png" alt="image-20200429172919311"></p><h2 id="检查共享是否设置好"><a href="#检查共享是否设置好" class="headerlink" title="检查共享是否设置好"></a>检查共享是否设置好</h2><pre><code class="shell">sudo vmware-hgfsclient</code></pre><p><img src="https://pic.downk.cc/item/5ea9537bc2a9a83be53ab28f.png" alt="image-20200429174421649"></p><p>能出现共享的文件夹名称说明之前都设置好了。</p><h2 id="安装一些必要的软件包"><a href="#安装一些必要的软件包" class="headerlink" title="安装一些必要的软件包"></a>安装一些必要的软件包</h2><pre><code class="shell">sudo apt-get install open-vm-tools</code></pre><p><img src="https://pic.downk.cc/item/5ea9537bc2a9a83be53ab292.png" alt="image-20200429174722532"></p><p>下面两个二选一，因为可能会遇到找不到软件包的情况。</p><pre><code class="shell">sudo apt-get install open-vm-dkmssudo apt-get install open-vm-tools-dkms</code></pre><p><img src="https://pic.downk.cc/item/5ea9537bc2a9a83be53ab295.png" alt="image-20200429174912343"></p><h2 id="设置挂载目录"><a href="#设置挂载目录" class="headerlink" title="设置挂载目录"></a>设置挂载目录</h2><p>可能有自动生成了可能没有，本文的前提是没有，于是设置一个。自动生成的叫/hgfs，换成别的名字也行</p><pre><code class="shell">sudo mkdir /mnt/hgfs</code></pre><p><img src="https://pic.downk.cc/item/5ea9537bc2a9a83be53ab28b.png" alt="image-20200429175436148"></p><h2 id="挂载操作"><a href="#挂载操作" class="headerlink" title="挂载操作"></a>挂载操作</h2><p>会根据之前安装的软件包名称的不同而不同。</p><p>安装open-vm-dkms，则</p><pre><code class="shell">sudo mount -t vmhgfs .host:/ /mnt/hgfs</code></pre><p>安装open-vm-tools-dkms，则</p><pre><code class="shell">vmhgfs-fuse .host:/ /mnt/hgfs</code></pre><p>此时共享文件夹已经能在/hgfs里看到了。</p><p><img src="https://pic.downk.cc/item/5ea9537bc2a9a83be53ab28d.png" alt="image-20200429180017616"></p><h2 id="有可能会遇到共享文件夹普通权限打不开"><a href="#有可能会遇到共享文件夹普通权限打不开" class="headerlink" title="有可能会遇到共享文件夹普通权限打不开"></a>有可能会遇到共享文件夹普通权限打不开</h2><p>建议重启虚拟机，重新进行挂载操作，改用命令（仅针对安装open-vm-tools-dkms，另一种没遇到不知道）：</p><pre><code class="shell">sudo vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other</code></pre><p>或者也可以选择root进去查看。</p><h2 id="每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢"><a href="#每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢" class="headerlink" title="每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢"></a>每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LAMMPS中ReaxFF势有关的安装和运行</title>
+      <link href="2020/04/20/LAMMPS%E4%B8%ADReaxFF%E5%8A%BF%E6%9C%89%E5%85%B3%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%BF%90%E8%A1%8C/"/>
+      <url>2020/04/20/LAMMPS%E4%B8%ADReaxFF%E5%8A%BF%E6%9C%89%E5%85%B3%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%BF%90%E8%A1%8C/</url>
+      
+        <content type="html"><![CDATA[<ul><li>进入/src，安装package：</li></ul><pre><code class="shell">make yes-USER-REAXC</code></pre><a id="more"></a><p>可以make package-status命令查看安装情况：</p><pre><code class="shell">peachrl@peachrl-PC:~/LAMMPS/lammps-3Mar20/src$ make package-status...Installed YES: package USER-REAXC...</code></pre><p>看到YES说明安装成功。</p><p><code>注意：我在网上查找教程的时候很多都是说要先make lib-reax之类的，但是在lammps官网上显示USER-REAXC不需要lib：</code></p><p><img src="https://pic.downk.cc/item/5e9dc42fc2a9a83be5d4eb36.png" alt="lib-no！"></p><p><code>大概是lammps改版了？总之我的lammps是“3Mar20”版本的。</code></p><ul><li><p>之后，还是在/src目录，重新make ubuntu（</p><p><a href="https://peachrl.github.io/2020/04/06/zai-deepin-xi-tong-an-zhuang-lammps-de-makefile.ubuntu/">之前make过的</a>）：</p><pre><code class="shell">sudo make ubuntu -j4</code></pre></li><li><p>移动和改个名：</p><pre><code class="shell">mv lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4.reaxc</code></pre></li><li><p>尝试运行一下example里reax文件里FeOH3那个例子：</p><pre><code class="shell">peachrl@peachrl-PC:~/LAMMPS/bin/reax/FeOH3$ mpirun -np 2 lmp4.reaxc &lt; in.FeOH3LAMMPS (3 Mar 2020)Reading data file ...  orthogonal box = (0 0 0) to (25 25 25)  1 by 1 by 2 MPI processor grid  reading atoms ...  105 atoms  read_data CPU = 0.0673389 secsReading potential file ffield.reax.Fe_O_C_H with DATE: 2011-02-18Neighbor list info ...  update every 10 steps, delay 0 steps, check no  max neighbors/atom: 2000, page size: 100000  master list distance cutoff = 12  ghost atom cutoff = 12  binsize = 6, bins = 5 5 5  2 neighbor lists, perpetual/occasional/extra = 2 0 0  (1) pair reax/c, perpetual      attributes: half, newton off, ghost      pair build: half/bin/newtoff/ghost      stencil: half/ghost/bin/3d/newtoff      bin: standard  (2) fix qeq/reax, perpetual, copy from (1)      attributes: half, newton off, ghost      pair build: copy      stencil: none      bin: noneSetting up Verlet run ...  Unit style    : real  Current step  : 0  Time step     : 0.25Per MPI rank memory allocation (min/avg/max) = 14.98 | 15.48 | 15.98 MbytesStep Temp E_pair E_mol TotEng Press        0            0   -9715.3326            0   -9715.3326   -139.61126     3000    533.69756   -9637.8194            0   -9472.3709    146.07633 Loop time of 10.2791 on 2 procs for 3000 steps with 105 atomsPerformance: 6.304 ns/day, 3.807 hours/ns, 291.855 timesteps/s92.8% CPU use with 2 MPI tasks x no OpenMP threadsMPI task timing breakdown:Section |  min time  |  avg time  |  max time  |%varavg| %total---------------------------------------------------------------Pair    | 8.8067     | 8.8202     | 8.8337     |   0.5 | 85.81Neigh   | 0.22447    | 0.23657    | 0.24867    |   2.5 |  2.30Comm    | 0.16772    | 0.18188    | 0.19605    |   3.3 |  1.77Output  | 3.4258e-05 | 4.9204e-05 | 6.4151e-05 |   0.0 |  0.00Modify  | 1.0178     | 1.0302     | 1.0426     |   1.2 | 10.02Other   |            | 0.01022    |            |       |  0.10Nlocal:    52.5 ave 64 max 41 minHistogram: 1 0 0 0 0 0 0 0 0 1Nghost:    511.5 ave 559 max 464 minHistogram: 1 0 0 0 0 0 0 0 0 1Neighs:    1976.5 ave 2428 max 1525 minHistogram: 1 0 0 0 0 0 0 0 0 1Total # of neighbors = 3953Ave neighs/atom = 37.6476Neighbor list builds = 300Dangerous builds not checkedPlease see the log.cite file for references relevant to this simulationTotal wall time: 0:00:10</code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LAMMPS的input脚本学习笔记</title>
+      <link href="2020/04/09/LAMMPS%E7%9A%84input%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>2020/04/09/LAMMPS%E7%9A%84input%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><a id="more"></a><ol><li><strong>LAMMPS按照顺序逐条执行命令，而不是全部读完文件后再执行</strong></li></ol><hr><ol start="2"><li><p><strong>命令末尾出现&amp;表示换行</strong></p><p>在写命令中途可以使用：</p></li></ol><pre><code>dump        2 all image 100 image.*.jpg type type &amp;            zoom 1.6 adiam 1.5</code></pre><p>​    和</p><pre><code>dump        2 all image 100 image.*.jpg type type zoom 1.6 adiam 1.5</code></pre><p>​    两段代码是一个意思，不过第二种写法要写在一行。</p><hr><p>​    &amp;在字符串内部使用，也表示换行：</p><pre><code>variable a string "red green blue &amp;                purple orange cyan"</code></pre><p>​    如果用的三个引号，那么不需要&amp;就可以换行：</p><pre><code>print """System volume = $vSystem temperature = $t"""</code></pre><hr><ol start="3"><li><strong>#表示注释，不过在引号里的#不算</strong></li></ol><hr><ol start="4"><li><p><strong>$：用varialbe 定义的变量，在下面引用变量的值时就要使用${}</strong></p><p>${变量名}，如果变量名是单个字母，大括号可以省略。例如：</p><pre><code>variable X equal (xlo+xhi)/2+sqrt(v_area)region 1 block $X 2 INF INF EDGE EDGEvariable X delete</code></pre><p>   $(表达式)，表达式视为临时变量，一般是个公式。例：</p></li></ol><pre><code>region 1 block $((xlo+xhi)/2+sqrt(v_area)) 2 INF INF EDGE EDGE</code></pre><p>​    又例：</p><pre><code>print "Final energy per atom: $(pe/atoms:%10.3f) eV/atom"</code></pre><p>   ==注意：$不能嵌套。==</p><hr><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>相关命令：&nbsp;<a href="https://lammps.sandia.gov/doc/units.html">units</a>、<a href="https://lammps.sandia.gov/doc/dimension.html">dimension</a>、<a href="https://lammps.sandia.gov/doc/newton.html">newton</a>、<a href="https://lammps.sandia.gov/doc/processors.html">processors</a>、<a href="https://lammps.sandia.gov/doc/boundary.html">boundary</a>&nbsp;<a href="https://lammps.sandia.gov/doc/atom_style.html">atom_style</a>、<a href="https://lammps.sandia.gov/doc/atom_modify.html">atom_modify</a></p><p><a href="https://lammps.sandia.gov/doc/pair_style.html">pair_style</a>、<a href="https://lammps.sandia.gov/doc/bond_style.html">bond_style</a>、<a href="https://lammps.sandia.gov/doc/angle_style.html">angle_style</a>、<a href="https://lammps.sandia.gov/doc/dihedral_style.html">dihedral_style</a>、<a href="https://lammps.sandia.gov/doc/improper_style.html">improper_style</a></p><p>都是粒子或粒子间相互作用有关的信息</p><hr><h2 id="系统定义"><a href="#系统定义" class="headerlink" title="系统定义"></a>系统定义</h2><p>相关命令：<a href="https://lammps.sandia.gov/doc/read_data.html">read_data</a>、<a href="https://lammps.sandia.gov/doc/read_restart.html">read_restart</a>&nbsp;</p><p><a href="https://lammps.sandia.gov/doc/lattice.html">lattice</a>,&nbsp;<a href="https://lammps.sandia.gov/doc/region.html">region</a>、<a href="https://lammps.sandia.gov/doc/create_box.html">create_box</a>、<a href="https://lammps.sandia.gov/doc/create_atoms.html">create_atoms</a>、<a href="https://lammps.sandia.gov/doc/read_dump.html">read_dump</a></p><p><a href="https://lammps.sandia.gov/doc/replicate.html">replicate</a></p><p>关于模拟的区域</p><hr><h2 id="模拟设置"><a href="#模拟设置" class="headerlink" title="模拟设置"></a>模拟设置</h2><p>力场系数（也可以写在read-in文件里）：<a href="https://lammps.sandia.gov/doc/pair_coeff.html">pair_coeff</a>、<a href="https://lammps.sandia.gov/doc/bond_coeff.html">bond_coeff</a>、<a href="https://lammps.sandia.gov/doc/angle_coeff.html">angle_coeff</a>、<a href="https://lammps.sandia.gov/doc/dihedral_coeff.html">dihedral_coeff</a>、<a href="https://lammps.sandia.gov/doc/improper_coeff.html">improper_coeff</a>、<a href="https://lammps.sandia.gov/doc/kspace_style.html">kspace_style</a>、<a href="https://lammps.sandia.gov/doc/dielectric.html">dielectric</a>、<a href="https://lammps.sandia.gov/doc/special_bonds.html">special_bonds</a></p><p>模拟参数：<a href="https://lammps.sandia.gov/doc/neighbor.html">neighbor</a>、<a href="https://lammps.sandia.gov/doc/neigh_modify.html">neigh_modify</a>、<a href="https://lammps.sandia.gov/doc/group.html">group</a>、<a href="https://lammps.sandia.gov/doc/timestep.html">timestep</a>、<a href="https://lammps.sandia.gov/doc/reset_timestep.html">reset_timestep</a>、<a href="https://lammps.sandia.gov/doc/run_style.html">run_style</a>、<a href="https://lammps.sandia.gov/doc/min_style.html">min_style</a>、<a href="https://lammps.sandia.gov/doc/min_modify.html">min_modify</a></p><p>计算指令：<a href="https://lammps.sandia.gov/doc/compute.html">compute</a>、<a href="https://lammps.sandia.gov/doc/compute_modify.html">compute_modify</a>、<a href="https://lammps.sandia.gov/doc/variable.html">variable</a></p><p>输出指令：&nbsp;<a href="https://lammps.sandia.gov/doc/thermo.html">thermo</a>、<a href="https://lammps.sandia.gov/doc/dump.html">dump</a>、<a href="https://lammps.sandia.gov/doc/restart.html">restart</a></p><hr><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>&nbsp;<a href="https://lammps.sandia.gov/doc/run.html">run</a>、<a href="https://lammps.sandia.gov/doc/minimize.html">minimize</a>、<a href="https://lammps.sandia.gov/doc/temper.html">temper</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LAMMPS中dump image command和dump movie command</title>
+      <link href="2020/04/07/LAMMPS%E4%B8%ADdump%20image%20command%E5%92%8Cdump%20movie%20command/"/>
+      <url>2020/04/07/LAMMPS%E4%B8%ADdump%20image%20command%E5%92%8Cdump%20movie%20command/</url>
+      
+        <content type="html"><![CDATA[<pre><code>dump ID group-ID style N file color diameter keyword value ...</code></pre><a id="more"></a><ul><li>ID：为这条dump指令起个名字</li><li>group-ID：哪几组粒子将被导出</li><li>style：image&nbsp;or&nbsp;movie</li><li>N：每隔多少timesteps导出一张图</li><li>file：导出的文件名</li><li>color：由什么来区分粒子的颜色<ul><li>比如说type：<ul><li>type 1 = red</li><li>type 2 = green</li><li>type 3 = blue</li><li>type 4 = yellow</li><li>type 5 = aqua</li><li>type 6 = cyan</li><li>更多颜色就要由<a href="https://lammps.sandia.gov/doc/dump_modify.html">dump_modify acolor</a>&nbsp;command来实现了</li></ul></li><li>再比如说vx：粒子在x方向的速度分量大小区间</li></ul></li><li>diameter：由什么来区分粒子的大小，比如type。默认所有type的粒子直径1.0，更多设置由<a href="https://lammps.sandia.gov/doc/dump_modify.html">dump_modify adiam</a>&nbsp;command来实现</li><li>keyword：其他设置，有atom、adiam、bond、line、tri、body、fix、size、view、center、up、zoom、persp、box、axes、subbox、shiny、ssao</li></ul><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><pre><code>dump        2 all image 500 image.*.jpg type type &amp;        zoom 1.6 adiam 1.2dump_modify    2 pad 5dump        3 all movie 1 movie.avi type type &amp;        zoom 1.6 adiam 1.2dump_modify    3 pad 5</code></pre><ul><li><p>dump第2条指令：</p><ul><li>all输出全部粒子</li><li>image导出图像格式</li><li>每隔500时间步长</li><li>导出的文件名为image.*.jpg</li><li>color=type由粒子的type区分颜色</li><li>diameter=type由粒子的type决定粒子直径</li><li>&amp;换行</li><li>zoom缩放模拟框的大小</li><li>adiam重置直径数据</li></ul></li><li><p>dump_modify第2条指令：</p><ul><li>pad文件名中的*是个5位数</li></ul></li></ul><div align="center"><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693dd.jpg" alt="image.00000" style="zoom:80%;"><div align="center"><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693e3.jpg" alt="image.10000" style="zoom:80%;"><div align="center"><iframe src="https://player.bilibili.com/player.html?aid=370317864&amp;bvid=BV1XZ4y1x79o&amp;cid=181211939&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe></div></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在Deepin系统安装LAMMPS的记录(Makefile.ubuntu)</title>
+      <link href="2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/"/>
+      <url>2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装之前"><a href="#安装之前" class="headerlink" title="安装之前"></a>安装之前</h2><a id="more"></a><ol><li>sudo apt-get install gcc</li><li>sudo apt-get install g++</li><li>sudo apt-get install gfortran</li><li>可能还有mpi-default-bin, mpi-default-dev,libfftw3-dev, libjpeg-dev and libpng12-dev这些，总之make的时候差什么补什么。具体可以参考/src/MAKE/MACHINES/Makefile.ubuntu里的注释：<pre><code># you have to install the packages g++, mpi-default-bin, mpi-default-dev,# libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this</code></pre></li></ol><h2 id="准备安装包"><a href="#准备安装包" class="headerlink" title="准备安装包"></a>准备安装包</h2><p>查看/src/MAKE/MACHINES/Makefile.ubuntu里的注释，有：</p><pre><code># ubuntu = Ubuntu Linux box, g++, openmpi, FFTW3</code></pre><p>因此准备安装包：fftw3、lammps、openmpi（openmpi和mpich2功能相似）</p><h2 id="安装的时候注意路径"><a href="#安装的时候注意路径" class="headerlink" title="安装的时候注意路径"></a>安装的时候注意路径</h2><h3 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h3><p>以下都是用的lammps的默认路径，为了make的时候方便。可以查看\lammps\src\MAKE\OPTIONS 路径下Makefile.fftw 文件和Makefile.g++_openmpi_link文件里的路径。</p><ol><li>这是fftw：（-j4 指调用4核编译）<pre><code class="shell">sudo ./configure --prefix=/usr/local --enable-floatsudo make -j4sudo make install</code></pre></li><li>openmpi：<pre><code class="shell">sudo ./configure --prefix=/usr/localsudo make -j4sudo make install</code></pre></li><li>将/src/MAKE/MACHINES/Makefile.ubuntu复制到/src/MAKE/目录下。在/src目录下：<pre><code class="shell">sudo make ubuntu -j4</code></pre><h3 id="如果不成功，有时候是library没有立即生效，用"><a href="#如果不成功，有时候是library没有立即生效，用" class="headerlink" title="如果不成功，有时候是library没有立即生效，用"></a>如果不成功，有时候是library没有立即生效，用</h3></li></ol><pre><code class="shell">ldconfig</code></pre><p>进行更新。</p><h3 id="检查安装路径可以用语句："><a href="#检查安装路径可以用语句：" class="headerlink" title="检查安装路径可以用语句："></a>检查安装路径可以用语句：</h3><pre><code class="shell">whereis openmpi</code></pre><h2 id="为了简化操作，设置环境变量"><a href="#为了简化操作，设置环境变量" class="headerlink" title="为了简化操作，设置环境变量"></a>为了简化操作，设置环境变量</h2><h3 id="在主目录的隐藏文件-bashrc里编辑："><a href="#在主目录的隐藏文件-bashrc里编辑：" class="headerlink" title="在主目录的隐藏文件.bashrc里编辑："></a>在主目录的隐藏文件.bashrc里编辑：</h3><pre><code>export PATH="$PATH:/home/peachrl/LAMMPS/bin"export PATH=/usr/local/bin:$PATH</code></pre><p>两种写法好像都行。然后，</p><pre><code class="shell">source ~/.bashrc</code></pre><p>让它生效。</p><h3 id="看是否成功用语句："><a href="#看是否成功用语句：" class="headerlink" title="看是否成功用语句："></a>看是否成功用语句：</h3><pre><code class="shell">which lmp_ubuntu</code></pre><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>运行前移动和改名了：</p><pre><code class="shell">mv /src/lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4</code></pre><p>运行：（3 指调用3核）</p><pre><code class="shell">cd /home/peachrl/LAMMPS/lammps-3Mar20/examples/flowmpirun -np 3 lmp4 &lt; in.flow.couette</code></pre><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="Makefile-ubuntu"><a href="#Makefile-ubuntu" class="headerlink" title="Makefile.ubuntu"></a>Makefile.ubuntu</h3><pre><code># ubuntu = Ubuntu Linux box, g++, openmpi, FFTW3# you have to install the packages g++, mpi-default-bin, mpi-default-dev,# libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this# makefileSHELL = /bin/sh# ---------------------------------------------------------------------# compiler/linker settings# specify flags and libraries needed for your compilerCC =        mpic++CCFLAGS =    -g -O3 # -WunusedSHFLAGS =    -fPICDEPFLAGS =    -MLINK =        mpic++LINKFLAGS =    -g -O3LIB = SIZE =        sizeARCHIVE =    arARFLAGS =    -rcSHLIBFLAGS =    -shared# ---------------------------------------------------------------------# LAMMPS-specific settings, all OPTIONAL# specify settings for LAMMPS features you will use# if you change any -D setting, do full re-compile after "make clean"# LAMMPS ifdef settings# see possible settings in Section 2.2 (step 4) of manualLMP_INC =    -DLAMMPS_GZIP -DLAMMPS_JPEG -DLAMMPS_PNG -DLAMMPS_FFMPEG# MPI library# see discussion in Section 2.2 (step 5) of manual# MPI wrapper compiler/linker can provide this info# can point to dummy MPI library in src/STUBS as in Makefile.serial# use -D MPICH and OMPI settings in INC to avoid C++ lib conflicts# INC = path for mpi.h, MPI compiler settings# PATH = path for MPI library# LIB = name of MPI libraryMPI_INC =MPI_PATH = MPI_LIB =# FFT library# see discussion in Section 2.2 (step 6) of manaul# can be left blank to use provided KISS FFT library# INC = -DFFT setting, e.g. -DFFT_FFTW, FFT compiler settings# PATH = path for FFT library# LIB = name of FFT libraryFFT_INC =        -DFFT_FFTW3FFT_PATH = FFT_LIB = -lfftw3# JPEG and/or PNG library# see discussion in Section 2.2 (step 7) of manual# only needed if -DLAMMPS_JPEG or -DLAMMPS_PNG listed with LMP_INC# INC = path(s) for jpeglib.h and/or png.h# PATH = path(s) for JPEG library and/or PNG library# LIB = name(s) of JPEG library and/or PNG libraryJPG_INC =       JPG_PATH =     JPG_LIB = -ljpeg -lpng# ---------------------------------------------------------------------# build rules and dependencies# do not edit this sectioninclude    Makefile.package.settingsinclude    Makefile.packageEXTRA_INC = $(LMP_INC) $(PKG_INC) $(MPI_INC) $(FFT_INC) $(JPG_INC) $(PKG_SYSINC)EXTRA_PATH = $(PKG_PATH) $(MPI_PATH) $(FFT_PATH) $(JPG_PATH) $(PKG_SYSPATH)EXTRA_LIB = $(PKG_LIB) $(MPI_LIB) $(FFT_LIB) $(JPG_LIB) $(PKG_SYSLIB)EXTRA_CPP_DEPENDS = $(PKG_CPP_DEPENDS)EXTRA_LINK_DEPENDS = $(PKG_LINK_DEPENDS)# Path to src filesvpath %.cpp ..vpath %.h ..# Link target$(EXE):    $(OBJ) $(EXTRA_LINK_DEPENDS)    $(LINK) $(LINKFLAGS) $(EXTRA_PATH) $(OBJ) $(EXTRA_LIB) $(LIB) -o $(EXE)    $(SIZE) $(EXE)# Library targetslib:    $(OBJ) $(EXTRA_LINK_DEPENDS)    $(ARCHIVE) $(ARFLAGS) $(EXE) $(OBJ)shlib:    $(OBJ) $(EXTRA_LINK_DEPENDS)    $(CC) $(CCFLAGS) $(SHFLAGS) $(SHLIBFLAGS) $(EXTRA_PATH) -o $(EXE) \        $(OBJ) $(EXTRA_LIB) $(LIB)# Compilation rules%.o:%.cpp $(EXTRA_CPP_DEPENDS)    $(CC) $(CCFLAGS) $(SHFLAGS) $(EXTRA_INC) -c $&lt;%.d:%.cpp $(EXTRA_CPP_DEPENDS)    $(CC) $(CCFLAGS) $(EXTRA_INC) $(DEPFLAGS) $&lt; &gt; $@%.o:%.cu $(EXTRA_CPP_DEPENDS)    $(CC) $(CCFLAGS) $(SHFLAGS) $(EXTRA_INC) -c $&lt;# Individual dependenciesdepend : fastdep.exe $(SRC)    @./fastdep.exe $(EXTRA_INC) -- $^ &gt; .depend || exit 1fastdep.exe: ../DEPEND/fastdep.c    cc -O -o $@ $&lt;sinclude .depend</code></pre><h3 id="Makefile-fftw"><a href="#Makefile-fftw" class="headerlink" title="Makefile.fftw"></a>Makefile.fftw</h3><pre><code>FFT_INC =        -DFFT_FFTW3 -I/usr/local/includeFFT_PATH =      -L/usr/local/libFFT_LIB =    -lfftw3</code></pre><h3 id="Makefile-g-openmpi-link"><a href="#Makefile-g-openmpi-link" class="headerlink" title="Makefile.g++_openmpi_link"></a>Makefile.g++_openmpi_link</h3><pre><code>MPI_INC =       -DMPICH_SKIP_MPICXX -DOMPI_SKIP_MPICXX=1 -I/usr/local/includeMPI_PATH =     -L/usr/local/libMPI_LIB =    -lmpi -lmpi_cxx</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
+      <link href="2020/01/20/%E6%B5%8B%E8%AF%95/"/>
+      <url>2020/01/20/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容</p><a id="more"></a><p>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -10,7 +10,7 @@ tags:
 	- Python
 	- GUI
 aplayer: true
-type: github
+#type: github
 #url: https://github.com/peachRL/ABLabWordCloud_GUI
 # hide: true
 # # hide: index

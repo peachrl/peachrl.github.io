@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
           url: "/musics/周深 - 亲爱的旅人啊.mp3",
           cover: "/musics/周深 - 亲爱的旅人啊.jpg",
         },
+        {
+          name: "曲尽陈情",
+          artist: "肖战",
+          url: "/musics/肖战 - 曲尽陈情.mp3",
+          cover: "/musics/肖战 - 曲尽陈情.jpg",
+        },
       ],
     });
   });

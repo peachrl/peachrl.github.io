@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://peachrl.github.io/about/index.html</loc>
+    
+    <lastmod>2021-02-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://peachrl.github.io/categories/index.html</loc>
     
     <lastmod>2021-02-20</lastmod>
@@ -17,13 +24,6 @@
   
   <url>
     <loc>https://peachrl.github.io/data/sentences.json</loc>
-    
-    <lastmod>2021-02-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peachrl.github.io/about/index.html</loc>
     
     <lastmod>2021-02-20</lastmod>
     
@@ -151,13 +151,6 @@
   </url>
   
   <url>
-    <loc>https://peachrl.github.io/tags/Julia/</loc>
-    <lastmod>2021-02-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://peachrl.github.io/tags/LAMMPS/</loc>
     <lastmod>2021-02-20</lastmod>
     <changefreq>daily</changefreq>
@@ -173,6 +166,13 @@
   
   <url>
     <loc>https://peachrl.github.io/tags/Windows/</loc>
+    <lastmod>2021-02-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peachrl.github.io/tags/Julia/</loc>
     <lastmod>2021-02-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

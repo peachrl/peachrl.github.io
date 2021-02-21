@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
           artist: "肖战",
           url: "/musics/肖战 - 曲尽陈情.mp3",
           cover: "/musics/肖战 - 曲尽陈情.jpg",
-          lrc: "/musics/肖战 - 曲尽陈情.txt",
+          lrc: "/musics/肖战 - 曲尽陈情.lrc",
         },
       ],
     });

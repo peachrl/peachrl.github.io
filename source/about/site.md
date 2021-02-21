@@ -17,4 +17,6 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 ### 不近期的歌单（因为懒得及时更新）
 
-{% meting "id:7856067210" "server:tencent" "type:playlist" "autoplay:false" "mutex:true" "listmaxheight:340px" "preload:auto" "theme:#00CC33"%}
+{% meting ":7856067210" "tencent" "playlist" "mutex:true" "listmaxheight:340px" "preload:auto" "theme:#00CC33"%}
+
+{% meting "5407263313" "netease" "playlist" "theme:#00CC33" "mutex:true" "listmaxheight:340px" "preload:auto" %}

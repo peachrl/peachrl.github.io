@@ -5,6 +5,7 @@ type: "about"
 layout: "about"
 aplayer: true
 reward: true
+icon: icon-cloud-line
 ---
 ### 联系方式
 

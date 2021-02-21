@@ -19,7 +19,7 @@ aplayer: true
 
 ## 准备工作
 
-### LAMMPS + USER-REAXC  + MOLECULE packages
+ LAMMPS + USER-REAXC  + MOLECULE packages
 
 <!-- more -->
 

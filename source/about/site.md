@@ -66,7 +66,7 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 #### <i class="ri-history-line"></i>
 
-<small>
+<span style="font-size:0.4em">
 <details open>
 <summary>2021年</summary>
 
@@ -83,12 +83,12 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 &emsp;&emsp;**2020年4月5日**&emsp;<i class="ri-t-shirt-2-line"></i>网站改名“万亿及秭”，重新定位为技术博客，删除第一篇文章，并更换网站主题[Icarus](https://blog.zhangruipeng.me/hexo-theme-icarus/uncategorized/icarus%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/)
 
-&emsp;&emsp;**2020年1月20日**&emsp;<i class="ri-article-line"></i>发布第一篇文章《某只桃一条轨线的起点》
+&emsp;&emsp;**2020年1月20日**&emsp;<i class="ri-article-line"></i>发布第一篇文章《某只桃一条迹线的起点》
 
-&emsp;&emsp;**2020年1月19日**&emsp;<i class="ri-database-line"></i>建站，使用网站主题[Blinkfox](https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/#toc-heading-24)，网站命名“一条轨线”，打算用这个网站记录生活
+&emsp;&emsp;**2020年1月19日**&emsp;<i class="ri-database-line"></i>建站，使用网站主题[Blinkfox](https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/#toc-heading-24)，网站命名“一条迹线”，打算用这个网站记录生活
 
 </details>
-</small>
+</span>
 <br/>
 
 ###### [返回主页](https://peachrl.github.io/)

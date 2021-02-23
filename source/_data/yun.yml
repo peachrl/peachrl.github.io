@@ -160,7 +160,9 @@ comment:
   enable: true
   tips:
     - 可以使用Markdown写评论，可以输入数学公式。
-    - 若您想及时得到回复，请直接在左侧边栏点击邮箱。
+    - 若您想及时得到博主的回复，可直接在左侧边栏点击邮箱进行联系。
+    - 若您想收到回复通知，请填写邮箱。
+    - 评论区头像由Gravatar提供支持。
   candidates:
     - valine
     #- minivaline
@@ -169,7 +171,7 @@ valine:
   enable: true
   appId: 5Hnzahxh49Ww4Ycj8OH9ycWp-MdYXbMMI # your leancloud application appid
   appKey: HjqrcbLC5SxvuTztFYyKNwn3 # your leancloud application appkey
-  placeholder: 赞！ # comment box placeholder
+  placeholder: 若您想收到回复通知or使用自己的Gravatar头像，请填写邮箱~ # comment box placeholder
   avatar: wavatar # gravatar style
   meta:
     - nick
@@ -208,7 +210,7 @@ valine:
 # enableQQ: false
   requiredFields:
     - nick
-    - mail
+   # - mail
 
 # minivaline:
 #   enable: true

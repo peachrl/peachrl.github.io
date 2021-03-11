@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux的ipv6地址没有中括号！</title>
+      <link href="2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
+      <url>2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<p>实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。</p><p>Windows系统里ipv6地址写作：</p><pre class="language-none"><code class="language-none">[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真</code></pre><p>Linux系统里不需要写中括号！！</p><pre class="language-none"><code class="language-none">1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真</code></pre><a id="more"></a><p>马上就连上了~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ABLabWordCloud文字云小程序第1版使用说明</title>
       <link href="2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
       <url>2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>

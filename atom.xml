@@ -6,7 +6,7 @@
   <link href="https://peachrl.github.io/atom.xml" rel="self"/>
   
   <link href="https://peachrl.github.io/"/>
-  <updated>2021-01-20T11:37:18.000Z</updated>
+  <updated>2021-03-11T11:36:48.729Z</updated>
   <id>https://peachrl.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux的ipv6地址没有中括号！</title>
+    <link href="https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
+    <id>https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</id>
+    <published>2021-03-11T11:20:47.261Z</published>
+    <updated>2021-03-11T11:36:48.729Z</updated>
+    
+    <content type="html"><![CDATA[<p>实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。</p><p>Windows系统里ipv6地址写作：</p><pre class="language-none"><code class="language-none">[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真</code></pre><p>Linux系统里不需要写中括号！！</p><pre class="language-none"><code class="language-none">1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真</code></pre><a id="more"></a><p>马上就连上了~</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。&lt;/p&gt;
+&lt;p&gt;Windows系统里ipv6地址写作：&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Linux系统里不需要写中括号！！&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>ABLabWordCloud文字云小程序第1版使用说明</title>
@@ -332,7 +357,7 @@
     <published>2020-01-20T14:22:53.000Z</published>
     <updated>2021-02-19T16:21:49.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-EXaSbEUp" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-LacFzKoH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-plzErjPh" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-bwnBQpnK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
     
     
     <summary type="html">this is only a test.</summary>

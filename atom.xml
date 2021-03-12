@@ -6,7 +6,7 @@
   <link href="https://peachrl.github.io/atom.xml" rel="self"/>
   
   <link href="https://peachrl.github.io/"/>
-  <updated>2021-01-20T11:37:18.000Z</updated>
+  <updated>2021-03-13T05:06:45.000Z</updated>
   <id>https://peachrl.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LAMMPS中的条件与循环</title>
+    <link href="https://peachrl.github.io/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/"/>
+    <id>https://peachrl.github.io/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/</id>
+    <published>2021-03-13T05:06:45.000Z</published>
+    <updated>2021-03-13T05:06:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Lammps可以通过jump和label命令进行循环，以及if命令设定条件。</p><a id="more"></a><p>jump命令：<code>jump file label</code>，表示前往读取file文件中对应label往后的语句。jump命令既可以让lammps连续地读取多个文件中的语句，也可以重复读取自身的一段甚至全部语句。如果要读取自身，file处可简写为SELF。</p><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><pre class="language-none"><code class="language-none">#in.loop#---------------------初始化模拟------------------------units               realatom_style          chargeboundary            p p plattice             custom 1.0 a1 2.456 0.0 0.0 a2 0.0 4.254 0.0 a3 0.0 0.0 6.708 &amp;                    basis 0.0 0.0 0.25 &amp;                    basis 0.5 0.16666666667 0.25 &amp;                      basis 0.5 0.5 0.25 &amp;                    basis 0.0 0.66666666667 0.25 &amp;                    basis 0.0 0.33333333333 0.75 &amp;                    basis 0.5 0.5 0.75 &amp;                      basis 0.5 0.83333333333 0.75 &amp;                    basis 0.0 0.0 0.75region              graphite block 0 20 0 10 1.5 2.5 units latticeregion              box block 0 24.56 0 21.27 0 23.54 units boxregion              insert sphere 12 10 23 1 units boxcreate_box          2 boxcreate_atoms        1 region graphitegroup               graphite region graphitegroup               insert dynamic all region insert every 1group               O type 2mass                1 12.0107mass                2 15.9994#---------------------势函数设置------------------------pair_style          reax/c NULLpair_coeff          * * ffield.reax.2010 C Oneighbor            2.0 binneigh_modify        every 1 delay 0 one 10000000 page 100000000#-----------------------运行----------------------------velocity            graphite create 500 21474 dist gaussianfix                 1 all qeq/reax 1 0.0 10.0 1e-6 reax/cfix                 2 graphite nvt temp 500.0 500.0 10.0fix                 3 insert addforce 0.1 0.1 -10fix                 4 O nvethermo_style        custom step time pe ke etotal temp press atoms volthermo              10dump                graph all xyz 10 CAr.0.xyztimestep            1run                 500undump              graph#--------------------循环入射一个粒子label               loopvariable            i loop 400create_atoms        2 single 12 10 23 units boxunfix               4group               O type 2fix                 4 O nvedump                graph all xyz 10 CAr.${i}.xyzrun                 500undump              graph#--------------------增加跳出循环的条件if                  "$(step) &gt; 8000" then &amp;                    "jump SELF break" &amp;else                "next i" &amp;                    "jump SELF loop"#--------------------跳出label               breakunfix               4unfix               3unfix               2unfix               1#-----------------------退出------------------------quit</code></pre><p>以下是在win10里安装预编译的LAMMPS executables串行4线程计算的，在命令行输入<code>lmp_serial -pk omp 4 -sf omp -in in.loop</code>，将得到的.xyz文件在OVITO里导出成视频如下。</p><p>红色小球表示的C原子,蓝色小球表示的O原子。刚开始盒子中部有2层C原子，没有O原子；随着每一轮循环，O原子不断被加到模拟盒子中，直到运行了8000步提前停止模拟。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Lammps可以通过jump和label命令进行循环，以及if命令设定条件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux的ipv6地址没有中括号！</title>
+    <link href="https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
+    <id>https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</id>
+    <published>2021-03-11T11:35:20.000Z</published>
+    <updated>2021-03-11T11:35:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。</p><p>Windows系统里ipv6地址写作：</p><pre class="language-none"><code class="language-none">[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真</code></pre><p>Linux系统里不需要写中括号！！</p><pre class="language-none"><code class="language-none">1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真</code></pre><a id="more"></a><p>马上就连上了~</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。&lt;/p&gt;
+&lt;p&gt;Windows系统里ipv6地址写作：&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Linux系统里不需要写中括号！！&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>ABLabWordCloud文字云小程序第1版使用说明</title>
@@ -326,59 +372,13 @@
   </entry>
   
   <entry>
-    <title>LAMMPS中的条件与循环</title>
-    <link href="https://peachrl.github.io/2020/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/"/>
-    <id>https://peachrl.github.io/2020/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/</id>
-    <published>2020-03-13T05:06:45.000Z</published>
-    <updated>2020-03-13T05:06:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Lammps可以通过jump和label命令进行循环，以及if命令设定条件。</p><a id="more"></a><p>jump命令：<code>jump file label</code>，表示前往读取file文件中对应label往后的语句。jump命令既可以让lammps连续地读取多个文件中的语句，也可以重复读取自身的一段甚至全部语句。如果要读取自身，file处可简写为SELF。</p><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><pre class="language-none"><code class="language-none">#in.loop#---------------------初始化模拟------------------------units               realatom_style          chargeboundary            p p plattice             custom 1.0 a1 2.456 0.0 0.0 a2 0.0 4.254 0.0 a3 0.0 0.0 6.708 &amp;                    basis 0.0 0.0 0.25 &amp;                    basis 0.5 0.16666666667 0.25 &amp;                      basis 0.5 0.5 0.25 &amp;                    basis 0.0 0.66666666667 0.25 &amp;                    basis 0.0 0.33333333333 0.75 &amp;                    basis 0.5 0.5 0.75 &amp;                      basis 0.5 0.83333333333 0.75 &amp;                    basis 0.0 0.0 0.75region              graphite block 0 20 0 10 1.5 2.5 units latticeregion              box block 0 24.56 0 21.27 0 23.54 units boxregion              insert sphere 12 10 23 1 units boxcreate_box          2 boxcreate_atoms        1 region graphitegroup               graphite region graphitegroup               insert dynamic all region insert every 1group               O type 2mass                1 12.0107mass                2 15.9994#---------------------势函数设置------------------------pair_style          reax/c NULLpair_coeff          * * ffield.reax.2010 C Oneighbor            2.0 binneigh_modify        every 1 delay 0 one 10000000 page 100000000#-----------------------运行----------------------------velocity            graphite create 500 21474 dist gaussianfix                 1 all qeq/reax 1 0.0 10.0 1e-6 reax/cfix                 2 graphite nvt temp 500.0 500.0 10.0fix                 3 insert addforce 0.1 0.1 -10fix                 4 O nvethermo_style        custom step time pe ke etotal temp press atoms volthermo              10dump                graph all xyz 10 CAr.0.xyztimestep            1run                 500undump              graph#--------------------循环入射一个粒子label               loopvariable            i loop 400create_atoms        2 single 12 10 23 units boxunfix               4group               O type 2fix                 4 O nvedump                graph all xyz 10 CAr.${i}.xyzrun                 500undump              graph#--------------------增加跳出循环的条件if                  "$(step) &gt; 8000" then &amp;                    "jump SELF break" &amp;else                "next i" &amp;                    "jump SELF loop"#--------------------跳出label               breakunfix               4unfix               3unfix               2unfix               1#-----------------------退出------------------------quit</code></pre><p>以下是在win10里安装预编译的LAMMPS executables串行4线程计算的，在命令行输入<code>lmp_serial -pk omp 4 -sf omp -in in.loop</code>，将得到的.xyz文件在OVITO里导出成视频如下。</p><p>红色小球表示的C原子,蓝色小球表示的O原子。刚开始盒子中部有2层C原子，没有O原子；随着每一轮循环，O原子不断被加到模拟盒子中，直到运行了8000步提前停止模拟。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Lammps可以通过jump和label命令进行循环，以及if命令设定条件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux的ipv6地址没有中括号！</title>
-    <link href="https://peachrl.github.io/2020/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
-    <id>https://peachrl.github.io/2020/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</id>
-    <published>2020-03-11T11:35:20.000Z</published>
-    <updated>2020-03-11T11:35:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。</p><p>Windows系统里ipv6地址写作：</p><pre class="language-none"><code class="language-none">[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真</code></pre><p>Linux系统里不需要写中括号！！</p><pre class="language-none"><code class="language-none">1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真</code></pre><a id="more"></a><p>马上就连上了~</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;实验室最近改了ipv6的地址，结果我在Win10里设置的hosts能连上实验室的ipv6地址，而Deepin V20系统连不上。困惑了两天终于想起来，上一次我也遇到过这个问题，其实是Linux的ipv6地址写法和Windows不一样。。在此记录，希望下次不会再忘记了。&lt;/p&gt;
-&lt;p&gt;Windows系统里ipv6地址写作：&lt;/p&gt;
-&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;[1010:200:3:ee22:0:bbbb:ffff:4000]  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Linux系统里不需要写中括号！！&lt;/p&gt;
-&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;1010:200:3:ee22:0:bbbb:ffff:4000  lab.com #随便打的地址，非真&lt;/code&gt;&lt;/pre&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>测试</title>
     <link href="https://peachrl.github.io/2020/01/20/%E6%B5%8B%E8%AF%95/"/>
     <id>https://peachrl.github.io/2020/01/20/%E6%B5%8B%E8%AF%95/</id>
     <published>2020-01-20T14:22:53.000Z</published>
     <updated>2021-02-19T16:21:49.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-wrREGQwy" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-CBavkIMJ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-qcOGQSwh" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-JDlUEEvi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
     
     
     <summary type="html">this is only a test.</summary>

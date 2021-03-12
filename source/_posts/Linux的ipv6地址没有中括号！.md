@@ -1,7 +1,7 @@
 ---
 title: Linux的ipv6地址没有中括号！
-date: 2020-03-11 192:35:20
-updated: 2020-03-11 192:35:20
+date: 2021-03-11 19:35:20
+updated: 2021-03-11 19:35:20
 author: peachRL
 email: 
 description: 

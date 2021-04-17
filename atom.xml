@@ -6,7 +6,7 @@
   <link href="https://peachrl.github.io/atom.xml" rel="self"/>
   
   <link href="https://peachrl.github.io/"/>
-  <updated>2021-03-13T05:06:45.000Z</updated>
+  <updated>2021-04-08T15:31:01.000Z</updated>
   <id>https://peachrl.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在lammps中计算压强</title>
+    <link href="https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/"/>
+    <id>https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/</id>
+    <published>2021-04-08T15:31:01.000Z</published>
+    <updated>2021-04-08T15:31:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在lammps的thermo输出中常常出现press项，输出的是整个系统的压强。如果要求lammps输出系统压强的分量或者部分体系受到的压强，则需要用到compute命令进行计算。</p><a id="more"></a><h2 id="系统压强"><a href="#系统压强" class="headerlink" title="系统压强"></a>系统压强</h2><p>系统压强可以用<code>compute ID all pressure ...</code>命令进行计算，输出结果为一个6维的向量，以此为对称张量压强在<code>xx yy zz xy xz yz</code>方向的分量。通过索引<code>1-6</code>能够对各分量进行访问，表示为<code>c_ID[索引]</code>，单位均为pressure单位。</p><h2 id="部分压强"><a href="#部分压强" class="headerlink" title="部分压强"></a>部分压强</h2><p>系统内部分压强需要采用<code>compute ID group-ID stress/atom ...</code>命令先计算group里各个原子所受的应力，同样分为<code>xx yy zz xy xz yz</code>6个方向的分量，单位为pressure单位。再通过<code>compute ID group-ID reduce ...</code>命令将group里所有原子的应力在一起进行计算，来求得group部分所受到的压强。</p><p>thermo输出的press量其实可以通过上述方法求得，这是<a href="https://lammps.sandia.gov/doc/compute_stress_atom.html">手册</a>上已有说明的：</p><pre class="language-none"><code class="language-none">compute        peratom all stress/atom NULLcompute        p all reduce sum c_peratom[1] c_peratom[2] c_peratom[3]variable       press equal -(c_p[1]+c_p[2]+c_p[3])/(3*vol)</code></pre><p>这里得到的变量值v_press就和thermo输出的press相同。</p><p>需要注意的是这里的vol表示整个系统的体积。lammps里也没有能够直接求得部分体积的命令，相应地需要用<code>compute ID group-ID voronoi/atom ...</code>命令先求各个原子所占的等效体积，再由<code>compute ID group-ID reduce sum ...</code>相加求解。其中voronoi命令的使用需要VORONOI package的支持。</p><h3 id="安装VORONOI-package的方法"><a href="#安装VORONOI-package的方法" class="headerlink" title="安装VORONOI package的方法"></a>安装VORONOI package的方法</h3><ol><li>首先从<a href="http://math.lbl.gov/voro++/download/">voro++官网</a>下载voro++软件。解压进入安装包，依次输入：</li></ol><pre class="language-shell" data-language="shell"><code class="language-shell">makesudo make installln -s voro++-0.4.6/src includelink #创造链接</code></pre><p>命令进行安装。</p><ol start="2"><li>接着进入到lammps文件夹中lib/voronoi目录，更改Makefile.lammps：</li></ol><pre class="language-none"><code class="language-none">voronoi_SYSINC = -I/usr/local/include/voro++voronoi_SYSLIB = -lvoro++voronoi_SYSPATH = -L/usr/local/lib</code></pre><ol start="3"><li>进入lammps文件夹中src目录：</li></ol><pre class="language-none"><code class="language-none">make yes-voronoisudo make ubuntu -j 4 #视个人情况编译</code></pre><p>得到lmp_ubuntu，成功√</p><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre class="language-none"><code class="language-none">computestressG g stress/atom NULLcomputepressG g reduce sum c_stressG[1] c_stressG[2] c_stressG[3]computevolC g voronoi/atomcomputevolG g reduce sum c_volC[1] variablepressSur equal -(c_pressG[1]+c_pressG[2]+c_pressG[3])/(3*count(g)*c_volG)</code></pre>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在lammps的thermo输出中常常出现press项，输出的是整个系统的压强。如果要求lammps输出系统压强的分量或者部分体系受到的压强，则需要用到compute命令进行计算。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>LAMMPS中的条件与循环</title>
@@ -378,7 +401,7 @@
     <published>2020-01-20T14:22:53.000Z</published>
     <updated>2021-02-19T16:21:49.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-mvksxxnL" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-kXhIoHJe" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h2><h3 id="不用看了"><a href="#不用看了" class="headerlink" title="不用看了"></a>不用看了</h3><p>没什么实际内容<br>行$ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta $内<br>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>    <div id="aplayer-bGYDUdfa" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28282862" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div>    <div id="aplayer-DauiNYAI" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="5407263313" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#9fdb79"></div>]]></content>
     
     
     <summary type="html">this is only a test.</summary>

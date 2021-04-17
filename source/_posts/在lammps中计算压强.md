@@ -77,5 +77,5 @@ compute		stressG g stress/atom NULL
 compute		pressG g reduce sum c_stressG[1] c_stressG[2] c_stressG[3]
 compute		volC g voronoi/atom
 compute		volG g reduce sum c_volC[1] 
-variable	pressSur equal -(c_pressG[1]+c_pressG[2]+c_pressG[3])/(3*count(g)*c_volG)
+variable	pressSur equal -(c_pressG[1]+c_pressG[2]+c_pressG[3])/(3*c_volG)
 ```

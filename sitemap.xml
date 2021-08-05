@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://peachrl.github.io/2021/08/01/python%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
+    
+    <lastmod>2021-08-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/</loc>
     
     <lastmod>2021-04-08</lastmod>
@@ -186,14 +193,14 @@
   </url>
   
   <url>
-    <loc>https://peachrl.github.io/tags/LAMMPS/</loc>
+    <loc>https://peachrl.github.io/tags/Julia/</loc>
     <lastmod>2021-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://peachrl.github.io/tags/Julia/</loc>
+    <loc>https://peachrl.github.io/tags/LAMMPS/</loc>
     <lastmod>2021-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -215,6 +222,13 @@
   
   <url>
     <loc>https://peachrl.github.io/tags/Windows/</loc>
+    <lastmod>2021-08-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peachrl.github.io/tags/python/</loc>
     <lastmod>2021-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

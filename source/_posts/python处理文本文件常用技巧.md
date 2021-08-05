@@ -1,5 +1,5 @@
 ---
-title: python处理文本文件常用技巧
+title: Python处理文本文件常用技巧
 date: 2021-08-01 08:57:22
 updated: 2021-08-01 08:57:22
 author: peachRL
@@ -7,7 +7,7 @@ email:
 description: 
 categories: 软件
 tags: 
-	- python
+	- Python
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

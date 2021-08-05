@@ -31,6 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
           cover: "/musics/肖战 - 曲尽陈情.jpg",
           lrc: "/musics/肖战 - 曲尽陈情.lrc",
         },
+        {
+          name: "瞳のこたえ",
+          artist: "Noria",
+          url: "/musics/Noria - 瞳のこたえ.mp3",
+          cover: "/musics/Noria - 瞳のこたえ.jpg",
+        },
       ],
     });
   });

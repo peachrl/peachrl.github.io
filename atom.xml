@@ -67,6 +67,37 @@
   </entry>
   
   <entry>
+    <title>用MaterialStudio和Ovito给lammps建立data文件</title>
+    <link href="https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
+    <id>https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
+    <published>2021-06-18T05:23:54.000Z</published>
+    <updated>2021-06-18T05:23:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在LAMMPS上怎么给Pt(111)表面建模：</p><pre class="language-none"><code class="language-none">lattice fcc 3.9242 &amp; origin 0 0 0 &amp; orient x 1 -1 0 &amp; orient y 1 1 -2 &amp; orient z 1 1 1</code></pre><p>得要像这样先算好每个轴的方向。有没有其他更加直观的方法呢？</p><a id="more"></a><p>需要安装软件 Material Studio，Ovito。（本文在 Win10 系统上安装的 <a href="https://www.aliyundrive.com/s/H4Ho5i3f2GG">Material Studio 2019</a> 及 <a href="https://www.ovito.org/">Ovito 3.4.3</a>，其中Material Studio 2019 是在网上找的破解版，极度难用，经常卡死，非常不推荐，有钱多金的朋友们可以入手正版，提倡支持正版，本文仅供学习和观摩，还有其他平民的建模方法，敬请期待其他博文）</p><p>在 Material Studio 上建立Pt的(111)表面模型，首先去网上下一个Pt晶体的cif模型（比如下面这个从<a href="http://www.crystallography.net/cod/search.html">网站</a>下载）：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae10.png" alt="image-20210806224807302" loading="lazy"></p><p>导入 Material Studio 中：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae15.png" alt="image-20210806225213902" loading="lazy"></p><p>切开(111)表面，并拓展和加真空层，得到超大晶胞：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae1b.png" alt="image-20210806225438020" loading="lazy"></p><p>导出成cif格式，再导入Ovito：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae09.png" alt="image-20210806230149609" loading="lazy"></p><p>File→Export File，可以直接导出lammps的data格式。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在LAMMPS上怎么给Pt(111)表面建模：&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;lattice fcc 3.9242 &amp;amp;
+	 origin 0 0 0 &amp;amp;
+	 orient x 1 -1 0 &amp;amp;
+	 orient y 1 1 -2 &amp;amp;
+	 orient z 1 1 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;得要像这样先算好每个轴的方向。有没有其他更加直观的方法呢？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    
+    <category term="Material Studio" scheme="https://peachrl.github.io/tags/Material-Studio/"/>
+    
+    <category term="Ovito" scheme="https://peachrl.github.io/tags/Ovito/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在lammps中计算压强</title>
     <link href="https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/"/>
     <id>https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/</id>
@@ -266,35 +297,6 @@
     
     
     <category term="Materials" scheme="https://peachrl.github.io/tags/Materials/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用MaterialStudio和Ovito给lammps建立data文件</title>
-    <link href="https://peachrl.github.io/2020/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
-    <id>https://peachrl.github.io/2020/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
-    <published>2020-06-18T05:23:54.000Z</published>
-    <updated>2020-06-18T05:23:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>在LAMMPS上怎么给Pt(111)表面建模：</p><pre class="language-none"><code class="language-none">lattice fcc 3.9242 &amp; origin 0 0 0 &amp; orient x 1 -1 0 &amp; orient y 1 1 -2 &amp; orient z 1 1 1</code></pre><p>得要像这样先算好每个轴的方向。有没有其他更加直观的方法呢？</p><a id="more"></a><p>需要安装软件 Material Studio，Ovito。（本文在 Win10 系统上安装的 <a href="https://www.aliyundrive.com/s/H4Ho5i3f2GG">Material Studio 2019</a> 及 <a href="https://www.ovito.org/">Ovito 3.4.3</a>，其中Material Studio 2019 是在网上找的破解版，极度难用，经常卡死，非常不推荐，有钱多金的朋友们可以入手正版，提倡支持正版，本文仅供学习和观摩，还有其他平民的建模方法，敬请期待其他博文）</p><p>在 Material Studio 上建立Pt的(111)表面模型，首先去网上下一个Pt晶体的cif模型（比如下面这个从<a href="http://www.crystallography.net/cod/search.html">网站</a>下载）：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae10.png" alt="image-20210806224807302" loading="lazy"></p><p>导入 Material Studio 中：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae15.png" alt="image-20210806225213902" loading="lazy"></p><p>切开(111)表面，并拓展和加真空层，得到超大晶胞：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae1b.png" alt="image-20210806225438020" loading="lazy"></p><p>导出成cif格式，再导入Ovito：</p><p><img src="https://pic.imgdb.cn/item/610d51305132923bf8e2ae09.png" alt="image-20210806230149609" loading="lazy"></p><p>File→Export File，可以直接导出lammps的data格式。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;在LAMMPS上怎么给Pt(111)表面建模：&lt;/p&gt;
-&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;lattice fcc 3.9242 &amp;amp;
-	 origin 0 0 0 &amp;amp;
-	 orient x 1 -1 0 &amp;amp;
-	 orient y 1 1 -2 &amp;amp;
-	 orient z 1 1 1&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;得要像这样先算好每个轴的方向。有没有其他更加直观的方法呢？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-    <category term="Material Studio - Ovito" scheme="https://peachrl.github.io/tags/Material-Studio-Ovito/"/>
     
   </entry>
   

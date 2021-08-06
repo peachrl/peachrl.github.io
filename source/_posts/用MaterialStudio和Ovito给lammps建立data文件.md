@@ -1,7 +1,7 @@
 ---
 title: 用MaterialStudio和Ovito给lammps建立data文件
-date: 2020-06-18 13:23:54
-updated: 2020-06-18 13:23:54
+date: 2021-06-18 13:23:54
+updated: 2021-06-18 13:23:54
 author: peachRL
 email: 
 description: 
@@ -9,7 +9,7 @@ categories: 软件
 tags: 
 	- LAMMPS
 	- Material Studio
-    - Ovito
+	- Ovito
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

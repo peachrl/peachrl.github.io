@@ -866,13 +866,15 @@ notice:
 #标签和目录的颜色
 tags:
   VSCode: "#007bff"
-  Julia: "#ffae00"
-  Windows: "#1100ad"
-  Python: "#a400f0"
-  Materials: "#abc900"
-  LAMMPS: "#0400ff"
+  Julia: "#b3ff00"
+  Windows: "#ff54aa"
+  Python: "#de66ff"
+  Materials: "#545454"
+  LAMMPS: "#00bfc2"
   GUI: "#bd0202"
   Linux: "#2577b1"
+  Material Studio: "#faab00"
+  Ovito: "#faab00"
 
 categories:
   软件: "#00b7ff"

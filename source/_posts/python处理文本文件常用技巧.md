@@ -1,5 +1,5 @@
 ---
-title: Python处理文本文件常用技巧
+title: python处理文本文件常用技巧
 date: 2021-08-01 08:57:22
 updated: 2021-08-01 08:57:22
 author: peachRL

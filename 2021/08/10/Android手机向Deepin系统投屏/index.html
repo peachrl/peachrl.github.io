@@ -72,7 +72,7 @@ adb start-server</code></pre>
 <p>再安装scrcpy：</p>
 <pre class="language-shell" data-language="shell"><code class="language-shell">sudo snap install scrcpy</code></pre>
 <p>这里网上有人遇到报错说缺少core18库，因此还需要安装一下<code>sudo snap install core</code>，不过我没有遇到。</p>
-<h3 id="手机开启开发者选项"><a href="#手机开启开发者选项" class="headerlink" title="手机开启开发者选项"></a>手机开启<code>开发者选项</code></h3><p>这一步是为了adb能更方便调试以及允许模拟点击。</p>
+<h3 id="手机开启开发者选项"><a href="#手机开启开发者选项" class="headerlink" title="手机开启开发者选项"></a>手机开启开发者选项</h3><p>这一步是为了adb能更方便调试以及允许模拟点击。</p>
 <p>不同手机开启<code>开发者选项</code>的位置不一定相同。OnePlus 8手机的<code>开发者选项</code>要从<code>设置</code>进入，打开倒数第二项<code>关于手机</code>，快速多次点击<code>版本号</code>。</p>
 <h3 id="两种方法手机连接电脑"><a href="#两种方法手机连接电脑" class="headerlink" title="两种方法手机连接电脑"></a>两种方法手机连接电脑</h3><h4 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a>有线连接</h4><p>手机与电脑用数据线连接，开启USB调试。这时可以用<code>adb devices</code>查看到我们的手机设备：</p>
 <p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa3b.png" alt="image-20210813211816433" loading="lazy"></p>

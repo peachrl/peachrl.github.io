@@ -6,7 +6,7 @@
   <link href="https://peachrl.github.io/atom.xml" rel="self"/>
   
   <link href="https://peachrl.github.io/"/>
-  <updated>2021-08-05T13:47:13.000Z</updated>
+  <updated>2021-08-13T12:02:01.000Z</updated>
   <id>https://peachrl.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LAMMPS自带的Python工具试用记录</title>
+    <link href="https://peachrl.github.io/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://peachrl.github.io/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
+    <published>2021-08-13T12:02:01.000Z</published>
+    <updated>2021-08-13T12:02:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>运行环境：deepin 20.2.2；python 3.7；lammps 30Jul2021</p></blockquote><p>lammps安装包自带的python工具也在/home/peachrl/lammps/tools/python目录内，有：</p><ul><li>log2txt.py    convert thermo info in a LAMMPS log file to columns of numbers</li><li>logplot.py    plot 2 columns of thermo info from a LAMMPS log file</li><li>dumpsort.py    sort the snapshots of atoms in a LAMMPS dump file by atom ID</li><li>dump2cfg.py    convert a native LAMMPS dump file to CFG format</li><li>dump2xyz.py    convert a native LAMMPS dump file to XYZ format</li><li>dump2pdb.py    convert a native LAMMPS dump file to PDB format</li><li>neb_combine.py    combine multiple NEB dump files into one time series</li><li>neb_final.py    combine multiple NEB final states into one sequence of states</li></ul><p>不论是直接取用还是学习python进行后处理，都是非常不错的材料。</p><a id="more"></a><h3 id="两种方式获得Pizza-py"><a href="#两种方式获得Pizza-py" class="headerlink" title="两种方式获得Pizza.py"></a>两种方式获得Pizza.py</h3><h4 id="方式一：下载Pizza-py的安装包"><a href="#方式一：下载Pizza-py的安装包" class="headerlink" title="方式一：下载Pizza.py的安装包"></a>方式一：<a href="https://cs.sandia.gov/~sjplimp/download.html">下载Pizza.py的安装包</a></h4><p><img src="https://pic.imgdb.cn/item/611660785132923bf86da638.png" alt="image-20210813170748222" loading="lazy"></p><p>解压并放到/home/peachrl/pizza目录下，其中的src文件夹在/home/peachrl/.bashrc中设置环境变量：</p><pre class="language-shell" data-language="shell"><code class="language-shell">export LAMMPS_PYTHON_TOOLS="/home/peachrl/pizza/src"</code></pre><h4 id="方式二：lammps安装包内的pizza文件夹"><a href="#方式二：lammps安装包内的pizza文件夹" class="headerlink" title="方式二：lammps安装包内的pizza文件夹"></a>方式二：lammps安装包内的pizza文件夹</h4><p>lammps安装包/home/peachrl/lammps/tools/python目录内有个pizza文件夹，包含lammps后处理所需的文件，直接在/home/peachrl/.bashrc中设置环境变量：</p><pre class="language-shell" data-language="shell"><code class="language-shell">export LAMMPS_PYTHON_TOOLS="/home/peachrl/lammps/tools/python/pizza"</code></pre><h3 id="log2txt-py"><a href="#log2txt-py" class="headerlink" title="log2txt.py"></a>log2txt.py</h3><p>将需要处理的log文件（比如下图的log.lammps）和log2txt.py放在同一文件夹（当然也可以不放同一文件夹，写清楚路径也行）：</p><p><img src="https://pic.imgdb.cn/item/611660785132923bf86da656.png" alt="image-20210813181306806" loading="lazy"></p><p>在终端运行：</p><pre class="language-shell" data-language="shell"><code class="language-shell">python log2txt.py log.lammps txt.lammps</code></pre><p>即可得到全部数据的提取：</p><p><img src="https://pic.imgdb.cn/item/611660785132923bf86da662.png" alt="image-20210813184856077" loading="lazy"></p><p>若在终端运行：</p><pre class="language-shell" data-language="shell"><code class="language-shell">python log2txt.py log.lammps txt.lammps Press</code></pre><p>则提取的是Press这一列下所有数据：</p><p><img src="https://pic.imgdb.cn/item/611660785132923bf86da673.png" alt="image-20210813185132227" loading="lazy"></p><h3 id="logplot-py"><a href="#logplot-py" class="headerlink" title="logplot.py"></a>logplot.py</h3><p>需要先安装GnuPlot：</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get install gnuplot</code></pre><p>将需要处理的log文件（前文的log.lammps）和logplot.py放在同一文件夹，在终端运行：</p><pre class="language-shell" data-language="shell"><code class="language-shell">python -i logplot.py log.lammps Time Press</code></pre><p>得到以Time为X轴，Press为Y轴的图像：</p><p><img src="https://pic.imgdb.cn/item/611660785132923bf86da68c.png" alt="image-20210813190815856" loading="lazy"></p><p>此时终端会停留在python里：</p><p><img src="https://pic.imgdb.cn/item/6116607d5132923bf86db889.png" alt="image-20210813194317562" loading="lazy"></p><p>如果需要保存成png格式的图片，可以继续输入：</p><pre class="language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g<span class="token punctuation">(</span><span class="token string">'set term png'</span><span class="token punctuation">)</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g<span class="token punctuation">(</span><span class="token string">'set output "Time-Press.png"'</span><span class="token punctuation">)</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span></code></pre><p>文件夹里就会出现已保存的文件。</p><p><img src="https://pic.imgdb.cn/item/6116607d5132923bf86db8a0.png" alt="image-20210813194535719" loading="lazy"></p><h3 id="dumpsort-py"><a href="#dumpsort-py" class="headerlink" title="dumpsort.py"></a>dumpsort.py</h3><p>通过dump命令输出如下图所示的文件：</p><p><img src="https://pic.imgdb.cn/item/6116607d5132923bf86db8ac.png" alt="image-20210813195451445" loading="lazy"></p><p>与dumpsort.py放于同一文件夹内，在终端运行：</p><pre class="language-shell" data-language="shell"><code class="language-shell">python dumpsort.py 265.txt 1 new265.txt</code></pre><p>得到：</p><p><img src="https://pic.imgdb.cn/item/6116607d5132923bf86db8ce.png" alt="image-20210813195708669" loading="lazy"></p><p>也就是按照命令中所输入的“1”（指<code>ITEM:ATOM</code>下面的第1列）进行从小到大排序。</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;运行环境：deepin 20.2.2；python 3.7；lammps 30Jul2021&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;lammps安装包自带的python工具也在/home/peachrl/lammps/tools/python目录内，有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;log2txt.py    convert thermo info in a LAMMPS log file to columns of numbers&lt;/li&gt;
+&lt;li&gt;logplot.py    plot 2 columns of thermo info from a LAMMPS log file&lt;/li&gt;
+&lt;li&gt;dumpsort.py    sort the snapshots of atoms in a LAMMPS dump file by atom ID&lt;/li&gt;
+&lt;li&gt;dump2cfg.py    convert a native LAMMPS dump file to CFG format&lt;/li&gt;
+&lt;li&gt;dump2xyz.py    convert a native LAMMPS dump file to XYZ format&lt;/li&gt;
+&lt;li&gt;dump2pdb.py    convert a native LAMMPS dump file to PDB format&lt;/li&gt;
+&lt;li&gt;neb_combine.py    combine multiple NEB dump files into one time series&lt;/li&gt;
+&lt;li&gt;neb_final.py    combine multiple NEB final states into one sequence of states&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不论是直接取用还是学习python进行后处理，都是非常不错的材料。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Python" scheme="https://peachrl.github.io/tags/Python/"/>
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    
+  </entry>
   
   <entry>
     <title>LAMMPS最新版（30 Jul 2021）安装要点</title>
@@ -449,29 +486,6 @@
     
     
     <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在Deepin系统安装LAMMPS的记录(Makefile.ubuntu)</title>
-    <link href="https://peachrl.github.io/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/"/>
-    <id>https://peachrl.github.io/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/</id>
-    <published>2020-04-06T07:27:38.000Z</published>
-    <updated>2020-04-06T07:27:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装之前"><a href="#安装之前" class="headerlink" title="安装之前"></a>安装之前</h2><a id="more"></a><ol><li>sudo apt-get install gcc</li><li>sudo apt-get install g++</li><li>sudo apt-get install gfortran</li><li>可能还有mpi-default-bin, mpi-default-dev,libfftw3-dev, libjpeg-dev and libpng12-dev这些，总之make的时候差什么补什么。具体可以参考/src/MAKE/MACHINES/Makefile.ubuntu里的注释：<pre class="language-none"><code class="language-none"># you have to install the packages g++, mpi-default-bin, mpi-default-dev,# libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this</code></pre></li></ol><h2 id="准备安装包"><a href="#准备安装包" class="headerlink" title="准备安装包"></a>准备安装包</h2><p>查看/src/MAKE/MACHINES/Makefile.ubuntu里的注释，有：</p><pre class="language-none"><code class="language-none"># ubuntu = Ubuntu Linux box, g++, openmpi, FFTW3</code></pre><p>因此准备安装包：fftw3、lammps、openmpi（openmpi和mpich2功能相似）</p><h2 id="安装的时候注意路径"><a href="#安装的时候注意路径" class="headerlink" title="安装的时候注意路径"></a>安装的时候注意路径</h2><h3 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h3><p>以下都是用的lammps的默认路径，为了make的时候方便。可以查看\lammps\src\MAKE\OPTIONS 路径下Makefile.fftw 文件和Makefile.g++_openmpi_link文件里的路径。</p><ol><li>这是fftw：（-j4 指调用4核编译）<pre class="language-shell" data-language="shell"><code class="language-shell">sudo ./configure --prefix=/usr/local --enable-floatsudo make -j4sudo make install</code></pre></li><li>openmpi：<pre class="language-shell" data-language="shell"><code class="language-shell">sudo ./configure --prefix=/usr/localsudo make -j4sudo make install</code></pre></li><li>将/src/MAKE/MACHINES/Makefile.ubuntu复制到/src/MAKE/目录下。在/src目录下：<pre class="language-shell" data-language="shell"><code class="language-shell">sudo make ubuntu -j4</code></pre><h3 id="如果不成功，有时候是library没有立即生效，用"><a href="#如果不成功，有时候是library没有立即生效，用" class="headerlink" title="如果不成功，有时候是library没有立即生效，用"></a>如果不成功，有时候是library没有立即生效，用</h3></li></ol><pre class="language-shell" data-language="shell"><code class="language-shell">ldconfig</code></pre><p>进行更新。</p><h3 id="检查安装路径可以用语句："><a href="#检查安装路径可以用语句：" class="headerlink" title="检查安装路径可以用语句："></a>检查安装路径可以用语句：</h3><pre class="language-shell" data-language="shell"><code class="language-shell">whereis openmpi</code></pre><h2 id="为了简化操作，设置环境变量"><a href="#为了简化操作，设置环境变量" class="headerlink" title="为了简化操作，设置环境变量"></a>为了简化操作，设置环境变量</h2><h3 id="在主目录的隐藏文件-bashrc里编辑："><a href="#在主目录的隐藏文件-bashrc里编辑：" class="headerlink" title="在主目录的隐藏文件.bashrc里编辑："></a>在主目录的隐藏文件.bashrc里编辑：</h3><pre class="language-none"><code class="language-none">export PATH="$PATH:/home/peachrl/LAMMPS/bin"export PATH=/usr/local/bin:$PATH</code></pre><p>两种写法好像都行。然后，</p><pre class="language-shell" data-language="shell"><code class="language-shell">source ~/.bashrc</code></pre><p>让它生效。</p><h3 id="看是否成功用语句："><a href="#看是否成功用语句：" class="headerlink" title="看是否成功用语句："></a>看是否成功用语句：</h3><pre class="language-shell" data-language="shell"><code class="language-shell">which lmp_ubuntu</code></pre><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>运行前移动和改名了：</p><pre class="language-shell" data-language="shell"><code class="language-shell">mv /src/lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4</code></pre><p>运行：（3 指调用3核）</p><pre class="language-shell" data-language="shell"><code class="language-shell">cd /home/peachrl/LAMMPS/lammps-3Mar20/examples/flowmpirun -np 3 lmp4 &lt; in.flow.couette</code></pre><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="Makefile-ubuntu"><a href="#Makefile-ubuntu" class="headerlink" title="Makefile.ubuntu"></a>Makefile.ubuntu</h3><pre class="language-none"><code class="language-none"># ubuntu = Ubuntu Linux box, g++, openmpi, FFTW3# you have to install the packages g++, mpi-default-bin, mpi-default-dev,# libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this# makefileSHELL = /bin/sh# ---------------------------------------------------------------------# compiler/linker settings# specify flags and libraries needed for your compilerCC =mpic++CCFLAGS =-g -O3 # -WunusedSHFLAGS =-fPICDEPFLAGS =-MLINK =mpic++LINKFLAGS =-g -O3LIB = SIZE =sizeARCHIVE =arARFLAGS =-rcSHLIBFLAGS =-shared# ---------------------------------------------------------------------# LAMMPS-specific settings, all OPTIONAL# specify settings for LAMMPS features you will use# if you change any -D setting, do full re-compile after "make clean"# LAMMPS ifdef settings# see possible settings in Section 2.2 (step 4) of manualLMP_INC =-DLAMMPS_GZIP -DLAMMPS_JPEG -DLAMMPS_PNG -DLAMMPS_FFMPEG# MPI library# see discussion in Section 2.2 (step 5) of manual# MPI wrapper compiler/linker can provide this info# can point to dummy MPI library in src/STUBS as in Makefile.serial# use -D MPICH and OMPI settings in INC to avoid C++ lib conflicts# INC = path for mpi.h, MPI compiler settings# PATH = path for MPI library# LIB = name of MPI libraryMPI_INC =MPI_PATH = MPI_LIB =# FFT library# see discussion in Section 2.2 (step 6) of manaul# can be left blank to use provided KISS FFT library# INC = -DFFT setting, e.g. -DFFT_FFTW, FFT compiler settings# PATH = path for FFT library# LIB = name of FFT libraryFFT_INC =    -DFFT_FFTW3FFT_PATH = FFT_LIB = -lfftw3# JPEG and/or PNG library# see discussion in Section 2.2 (step 7) of manual# only needed if -DLAMMPS_JPEG or -DLAMMPS_PNG listed with LMP_INC# INC = path(s) for jpeglib.h and/or png.h# PATH = path(s) for JPEG library and/or PNG library# LIB = name(s) of JPEG library and/or PNG libraryJPG_INC =       JPG_PATH = JPG_LIB = -ljpeg -lpng# ---------------------------------------------------------------------# build rules and dependencies# do not edit this sectionincludeMakefile.package.settingsincludeMakefile.packageEXTRA_INC = $(LMP_INC) $(PKG_INC) $(MPI_INC) $(FFT_INC) $(JPG_INC) $(PKG_SYSINC)EXTRA_PATH = $(PKG_PATH) $(MPI_PATH) $(FFT_PATH) $(JPG_PATH) $(PKG_SYSPATH)EXTRA_LIB = $(PKG_LIB) $(MPI_LIB) $(FFT_LIB) $(JPG_LIB) $(PKG_SYSLIB)EXTRA_CPP_DEPENDS = $(PKG_CPP_DEPENDS)EXTRA_LINK_DEPENDS = $(PKG_LINK_DEPENDS)# Path to src filesvpath %.cpp ..vpath %.h ..# Link target$(EXE):$(OBJ) $(EXTRA_LINK_DEPENDS)$(LINK) $(LINKFLAGS) $(EXTRA_PATH) $(OBJ) $(EXTRA_LIB) $(LIB) -o $(EXE)$(SIZE) $(EXE)# Library targetslib:$(OBJ) $(EXTRA_LINK_DEPENDS)$(ARCHIVE) $(ARFLAGS) $(EXE) $(OBJ)shlib:$(OBJ) $(EXTRA_LINK_DEPENDS)$(CC) $(CCFLAGS) $(SHFLAGS) $(SHLIBFLAGS) $(EXTRA_PATH) -o $(EXE) \        $(OBJ) $(EXTRA_LIB) $(LIB)# Compilation rules%.o:%.cpp $(EXTRA_CPP_DEPENDS)$(CC) $(CCFLAGS) $(SHFLAGS) $(EXTRA_INC) -c $&lt;%.d:%.cpp $(EXTRA_CPP_DEPENDS)$(CC) $(CCFLAGS) $(EXTRA_INC) $(DEPFLAGS) $&lt; &gt; $@%.o:%.cu $(EXTRA_CPP_DEPENDS)$(CC) $(CCFLAGS) $(SHFLAGS) $(EXTRA_INC) -c $&lt;# Individual dependenciesdepend : fastdep.exe $(SRC)@./fastdep.exe $(EXTRA_INC) -- $^ &gt; .depend || exit 1fastdep.exe: ../DEPEND/fastdep.ccc -O -o $@ $&lt;sinclude .depend</code></pre><h3 id="Makefile-fftw"><a href="#Makefile-fftw" class="headerlink" title="Makefile.fftw"></a>Makefile.fftw</h3><pre class="language-none"><code class="language-none">FFT_INC =    -DFFT_FFTW3 -I/usr/local/includeFFT_PATH =      -L/usr/local/libFFT_LIB =-lfftw3</code></pre><h3 id="Makefile-g-openmpi-link"><a href="#Makefile-g-openmpi-link" class="headerlink" title="Makefile.g++_openmpi_link"></a>Makefile.g++_openmpi_link</h3><pre class="language-none"><code class="language-none">MPI_INC =       -DMPICH_SKIP_MPICXX -DOMPI_SKIP_MPICXX=1 -I/usr/local/includeMPI_PATH = -L/usr/local/libMPI_LIB =-lmpi -lmpi_cxx</code></pre>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;安装之前&quot;&gt;&lt;a href=&quot;#安装之前&quot; class=&quot;headerlink&quot; title=&quot;安装之前&quot;&gt;&lt;/a&gt;安装之前&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
     
   </entry>
   

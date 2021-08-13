@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://peachrl.github.io/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/</loc>
+    
+    <lastmod>2021-08-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://peachrl.github.io/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</loc>
     
     <lastmod>2021-08-05</lastmod>
@@ -222,6 +229,13 @@
   
   <url>
     <loc>https://peachrl.github.io/tags/Linux/</loc>
+    <lastmod>2021-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peachrl.github.io/tags/Android/</loc>
     <lastmod>2021-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

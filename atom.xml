@@ -54,6 +54,33 @@
   </entry>
   
   <entry>
+    <title>Android手机向Deepin系统投屏</title>
+    <link href="https://peachrl.github.io/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/"/>
+    <id>https://peachrl.github.io/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/</id>
+    <published>2021-08-10T05:39:57.000Z</published>
+    <updated>2021-08-10T05:39:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>运行环境：电脑系统 Deepin 20.2.2；手机系统 Hydrogen OS 11.0.10.10.IN21</p></blockquote><p>因为最近需要用科技云会开组会，手机屏幕看组会太小而Deepin系统上没有这个软件，所以本桃开发了手机向Linux系统投屏的新技能√</p><p>主要工具为scrcpy，“scrcpy是免费开源的投屏软件，支持将安卓手机屏幕投放在 Windows、macOS、GNU/Linux 上，并可直接借助鼠标在投屏窗口中进行交互和录制”。</p><a id="more"></a><h3 id="安装adb并开启服务"><a href="#安装adb并开启服务" class="headerlink" title="安装adb并开启服务"></a>安装adb并开启服务</h3><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get install adbadb start-server</code></pre><p>adb是用来调试Android设备的，开启一次之后会一直开启（包括重启电脑），除非手动关闭。</p><h3 id="安装scrcpy"><a href="#安装scrcpy" class="headerlink" title="安装scrcpy"></a>安装scrcpy</h3><p>我们直接尝试用<code>sudo apt-get install scrcpy</code>命令安装，但是失败了：</p><p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa1b.png" alt="image-20210813204307731" loading="lazy"></p><p>于是按照提示使用snap进行安装。首先安装snap，这是一个很受欢迎的软件包管理和部署系统：</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get install snapd</code></pre><p>再安装scrcpy：</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo snap install scrcpy</code></pre><p>这里网上有人遇到报错说缺少core18库，因此还需要安装一下<code>sudo snap install core</code>，不过我没有遇到。</p><h3 id="手机开启开发者选项"><a href="#手机开启开发者选项" class="headerlink" title="手机开启开发者选项"></a>手机开启<code>开发者选项</code></h3><p>这一步是为了adb能更方便调试以及允许模拟点击。</p><p>不同手机开启<code>开发者选项</code>的位置不一定相同。OnePlus 8手机的<code>开发者选项</code>要从<code>设置</code>进入，打开倒数第二项<code>关于手机</code>，快速多次点击<code>版本号</code>。</p><h3 id="两种方法手机连接电脑"><a href="#两种方法手机连接电脑" class="headerlink" title="两种方法手机连接电脑"></a>两种方法手机连接电脑</h3><h4 id="有线连接"><a href="#有线连接" class="headerlink" title="有线连接"></a>有线连接</h4><p>手机与电脑用数据线连接，开启USB调试。这时可以用<code>adb devices</code>查看到我们的手机设备：</p><p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa3b.png" alt="image-20210813211816433" loading="lazy"></p><h4 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a>无线连接</h4><p>虽说是无线连接，但实际上还是需要用一下数据线，否则是需要手机root才能实现的。</p><p>手机与电脑必须保持在同一局域网，用数据线连接，开启USB调试。</p><p>在手机里<code>设置</code>-<code>关于手机</code>-<code>状态信息</code>找到ip地址，或者在终端用命令<code>adb shell ip a</code>查看ip：</p><p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa60.png" alt="image-20210813212241661" loading="lazy"></p><p>在终端输入，让设备在5555端口监听TCP/IP连接（端口四位数都行）：</p><pre class="language-shell" data-language="shell"><code class="language-shell">adb tcpip 5555</code></pre><p>通过 IP 地址连接设备：</p><pre class="language-shell" data-language="shell"><code class="language-shell">adb connect &lt;手机ip&gt;:5555</code></pre><p>确认连接状态：</p><pre class="language-shell" data-language="shell"><code class="language-shell">adb devices</code></pre><p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa7d.png" alt="image-20210813212913008" loading="lazy"></p><p>这时能看到List of devices attached有两条，上面一条是无线连接的，下面一条是有线连接的。这时可以拔掉数据线，无线连接会依然保持。</p><p>类似的用<code>adb disconnect &lt;手机ip&gt;:5555</code>命令可以断开连接。</p><h3 id="scrcpy开始投屏"><a href="#scrcpy开始投屏" class="headerlink" title="scrcpy开始投屏"></a>scrcpy开始投屏</h3><p>在<code>adb devices</code>显示有1个设备连接的情况下，在终端输入：</p><pre class="language-shell" data-language="shell"><code class="language-shell">scrcpy</code></pre><p>即可。</p><p>科技云会在Deepin上也可以顺利“打开”了：</p><p><img src="https://pic.imgdb.cn/item/611678af5132923bf8cfaa93.png" alt="image-20210813214109597" loading="lazy"></p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;运行环境：电脑系统 Deepin 20.2.2；手机系统 Hydrogen OS 11.0.10.10.IN21&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因为最近需要用科技云会开组会，手机屏幕看组会太小而Deepin系统上没有这个软件，所以本桃开发了手机向Linux系统投屏的新技能√&lt;/p&gt;
+&lt;p&gt;主要工具为scrcpy，“scrcpy是免费开源的投屏软件，支持将安卓手机屏幕投放在 Windows、macOS、GNU/Linux 上，并可直接借助鼠标在投屏窗口中进行交互和录制”。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+    <category term="Android" scheme="https://peachrl.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LAMMPS最新版（30 Jul 2021）安装要点</title>
     <link href="https://peachrl.github.io/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/"/>
     <id>https://peachrl.github.io/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</id>
@@ -458,27 +485,6 @@
     
     
     <summary type="html">&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LAMMPS中dump image command和dump movie command</title>
-    <link href="https://peachrl.github.io/2020/04/07/LAMMPS%E4%B8%ADdump%20image%20command%E5%92%8Cdump%20movie%20command/"/>
-    <id>https://peachrl.github.io/2020/04/07/LAMMPS%E4%B8%ADdump%20image%20command%E5%92%8Cdump%20movie%20command/</id>
-    <published>2020-04-07T09:06:33.000Z</published>
-    <updated>2020-04-07T09:06:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<pre class="language-none"><code class="language-none">dump ID group-ID style N file color diameter keyword value ...</code></pre><a id="more"></a><ul><li>ID：为这条dump指令起个名字</li><li>group-ID：哪几组粒子将被导出</li><li>style：image&nbsp;or&nbsp;movie</li><li>N：每隔多少timesteps导出一张图</li><li>file：导出的文件名</li><li>color：由什么来区分粒子的颜色<ul><li>比如说type：<ul><li>type 1 = red</li><li>type 2 = green</li><li>type 3 = blue</li><li>type 4 = yellow</li><li>type 5 = aqua</li><li>type 6 = cyan</li><li>更多颜色就要由<a href="https://lammps.sandia.gov/doc/dump_modify.html">dump_modify acolor</a>&nbsp;command来实现了</li></ul></li><li>再比如说vx：粒子在x方向的速度分量大小区间</li></ul></li><li>diameter：由什么来区分粒子的大小，比如type。默认所有type的粒子直径1.0，更多设置由<a href="https://lammps.sandia.gov/doc/dump_modify.html">dump_modify adiam</a>&nbsp;command来实现</li><li>keyword：其他设置，有atom、adiam、bond、line、tri、body、fix、size、view、center、up、zoom、persp、box、axes、subbox、shiny、ssao</li></ul><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><pre class="language-none"><code class="language-none">dump2 all image 500 image.*.jpg type type &amp;zoom 1.6 adiam 1.2dump_modify2 pad 5dump3 all movie 1 movie.avi type type &amp;zoom 1.6 adiam 1.2dump_modify3 pad 5</code></pre><ul><li><p>dump第2条指令：</p><ul><li>all输出全部粒子</li><li>image导出图像格式</li><li>每隔500时间步长</li><li>导出的文件名为image.*.jpg</li><li>color=type由粒子的type区分颜色</li><li>diameter=type由粒子的type决定粒子直径</li><li>&amp;换行</li><li>zoom缩放模拟框的大小</li><li>adiam重置直径数据</li></ul></li><li><p>dump_modify第2条指令：</p><ul><li>pad文件名中的*是个5位数</li></ul></li></ul><div align="center"><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693dd.jpg" alt="image.00000" style="zoom:80%;" loading="lazy"><div align="center"><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693e3.jpg" alt="image.10000" style="zoom:80%;" loading="lazy"><div align="center"><iframe src="https://player.bilibili.com/player.html?aid=370317864&amp;bvid=BV1XZ4y1x79o&amp;cid=181211939&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe></div></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;dump ID group-ID style N file color diameter keyword value ...&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
     

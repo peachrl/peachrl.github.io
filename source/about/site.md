@@ -9,8 +9,8 @@ slide:
   config:
     history: true
     mouseWheel: true
-    width: 960
-    height: 720
+    width: 1600
+    height: 900
     transition: "slide"
     backgroundTransition: "fade"
     center: true

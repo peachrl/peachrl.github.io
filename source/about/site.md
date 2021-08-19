@@ -9,9 +9,15 @@ slide:
   config:
     history: true
     mouseWheel: true
-aplayer: true
-reward: true
+    width: 960
+    height: 720
+    transition: "slide"
+    backgroundTransition: "fade"
+    center: true
+aplayer: false
+reward: false
 ---
+<!-- slide -->
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -70,7 +76,7 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 <details open>
 <summary>2021年</summary>
 
-&emsp;&emsp;**2021年2月20日**&emsp;<i class="ri-t-shirt-2-line"></i>更换网站主题[Yun](https://hexo-theme-yun.vercel.app/)
+&emsp;&emsp;**2021年2月20日**&emsp;<i class="ri-t-shirt-2-line"></i>更换网站主题[Yun](https://github.com/YunYouJun/hexo-theme-yun)
 
 &emsp;&emsp;**2021年1月1日**&emsp;<i class="ri-database-line"></i>总结2020年：全年累计发布13篇文章，删除1篇文章；本博客所在的项目[peachrl/peachrl.github.io](https://github.com/peachrl/peachrl.github.io)被放到了北极，因此博主桃成为了北极代码库贡献者（算算时间就是已删除的那篇文章被存起来了(*/ω＼*)）
 
@@ -92,3 +98,4 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 <br/>
 
 ###### [返回主页](https://peachrl.github.io/)
+

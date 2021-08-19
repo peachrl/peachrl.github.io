@@ -89,7 +89,7 @@ fireworks:
 footer:
   since: 2020
   icon:
-    name: icon-map-pin-user-line
+    name: icon-open-arm-line
     animated: true
     color: "#336600"
   powered:

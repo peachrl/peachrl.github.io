@@ -41,6 +41,7 @@
     "heart-line",
     "home-4-line",
     "list-ordered",
+    "list-unordered",
     "mail-line",
     "money-cny-circle-line",
     "open-arm-line",
@@ -51,7 +52,8 @@
     "user-line",
     "calendar-line",
     "time-line",
-    "timer-line"
+    "timer-line",
+    "train-line"
   ],
   "logos": [
     "alipay-line",

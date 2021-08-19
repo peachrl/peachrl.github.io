@@ -56,8 +56,8 @@ colors:
   # bg: "#F5F5F5"
   selection_bg: "#3cab00" # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
-  # tag_start_color:
-  # tag_end_color:
+  tag_start_color: "#003333"
+  tag_end_color: "#99CC99"
 
 #代码高亮
 codeblock:
@@ -879,9 +879,9 @@ tags:
   Atomsk: "#FF6666"
 
 categories:
-  软件: "#00b7ff"
-  其他: black
-  理论: "#c9d400"
+  软件: "#669933"
+  其他: "#CC9900"
+  理论: "#336666"
 
 #页面链接
 pages:
@@ -1047,7 +1047,7 @@ wordcount:
 
 #标签云：使用彩色词云替代原生标签云
 wordcloud:
-  enable: true
+  enable: false
   height: 350
 
 github_issues:

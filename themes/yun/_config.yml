@@ -48,9 +48,9 @@ social:
     link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
-  - name: QQ 群 389401003
+  - name: QQ 群 1050458482
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://qm.qq.com/cgi-bin/qm/qr?k=epvxdq1sknJe9JMj6J1LsBw4a6cI_2ln&jump_from=webapi
+    link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
     icon: icon-qq-line
     color: "#12B7F5"
   - name: GitHub
@@ -78,13 +78,13 @@ social:
     icon: icon-bilibili-line
     color: "#FF8EB3"
   # - name: POPI
-  #   link: https://www.popiask.cn/elpsycn
+  #   link: https://www.popiapp.cn/elpsycn
   #   icon: icon-questionnaire-line
   #   color: "#525252"
-  # - name: 微信公众号
-  #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-  #   icon: icon-wechat-2-line
-  #   color: "#1AAD19"
+  - name: 微信公众号
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
   - name: Twitter
     link: https://twitter.com/YunYouJun
     icon: icon-twitter-line
@@ -103,8 +103,8 @@ social:
     icon: icon-mail-line
     color: "#8E71C1"
   - name: Travelling
-    link: https://travellings.now.sh/
-    icon: icon-send-plane-2-line
+    link: https://travellings.link
+    icon: icon-train-line
     color: black
 
 codeblock:
@@ -136,7 +136,7 @@ girls:
 # Sidebar Avatar
 avatar:
   enable: true
-  url: /Yun.png
+  url: /yun.png
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -284,12 +284,12 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.25/dist/yun/yun-markdown.min.css
     # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   js:
     base:
     async:
-      iconfont: //at.alicdn.com/t/font_1140697_ed8vp4atwoj.js
+      iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
     defer:
 
 # cdn for third-party library (alternative include)
@@ -429,6 +429,8 @@ footer:
     animated: true
     # Change the color of icon, using Hex Code.
     color: "#0078E7"
+    # url: https://sponsors.yunyoujun.cn
+    # title: 云游君的赞助者们
 
   powered:
     # Hexo link (Powered by Hexo).
@@ -446,6 +448,14 @@ footer:
     suffix: (●'◡'●)
     start_time: "2019-04-12T00:00:00"
 
+  # Display support
+  # support:
+  #   enable: true
+  #   title: 又拍云
+  #   link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+  #   logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+  #   prefix: 本网站由
+  #   suffix: 提供 CDN 加速
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 
@@ -543,7 +553,8 @@ google_adsense:
 # ---------------
 google_analytics:
   enable: false
-  id: UA-XXXXXXXXX-X
+  # GA4
+  id: G-XXXXXXXXX
 
 # Google Tagmanager
 google_tagmanager:

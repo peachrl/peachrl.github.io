@@ -1,18 +1,18 @@
 #comment.hty-card
-  .comment-tooltip.text-center
-    if theme.comment.tips
+  if theme.comment.tips
+    .comment-tooltip.text-center
       each tip in theme.comment.tips
         span!=tip
         br
-    if theme.github_issues && theme.github_issues.enable
-      include github-issues.pug
-    if theme.github_discussions && theme.github_discussions.enable
-      include github-discussions.pug
+      if theme.github_issues && theme.github_issues.enable
+        include github-issues.pug
+      if theme.github_discussions && theme.github_discussions.enable
+        include github-discussions.pug
 
     
     if theme.comment.candidates && theme.comment.candidates.length > 1
       .toggle-comment-system(style="margin: 1rem auto")
-        - var commentContainer = {valine: '#valine-container', utterances: '.utterances', livere: '#lv-container', minivaline: '#minivaline-container',  disqus: '#disqus_thread', disqusjs: '#disqus_thread'}
+        - var commentContainer = {valine: '#valine-container', waline: '#waline', utterances: '.utterances', livere: '#lv-container', minivaline: '#minivaline-container',  disqus: '#disqus_thread', disqusjs: '#disqus_thread', giscus: '.giscus'}
         for candidate, i in theme.comment.candidates
           if i !== 0
             style.
@@ -55,4 +55,6 @@
     include utterances.pug
   if theme.twikoo && theme.twikoo.enable
     include twikoo.pug
+  if theme.giscus && theme.giscus.enable
+    include giscus.pug
 

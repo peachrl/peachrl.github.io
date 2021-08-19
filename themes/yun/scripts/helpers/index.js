@@ -1,13 +1,17 @@
-/*global hexo*/
+/* global hexo */
 
 /**
  * 是否为 url 链接
+ * @param {string} path
+ * @returns
  */
-hexo.extend.helper.register("is_url", function(path) {
+function isUrl(path) {
   return new RegExp(/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/).test(
     path
   );
-});
+}
+
+hexo.extend.helper.register("is_url", isUrl);
 
 hexo.extend.helper.register("page_title", function(page) {
   const { __ } = this;
@@ -31,8 +35,10 @@ hexo.extend.helper.register("page_title", function(page) {
 
 /**
  * 根据文章类型获取对应颜色及图标
+ * @param {string} type
+ * @returns
  */
-hexo.extend.helper.register("getPropertyByType", function(type = "link") {
+function getPropertyByType(type = "link") {
   const { theme } = this;
   if (type in theme.types === false) {
     type = "link";
@@ -47,7 +53,9 @@ hexo.extend.helper.register("getPropertyByType", function(type = "link") {
     color: typeColor,
     icon: typeIcon,
   };
-});
+}
+
+hexo.extend.helper.register("getPropertyByType", getPropertyByType);
 
 /**
  * 获取默认语言

@@ -209,6 +209,8 @@ waline:
   comment: false
 ```
 
+> 请务必不要直接照抄我的配置！
+
 - `serverURL`: 后端部署后的链接（需自行部署）
 - `comment`: 是否显示本文评论数量
 
@@ -260,6 +262,27 @@ twikoo:
   envId: xxxxxxxxxxxxxxx # 腾讯云环境id
   region: # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
   option: # 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+```
+
+### Giscus
+
+[Giscus](https://github.com/laymonage/giscus) 是由 GitHub Discussions 提供支持的评论系统。
+让访问者通过 GitHub 在您的网站上留下评论和反应！
+受到 [utterances](https://utteranc.es/) 的极大启发。
+
+> Giscus （基于 Discussions）相比 utterances（基于 Issue）权限更加细分，且可指定回复。更像一个评论系统。
+
+```yaml
+giscus:
+  enable: false
+  repo:
+  repo-id:
+  category:
+  category-id:
+  mapping: pathname
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light
 ```
 
 <!-- ## 分享

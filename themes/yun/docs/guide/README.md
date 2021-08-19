@@ -25,8 +25,8 @@ hexo server
 ::: tip 渲染器
 如果您没有 `pug` 与 `stylus` 的渲染器，请先安装：
 [hexo-renderer-pug](https://github.com/hexojs/hexo-renderer-pug)
-（这个是　 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
-或[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
+（这个是 Hexo 官方在维护，但是好像没有下面的星多，更新的勤快。）
+或 [hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
 （以及前者尚未支持开发时热更新，后者支持。）
 和 [hexo-renderer-stylus](https://github.com/hexojs/hexo-renderer-stylus)
 
@@ -60,6 +60,12 @@ git clone -b master https://github.com/YunYouJun/hexo-theme-yun themes/yun
 git clone -b dev https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
+您可以采用子模块的方式将博客与主题仓库建立关联，而无需将主题一并上传至仓库。
+
+```bash
+git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
 ### 启用主题
 
 修改 Hexo 站点配置文件 `_config.yml`
@@ -76,7 +82,7 @@ theme: yun
 采用约定大于配置的方式，您仅需在 `yun.yml` 中自定义您想要覆盖的配置，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
 
 > 你可以参考我的配置文件 [yun.yml - yunyoujun.github.io](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/_data/yun.yml)，是不是很短。  
-> 因为我开启了 `algolia`、`wordcount` 等需要在其他地方安装或额外配置的东西，所以如果你直接复制我的配置，记得删掉 `algolia_search` 和 `wordcount`字段。
+> 因为我开启了 `algolia`、`wordcount` 等需要在其他地方安装或额外配置的东西，所以如果你直接复制我的配置，记得删掉 `algolia_search` 和 `wordcount`字段。（以及请务必不要照抄我的 `waline` 字段！）
 
 ::: tip
 如：
@@ -135,7 +141,7 @@ git pull
 通过 `createElement` 的方式，`append` 到 `body` 容器中。
 
 ```js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let apContainer = document.createElement("div");
   apContainer.id = "aplayer";
   document.body.append(apContainer);
@@ -189,3 +195,144 @@ run: |
 [效果预览与说明](https://www.yunyoujun.cn/yun/markdown.html)
 
 - 多彩引用标签
+
+## 其他方式
+
+### Docker
+
+如果你已对 Docker 有所了解，并想要使用配置完毕的现有环境。
+
+可以按照下面的说明使用 Docker 构建一个定制好的环境，里面包含了大部分的插件。
+这样您后续基本就不需要关心插件问题了，需要关心的只有如何书写配置文件。
+
+请在 hexo 根目录创建名为 `docker-compose.yml` 的文件并填入下列内容。
+
+```yaml
+version: "3"
+services:
+  cli:
+    user: root
+    image: hexo-theme-yun
+    container_name: hexo
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - CHANGE_APK_SOURCE=true # 更换 APK 源为阿里源
+        - CHANGE_NPM_SOURCE=true # 更换 NPM 源为腾讯源
+    working_dir: /blog
+    environment:
+      - NODE_ENV=production # 将 node 的配置切换到生产环境
+    volumes:
+      - ./_config.yml:/blog/_config.yml # 挂载根目录配置文件
+      - ./themes:/blog/themes # 挂载主题目录
+      - ./scaffolds:/blog/scaffolds # 挂载模板目录
+      - ./source:/blog/source # 挂载资源目录
+      - ./public:/blog/public # 挂载 HTML 的生成目录
+    ports:
+      - 4000:4000 # 将 Docker 内的 4000 端口映射到主机的 4000 端口
+    command: "sleep 24h" # 休眠 shell 24 小时防止容器自动关闭
+```
+
+然后在 hexo 根目录创建名为 `Dockerfile` 的文件并填入下列内容。
+
+```dockerfile
+FROM node:12.20.2-alpine AS base
+ARG CHANGE_APK_SOURCE=false
+ARG CHANGE_NPM_SOURCE=false
+ENV NPM_CONFIG_LOGLEVEL=info
+ENV NODE_ENV=production
+WORKDIR /
+RUN     set -xe \
+    &&  if [ ${CHANGE_APK_SOURCE} = true ]; then \
+            sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories ; \
+        fi \
+    &&  if [ ${CHANGE_NPM_SOURCE} = true ] ; then \
+            npm config set registry http://mirrors.cloud.tencent.com/npm/ ; \
+        fi \
+    &&  apk update \
+    &&  apk add --no-cache \
+            git \
+            libc6-compat \
+    &&  npm -g config set user root \
+    &&  npx hexo init blog \
+    &&  cd blog \
+    &&  npm install --save hexo-cli \
+    &&  npm install --save hexo-server \
+    &&  npm install --save hexo-render-pug \
+    &&  npm install --save hexo-renderer-stylus \
+    &&  npm install --save hexo-tag-aplayer \
+    &&  npm install --save hexo-generator-sitemap \
+    &&  npm install --save hexo-generator-search \
+    &&  npm install --save hexo-generator-tag \
+    &&  npm install --save hexo-generator-category \
+    &&  npm install --save hexo-algoliasearch \
+    &&  npm install --save hexo-wordcount \
+    &&  npm install --save hexo-generator-feed \
+    # &&  npm install --save hexo-helper-live2d \
+    # &&  npm install --save hexo-abbrlink \
+    # &&  npm install --save hexo-math \
+    # &&  npm install --save hexo-filter-mathjax \
+    &&  npm install --save hexo-tag-common \
+    &&  npm install --save hexo-widget-tree \
+    &&  npm install --save hexo-blog-encrypt
+
+FROM node:12.20.2-alpine
+ENV NPM_CONFIG_LOGLEVEL=info
+ENV NODE_ENV=production
+ARG CHANGE_APK_SOURCE=false
+ARG CHANGE_NPM_SOURCE=false
+COPY --from=base /blog /blog
+WORKDIR /
+RUN     set -xe \
+    &&  if [ ${CHANGE_APK_SOURCE} = true ]; then \
+            sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories ; \
+        fi \
+    &&  if [ ${CHANGE_NPM_SOURCE} = true ] ; then \
+            npm config set registry http://mirrors.cloud.tencent.com/npm/ ; \
+        fi \
+    &&  apk update \
+    &&  apk add --no-cache git \
+    &&  npm -g config set user root
+
+```
+
+然后请在 hexo 根目录执行 `docker-compose build` 来构建镜像。
+
+镜像构建完成后可以在 hexo 根目录执行 `docker-compose up -d` 来启动容器。
+
+启动容器后您可以继续按照文档的指示来配置您的博客，
+配置完毕后可以执行下列命令来进行测试和部署等操作。
+
+```sh
+# 启动测试服务器并可以在 http://localhost:4000 查看测试效果
+docker exec hexo npx hexo s
+
+# 生成 HTML 文件到 hexo 根目录的 public 目录下
+docker exec hexo npx hexo g
+
+# 部署博客到 Github 等平台
+docker exec hexo npx hexo d
+
+# 清理生成的文件
+docker exec hexo npx hexo c
+```
+
+::: warning
+
+出于一些考虑容器中并未提供下列插件：
+
+- [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)：此插件一旦安装便默认开启，
+  故默认不予安装。
+
+- [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink)：此插件一旦安装便默认开启，
+  故默认不予安装。
+
+- [hexo-math](https://github.com/hexojs/hexo-math)：此插件是 KaTeX 的备用项，
+  如果您不打算使用 KaTeX 可以启用此插件，但此插件默认不予安装。
+
+- [hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)：同 hexo-math。
+
+如果您对插件有特殊需求可以自行修改 `Dockerfile` 文件。
+
+:::

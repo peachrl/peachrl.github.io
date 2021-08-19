@@ -13,12 +13,14 @@
 - `author`: 设置作者则会显示
 - `email`: 自动根据邮箱获取 [Gravatar](https://en.gravatar.com/site/implement/images/) 头像
 - `toc`: 是否显示目录（文章 `post` 默认显示，页面 `post` 默认不显示）
+- `readmore`: 将会首页卡片摘要末尾强制显示一个 `阅读更多` 按钮
 
 ```md {3,4}
 ---
 title: xxx
 author: 云游君
 email: me@yunyoujun.cn
+readmore: true
 ---
 ```
 
@@ -160,6 +162,8 @@ hexo new page about
 然后就开始介绍你自己吧～
 
 ### 关于站点
+
+> 主题将根据 `source/about/site.md` 是否存在，决定是否渲染侧边栏中关于站点的超链接。
 
 此外点击侧边栏中的站点名称，会进入关于站点页面。
 

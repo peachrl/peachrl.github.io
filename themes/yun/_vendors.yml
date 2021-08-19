@@ -46,9 +46,10 @@ vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
 # comment
 valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
 waline_js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
-minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@latest
+minivaline_js: https://cdn.jsdelivr.net/npm/minivaline@6
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
   js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
 twikoo: https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js
+iconify: https://code.iconify.design/1/1.0.7/iconify.min.js

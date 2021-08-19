@@ -11,6 +11,7 @@
 @import '_components/*/*';
 // widget
 @import '_widget';
+@import '_helper';
 
 if (hexo-config('mode') == 'dark') {
   :root {
@@ -40,6 +41,8 @@ if (hexo-config('mode') == 'dark') {
 }
 
 // extend page
+@import '_extend/tags';
+
 if (hexo-config('albums.enable')) {
   @import '_extend/albums';
 }

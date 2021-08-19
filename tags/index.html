@@ -42,7 +42,7 @@
   const wordcloud_canvas = document.getElementById('wordcloud-canvas')
   wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
   wordcloud_canvas.height = 350
-  let wordcloud_config = {"list":[["Python",1.4,"/tags/Python/"],["GUI",1.2,"/tags/GUI/"],["Linux",1.7,"/tags/Linux/"],["Android",1.1,"/tags/Android/"],["Julia",1.1,"/tags/Julia/"],["LAMMPS",2.3,"/tags/LAMMPS/"],["VSCode",1.1,"/tags/VSCode/"],["Windows",1.1,"/tags/Windows/"],["Material Studio",1.1,"/tags/Material-Studio/"],["Ovito",1.1,"/tags/Ovito/"],["Atomsk",1.1,"/tags/Atomsk/"],["Materials",1.1,"/tags/Materials/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
+  let wordcloud_config = {"list":[["Python",1.4,"/tags/Python/"],["GUI",1.2,"/tags/GUI/"],["Linux",1.7,"/tags/Linux/"],["Android",1.1,"/tags/Android/"],["Julia",1.1,"/tags/Julia/"],["LAMMPS",2.3,"/tags/LAMMPS/"],["VSCode",1.1,"/tags/VSCode/"],["Windows",1.1,"/tags/Windows/"],["Atomsk",1.1,"/tags/Atomsk/"],["Material Studio",1.1,"/tags/Material-Studio/"],["Ovito",1.1,"/tags/Ovito/"],["Materials",1.1,"/tags/Materials/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
   wordcloud_config.hover = function(item, dimension){
     if (!dimension) {
       wordbox.hidden = true

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>用Atomsk给lammps建立data文件</title>
+      <link href="2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
+      <url>2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p>前面有一篇文<a href="https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/">用MaterialStudio和Ovito给lammps建立data文件</a>，但是博主桃非常穷，Material Studio软件只用得起盗版，因此这一篇文给出了另一种建模方法，用开源软件Atomsk给lammps建立data文件。</p><a id="more"></a><h3 id="Atomsk软件的安装"><a href="#Atomsk软件的安装" class="headerlink" title="Atomsk软件的安装"></a>Atomsk软件的安装</h3><p>系统：Deepin 20.2.2</p><ol><li>下载<a href="https://atomsk.univ-lille.fr/dl.php">安装包</a></li><li>解压并进入文件夹</li><li><code>sudo bash install.sh</code></li></ol><h3 id="Atomsk的使用"><a href="#Atomsk的使用" class="headerlink" title="Atomsk的使用"></a>Atomsk的使用</h3><p>Atomsk软件没有图形界面，所有操作在命令行进行。命令基本是<code>atomsk+输入文件/mode命令+options命令+输出文件名</code>的格式。例如生成粒子数5600共7层的石墨壁面：</p><pre class="language-shell" data-language="shell"><code class="language-shell">atomsk --create graphite 2.464 6.711 C -orthogonal-cell -duplicate 20 10 4 -cut above 0.75*BOX z big-graphite.lmp</code></pre><p>其中</p><ul><li><code>--create graphite 2.464 6.711 C</code>是我们使用的mode命令，表示以graphite晶体格式，a=2.464Å，b=6.711Å，原子种类为C原子，生成晶胞</li><li><code>-orthogonal-cell</code>是option命令，表示将晶胞修改为正交的</li><li><code>-duplicate 20 10 4</code>是option命令，表示将晶胞沿x、y、z方向复制20×10×4倍</li><li><code>-cut above 0.75*BOX z</code>是option命令，表示将前面生成的模型切除z的正方向最上面占比0.25的部分</li><li><code>big-graphite.lmp</code>最后输出文件名big-graphite，格式为.lmp（也就是lammps的data文件格式）</li></ul><p>在终端中显示：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256cd.png" alt="image-20210819104759688" loading="lazy"></p><p>查看生成的文件：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256bd.png" alt="image-20210819110036133" loading="lazy"></p><p>在ovito中查看：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256d5.png" alt="image-20210819104923195" loading="lazy"></p><p>非常容易。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+            <tag> Atomsk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LAMMPS自带的Python工具试用记录</title>
       <link href="2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
       <url>2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
@@ -74,9 +101,9 @@
       
         <tags>
             
-            <tag> LAMMPS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> LAMMPS </tag>
             
         </tags>
       
@@ -155,9 +182,9 @@
       
         <tags>
             
-            <tag> LAMMPS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> LAMMPS </tag>
             
         </tags>
       
@@ -563,9 +590,9 @@
       
         <tags>
             
-            <tag> LAMMPS </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> LAMMPS </tag>
             
         </tags>
       

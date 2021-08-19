@@ -6,7 +6,7 @@
   <link href="https://peachrl.github.io/atom.xml" rel="self"/>
   
   <link href="https://peachrl.github.io/"/>
-  <updated>2021-08-13T12:02:01.000Z</updated>
+  <updated>2021-08-18T02:28:19.000Z</updated>
   <id>https://peachrl.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用Atomsk给lammps建立data文件</title>
+    <link href="https://peachrl.github.io/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
+    <id>https://peachrl.github.io/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
+    <published>2021-08-18T02:28:19.000Z</published>
+    <updated>2021-08-18T02:28:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前面有一篇文<a href="https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/">用MaterialStudio和Ovito给lammps建立data文件</a>，但是博主桃非常穷，Material Studio软件只用得起盗版，因此这一篇文给出了另一种建模方法，用开源软件Atomsk给lammps建立data文件。</p><a id="more"></a><h3 id="Atomsk软件的安装"><a href="#Atomsk软件的安装" class="headerlink" title="Atomsk软件的安装"></a>Atomsk软件的安装</h3><p>系统：Deepin 20.2.2</p><ol><li>下载<a href="https://atomsk.univ-lille.fr/dl.php">安装包</a></li><li>解压并进入文件夹</li><li><code>sudo bash install.sh</code></li></ol><h3 id="Atomsk的使用"><a href="#Atomsk的使用" class="headerlink" title="Atomsk的使用"></a>Atomsk的使用</h3><p>Atomsk软件没有图形界面，所有操作在命令行进行。命令基本是<code>atomsk+输入文件/mode命令+options命令+输出文件名</code>的格式。例如生成粒子数5600共7层的石墨壁面：</p><pre class="language-shell" data-language="shell"><code class="language-shell">atomsk --create graphite 2.464 6.711 C -orthogonal-cell -duplicate 20 10 4 -cut above 0.75*BOX z big-graphite.lmp</code></pre><p>其中</p><ul><li><code>--create graphite 2.464 6.711 C</code>是我们使用的mode命令，表示以graphite晶体格式，a=2.464Å，b=6.711Å，原子种类为C原子，生成晶胞</li><li><code>-orthogonal-cell</code>是option命令，表示将晶胞修改为正交的</li><li><code>-duplicate 20 10 4</code>是option命令，表示将晶胞沿x、y、z方向复制20×10×4倍</li><li><code>-cut above 0.75*BOX z</code>是option命令，表示将前面生成的模型切除z的正方向最上面占比0.25的部分</li><li><code>big-graphite.lmp</code>最后输出文件名big-graphite，格式为.lmp（也就是lammps的data文件格式）</li></ul><p>在终端中显示：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256cd.png" alt="image-20210819104759688" loading="lazy"></p><p>查看生成的文件：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256bd.png" alt="image-20210819110036133" loading="lazy"></p><p>在ovito中查看：</p><p><img src="https://pic.imgdb.cn/item/611dc9af4907e2d39cf256d5.png" alt="image-20210819104923195" loading="lazy"></p><p>非常容易。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;前面有一篇文&lt;a href=&quot;https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/&quot;&gt;用MaterialStudio和Ovito给lammps建立data文件&lt;/a&gt;，但是博主桃非常穷，Material Studio软件只用得起盗版，因此这一篇文给出了另一种建模方法，用开源软件Atomsk给lammps建立data文件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    
+    <category term="Atomsk" scheme="https://peachrl.github.io/tags/Atomsk/"/>
+    
+  </entry>
   
   <entry>
     <title>LAMMPS自带的Python工具试用记录</title>
@@ -98,9 +121,9 @@
     <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
     
   </entry>
   
@@ -178,9 +201,9 @@
     <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
     
   </entry>
   
@@ -464,27 +487,6 @@
 &lt;li&gt;进入/src，安装package：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;make yes-USER-REAXC&lt;/code&gt;&lt;/pre&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LAMMPS的input脚本学习笔记</title>
-    <link href="https://peachrl.github.io/2020/04/09/LAMMPS%E7%9A%84input%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://peachrl.github.io/2020/04/09/LAMMPS%E7%9A%84input%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-04-09T10:26:53.000Z</published>
-    <updated>2020-04-09T10:26:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><a id="more"></a><ol><li><strong>LAMMPS按照顺序逐条执行命令，而不是全部读完文件后再执行</strong></li></ol><hr><ol start="2"><li><p><strong>命令末尾出现&amp;表示换行</strong></p><p>在写命令中途可以使用：</p></li></ol><pre class="language-none"><code class="language-none">dump2 all image 100 image.*.jpg type type &amp;zoom 1.6 adiam 1.5</code></pre><p>​    和</p><pre class="language-none"><code class="language-none">dump2 all image 100 image.*.jpg type type zoom 1.6 adiam 1.5</code></pre><p>​    两段代码是一个意思，不过第二种写法要写在一行。</p><hr><p>​    &amp;在字符串内部使用，也表示换行：</p><pre class="language-none"><code class="language-none">variable a string "red green blue &amp;                purple orange cyan"</code></pre><p>​    如果用的三个引号，那么不需要&amp;就可以换行：</p><pre class="language-none"><code class="language-none">print """System volume = $vSystem temperature = $t"""</code></pre><hr><ol start="3"><li><strong>#表示注释，不过在引号里的#不算</strong></li></ol><hr><ol start="4"><li><p><strong>$：用varialbe 定义的变量，在下面引用变量的值时就要使用${}</strong></p><p>${变量名}，如果变量名是单个字母，大括号可以省略。例如：</p><pre class="language-none"><code class="language-none">variable X equal (xlo+xhi)/2+sqrt(v_area)region 1 block $X 2 INF INF EDGE EDGEvariable X delete</code></pre><p>   $(表达式)，表达式视为临时变量，一般是个公式。例：</p></li></ol><pre class="language-none"><code class="language-none">region 1 block $((xlo+xhi)/2+sqrt(v_area)) 2 INF INF EDGE EDGE</code></pre><p>​    又例：</p><pre class="language-none"><code class="language-none">print "Final energy per atom: $(pe/atoms:%10.3f) eV/atom"</code></pre><p>   ==注意：$不能嵌套。==</p><hr><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>相关命令：&nbsp;<a href="https://lammps.sandia.gov/doc/units.html">units</a>、<a href="https://lammps.sandia.gov/doc/dimension.html">dimension</a>、<a href="https://lammps.sandia.gov/doc/newton.html">newton</a>、<a href="https://lammps.sandia.gov/doc/processors.html">processors</a>、<a href="https://lammps.sandia.gov/doc/boundary.html">boundary</a>&nbsp;<a href="https://lammps.sandia.gov/doc/atom_style.html">atom_style</a>、<a href="https://lammps.sandia.gov/doc/atom_modify.html">atom_modify</a></p><p><a href="https://lammps.sandia.gov/doc/pair_style.html">pair_style</a>、<a href="https://lammps.sandia.gov/doc/bond_style.html">bond_style</a>、<a href="https://lammps.sandia.gov/doc/angle_style.html">angle_style</a>、<a href="https://lammps.sandia.gov/doc/dihedral_style.html">dihedral_style</a>、<a href="https://lammps.sandia.gov/doc/improper_style.html">improper_style</a></p><p>都是粒子或粒子间相互作用有关的信息</p><hr><h2 id="系统定义"><a href="#系统定义" class="headerlink" title="系统定义"></a>系统定义</h2><p>相关命令：<a href="https://lammps.sandia.gov/doc/read_data.html">read_data</a>、<a href="https://lammps.sandia.gov/doc/read_restart.html">read_restart</a>&nbsp;</p><p><a href="https://lammps.sandia.gov/doc/lattice.html">lattice</a>,&nbsp;<a href="https://lammps.sandia.gov/doc/region.html">region</a>、<a href="https://lammps.sandia.gov/doc/create_box.html">create_box</a>、<a href="https://lammps.sandia.gov/doc/create_atoms.html">create_atoms</a>、<a href="https://lammps.sandia.gov/doc/read_dump.html">read_dump</a></p><p><a href="https://lammps.sandia.gov/doc/replicate.html">replicate</a></p><p>关于模拟的区域</p><hr><h2 id="模拟设置"><a href="#模拟设置" class="headerlink" title="模拟设置"></a>模拟设置</h2><p>力场系数（也可以写在read-in文件里）：<a href="https://lammps.sandia.gov/doc/pair_coeff.html">pair_coeff</a>、<a href="https://lammps.sandia.gov/doc/bond_coeff.html">bond_coeff</a>、<a href="https://lammps.sandia.gov/doc/angle_coeff.html">angle_coeff</a>、<a href="https://lammps.sandia.gov/doc/dihedral_coeff.html">dihedral_coeff</a>、<a href="https://lammps.sandia.gov/doc/improper_coeff.html">improper_coeff</a>、<a href="https://lammps.sandia.gov/doc/kspace_style.html">kspace_style</a>、<a href="https://lammps.sandia.gov/doc/dielectric.html">dielectric</a>、<a href="https://lammps.sandia.gov/doc/special_bonds.html">special_bonds</a></p><p>模拟参数：<a href="https://lammps.sandia.gov/doc/neighbor.html">neighbor</a>、<a href="https://lammps.sandia.gov/doc/neigh_modify.html">neigh_modify</a>、<a href="https://lammps.sandia.gov/doc/group.html">group</a>、<a href="https://lammps.sandia.gov/doc/timestep.html">timestep</a>、<a href="https://lammps.sandia.gov/doc/reset_timestep.html">reset_timestep</a>、<a href="https://lammps.sandia.gov/doc/run_style.html">run_style</a>、<a href="https://lammps.sandia.gov/doc/min_style.html">min_style</a>、<a href="https://lammps.sandia.gov/doc/min_modify.html">min_modify</a></p><p>计算指令：<a href="https://lammps.sandia.gov/doc/compute.html">compute</a>、<a href="https://lammps.sandia.gov/doc/compute_modify.html">compute_modify</a>、<a href="https://lammps.sandia.gov/doc/variable.html">variable</a></p><p>输出指令：&nbsp;<a href="https://lammps.sandia.gov/doc/thermo.html">thermo</a>、<a href="https://lammps.sandia.gov/doc/dump.html">dump</a>、<a href="https://lammps.sandia.gov/doc/restart.html">restart</a></p><hr><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>&nbsp;<a href="https://lammps.sandia.gov/doc/run.html">run</a>、<a href="https://lammps.sandia.gov/doc/minimize.html">minimize</a>、<a href="https://lammps.sandia.gov/doc/temper.html">temper</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;</summary>
     
     
     

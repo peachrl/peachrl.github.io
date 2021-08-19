@@ -18,7 +18,11 @@ aplayer: true
 # indexing: false
 ---
 
+<div class="success">
+
 > 运行环境：电脑系统 Deepin 20.2.2；手机系统 Hydrogen OS 11.0.10.10.IN21
+
+</div>
 
 因为最近需要用科技云会开组会，手机屏幕看组会太小而Deepin系统上没有这个软件，所以本桃开发了手机向Linux系统投屏的新技能√
 

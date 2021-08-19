@@ -17,8 +17,12 @@ aplayer: true
 # indexing: false
 ---
 
+<div class="success">
+
 
 > OpenKIM is an interatomic potential repository and an online framework for making molecular simulations reliable, reproducible, and portable. 
+
+</div>
 
 <!-- more -->
 

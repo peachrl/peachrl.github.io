@@ -52,9 +52,9 @@ trianglify:
 
 #背景颜色
 colors:
-  primary: "#3cab00"
+  primary: "#336600"
   # bg: "#F5F5F5"
-  selection_bg: "#3cab00" # 选取文字时的背景色
+  selection_bg: "#336600" # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
   tag_start_color: "#003333"
   tag_end_color: "#99CC99"
@@ -89,13 +89,13 @@ fireworks:
 footer:
   since: 2020
   icon:
-    name: icon-cloud-line
+    name: icon-map-pin-user-line
     animated: true
-    color: "#3cab00"
+    color: "#336600"
   powered:
     enable: true
     version: true
-    color: "#3cab00"
+    color: "#336600"
   live_time:
     enable: true
     prefix: 本博客已运行

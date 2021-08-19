@@ -20,7 +20,12 @@ aplayer: true
 
 ## Julia的安装
 
+<div class="success">
+
+
 > Julia 语言扮演了这样一个角色：它是一门灵活的动态语言，适合用于科学计算和数值计算，并且性能可与传统的静态类型语言媲美。
+
+</div>
 
 <!-- more -->
 

@@ -18,7 +18,11 @@ aplayer: true
 # indexing: falset
 ---
 
+<div class="success">
+
 > 运行环境：deepin 20.2.2；python 3.7；lammps 30Jul2021
+
+</div>
 
 lammps安装包自带的python工具也在/home/peachrl/lammps/tools/python目录内，有：
 

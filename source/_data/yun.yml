@@ -1011,7 +1011,7 @@ scrollreveal:
 sidebar:
   bg_image: /images/blurlight.jpg
   dark_bg_image: /images/blurdark.jpg
-  bg_position: bottom 1rem center
+  bg_position: bottom 3rem center
   tagcloud:
     enable: true
     amount: 20

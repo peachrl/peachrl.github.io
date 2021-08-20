@@ -1764,7 +1764,7 @@ input {
   background-image: url("/images/blurlight.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 1rem center;
+  background-position: bottom 3rem center;
   text-align: center;
   z-index: 10;
   transition-property: all;

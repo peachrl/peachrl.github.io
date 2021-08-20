@@ -1,21 +1,21 @@
 [
-    {
-      "content": "Hello, World!",
-      "author": "Brian Kernighan",
-      "from": "The C Programming Language"
-    },
-    {
-      "content": "是非在己 毁誉由人 得失不论",
-      "author": "魏无羡",
-      "from": "魔道祖师"
-    },
-    {
-        "content": "载获济济 有实其积 万亿及秭",
-        "from": "周颂·载芟"
-    },
-    {
-        "content": "往处如镜 直照来处",
-        "author": "第四季第11集",
-        "from": "克隆人战争"
-    }
-  ]
+  {
+    "content": "Hello, World!",
+    "author": "Brian Kernighan",
+    "from": "The C Programming Language"
+  },
+  {
+    "content": "是非在己 毁誉由人 得失不论",
+    "author": "魏无羡",
+    "from": "魔道祖师"
+  },
+  {
+    "content": "载获济济 有实其积 万亿及秭",
+    "from": "周颂·载芟"
+  },
+  {
+    "content": "往处如镜 直照来处",
+    "author": "第四季第11集",
+    "from": "克隆人战争"
+  }
+]

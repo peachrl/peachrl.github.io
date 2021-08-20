@@ -949,7 +949,7 @@ toc:
   list_number: true
   max_depth: 6
   min_depth: 1
-  placeholder: 很遗憾，咱没写啥目录
+  placeholder: 目录为空
   collapse: false
 
 #预加载

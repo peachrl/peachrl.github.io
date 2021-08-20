@@ -17,8 +17,6 @@ slide:
 aplayer: false
 reward: false
 ---
-<!-- slide -->
-
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 <style type="text/css">

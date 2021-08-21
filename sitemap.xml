@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://peachrl.github.io/2021/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2021-08-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://peachrl.github.io/data/GSI.json</loc>
     
     <lastmod>2021-08-21</lastmod>
@@ -138,13 +145,6 @@
     <loc>https://peachrl.github.io/2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/</loc>
     
     <lastmod>2020-10-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peachrl.github.io/2020/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2020-08-21</lastmod>
     
   </url>
   

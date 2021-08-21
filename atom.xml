@@ -129,9 +129,9 @@
     <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
     
   </entry>
   
@@ -209,9 +209,9 @@
     <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
-    
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
     
   </entry>
   
@@ -321,6 +321,33 @@
     
     
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VOSviewer的安装与使用——文本聚类分析与可视化</title>
+    <link href="https://peachrl.github.io/2020/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://peachrl.github.io/2020/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-21T15:08:30.000Z</published>
+    <updated>2020-08-21T15:08:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="success"><blockquote><p>VOSviewer is a software tool for constructing and visualizing bibliometric networks.</p></blockquote><p>这一篇文主要聊VOSviewer的安装与使用。当然，VOSviewer并不是唯一可以实现文本的聚类分析与可视化以梳理文献的软件，还有比如Histcite、CiteSpace等也可以，这就不在本文要讲的范围内了。</p><p>&lt;\div&gt;</p><a id="more"></a><h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><ol><li>VOSviewer需要在Java环境下运行，因此首先安装<a href="https://www.java.com/zh-CN/download/">Java</a></li></ol><p><img src="https://pic.imgdb.cn/item/612119544907e2d39c594c21.png" alt="image-20210821132245760" loading="lazy"></p><ol start="2"><li>下载<a href="https://www.vosviewer.com/download">VOSviewer</a>，各系统均有对应安装包，下载解压后如下图所示</li></ol><p><img src="https://pic.imgdb.cn/item/612119534907e2d39c594bf0.png" alt="image-20210821133056987" loading="lazy"></p><p>双击VOSviewer即可运行程序。</p><h2 id="基于Web-of-Science数据的使用"><a href="#基于Web-of-Science数据的使用" class="headerlink" title="基于Web of Science数据的使用"></a>基于Web of Science数据的使用</h2><div class="info"><blockquote><p>需要在校园网内网或者从外部通过校园网访问Web of Science的条件下使用。</p></blockquote></div><ol><li>进入Web of Science网站，按需检索想要知道的信息（选择不同数据库可以检索到的信息会不同，比如有的库就无法检索<code>所有字段</code>，只能检索<code>主题</code>、<code>关键词</code>之类的）：</li></ol><p><img src="https://pic.imgdb.cn/item/612119544907e2d39c594bfa.png" alt="image-20210821140554500" loading="lazy"></p><ol start="2"><li>导出制表符分隔文件（RIS、Excel（csv）等格式也可以，具体详情可查看VOSviewer的手册，下载的文件中那个pdf就是）</li></ol><p><img src="https://pic.imgdb.cn/item/612119544907e2d39c594c08.png" alt="image-20210821140804291" loading="lazy"></p><ol start="3"><li>记录内容也是按需选择，最后会导出一个叫savedrecs.txt的文件</li></ol><p><img src="https://pic.imgdb.cn/item/612119544907e2d39c594c14.png" alt="image-20210821140912864" loading="lazy"></p><ol start="4"><li>打开VOSviewer软件，点击左侧create，基于文献信息的分析内容，选based on bibliographic data：</li></ol><p><img src="https://pic.imgdb.cn/item/612119754907e2d39c59955d.png" alt="image-20210821142306327" loading="lazy"></p><p>VOSviewer支持的文件格式里就有Web of Science：</p><p><img src="https://pic.imgdb.cn/item/612119754907e2d39c59956c.png" alt="image-20210821142429971" loading="lazy"></p><p>选择导入刚刚的制表符分隔文件（如果从Web of Science下载了多个saverecs文件，可以都选上导入多个文件）：</p><p><img src="https://pic.imgdb.cn/item/612119754907e2d39c59957b.png" alt="image-20210821142446634" loading="lazy"></p><p>比如做一个关键词的分析，可以选择Co-occurrence：</p><p><img src="https://pic.imgdb.cn/item/612119754907e2d39c599591.png" alt="image-20210821144129745" loading="lazy"></p><p>设定至少出现2次才认为是需要分析的关键词：</p><p><img src="https://pic.imgdb.cn/item/612119754907e2d39c599555.png" alt="image-20210821144243909" loading="lazy"></p><p>显示其中与其他词汇关联最多的20个：</p><p><img src="https://pic.imgdb.cn/item/6121197b4907e2d39c59a198.png" alt="image-20210821144355745" loading="lazy"></p><p>可以再手动筛选以下想要分析的词汇：</p><p><img src="https://pic.imgdb.cn/item/6121197b4907e2d39c59a1b6.png" alt="image-20210821144645643" loading="lazy"></p><p>得到聚类图谱：</p><p><img src="https://pic.imgdb.cn/item/6121197b4907e2d39c59a1c4.png" alt="image-20210821144844506" loading="lazy"></p><p>可选的图谱有Network Visualization、Overlay Visualization、Density Visualization三种，Density Visualization又分为Item desity和Cluster density两种，三种图谱的各种参数可以在右侧设置。如上图的Network Visualization圆的大小代表关键词权重，两个圆之间的距离越短表示关键词关联性越强。圆的颜色代表了各自的聚类。</p><p>回到第4步，如果要基于论文title、abstract等文本信息的词共现分析，就选择based on text data，前面的设置大同小异，counting method指同一篇文献多次出现的词语是算一遍还是算多遍。</p><p><img src="https://pic.imgdb.cn/item/6121197b4907e2d39c59a1d6.png" alt="image-20210821150312936" loading="lazy"></p><p>其他设置也大同小异，最后得到：</p><p><img src="https://pic.imgdb.cn/item/6121197b4907e2d39c59a18e.png" alt="image-20210821150750334" loading="lazy"></p><h2 id="基于Semantic-ScholarCrossref数据的使用"><a href="#基于Semantic-ScholarCrossref数据的使用" class="headerlink" title="基于Semantic ScholarCrossref数据的使用"></a>基于<del>Semantic Scholar</del>Crossref数据的使用</h2><h3 id="Semantic-Scholar的报错"><a href="#Semantic-Scholar的报错" class="headerlink" title="Semantic Scholar的报错"></a>Semantic Scholar的报错</h3><p>Semantic Scholar的数据需要通过API的调用导出JSON格式的文件。比如关键词near space hypersonic cruise vehicles的搜索，在Semantic Scholar网站有549条信息，将其中101-200条导出JSON文件，在浏览器地址栏输入：</p><pre class="language-none"><code class="language-none">https://api.semanticscholar.org/graph/v1/paper/search?query=near+space+hypersonic+cruise+vehicles&amp;offset=100&amp;limit=100&amp;fields=externalIds,title,abstract,authors</code></pre><p>理论上，保存下来即可得到JSON格式的文本文件。然而，放到VOSviewer里报错了：</p><p><img src="https://pic.imgdb.cn/item/6121197e4907e2d39c59a998.png" alt="image-20210821200028383" loading="lazy"></p><p>暂时没有搞清楚为什么，所以尝试另辟蹊径。除了JSON文件，VOSviewer也可以读取DOI，因此稍稍处理以下我们下载下来的JSON文件，提取出里面的DOI并导入：</p><p><img src="https://pic.imgdb.cn/item/6121197e4907e2d39c59a991.png" alt="image-20210821212027644" loading="lazy"></p><p>华丽地再一次报错了。</p><p>博主桃感觉自己找不出什么原因，网上也没有什么相关信息，想要解决大概得给开发者写邮件问问了。</p><h3 id="换Crossref"><a href="#换Crossref" class="headerlink" title="换Crossref"></a>换Crossref</h3><p>大同小异，需要用API，而且每次能够导出的条数是有限制的，不过，随便写个循环就可以解决了。</p><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen<span class="token punctuation">,</span>Request<span class="token keyword">import</span> json<span class="token comment">#从url获得json文件</span><span class="token keyword">def</span> <span class="token function">getAndSaveJSON</span><span class="token punctuation">(</span>offset<span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment">#</span>    fullurl <span class="token operator">=</span> <span class="token string">"https://api.crossref.org/works?query=near+space+hypersonic+cruise+vehicles&amp;sort=relevance&amp;filter=from-pub-date:2012-01-01,type:journal-article&amp;rows=1000&amp;offset="</span><span class="token operator">+</span>offset    <span class="token comment">#</span>    header <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span><span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'</span><span class="token punctuation">}</span>    req<span class="token operator">=</span>Request<span class="token punctuation">(</span>fullurl<span class="token punctuation">,</span>headers<span class="token operator">=</span>header<span class="token punctuation">)</span>    rawtext<span class="token operator">=</span>urlopen<span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>    jsonStr <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>rawtext<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    json<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>jsonStr<span class="token punctuation">,</span> <span class="token builtin">open</span><span class="token punctuation">(</span>offset<span class="token operator">+</span><span class="token string">'.json'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token keyword">return</span> offset<span class="token operator">+</span><span class="token string">'.json'</span><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">10000</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment">#每次获取的信息条数有限，因此写个循环</span>    getAndSaveJSON<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre><p>以下是在Crossref网站搜索near space hypersonic cruise vehicles得到的期刊名分布：</p><iframe allowfullscreen="true" src="https://app.vosviewer.com/?json=https://github.com/peachrl/peachrl.github.io/tree/master/data/near_space_source.json&amp;simple_ui=true" width="100%" height="75%" style="border: 1px solid #ddd; max-width: 1200px; min-height: 500px"> </iframe><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上Web of Science和Semantic Scholar只是两个例子，基于什么网站什么数据库其实不重要，只要能够得到VOSviewer可读的文件格式，都可以导入进行分析，比如Mendeley之类的文献管理系统，都可以导出RIS格式。</p><p>ʅ（´◔౪◔）ʃ <strong>重点是，你从图中得到了什么呢？</strong></p></div>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;success&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;VOSviewer is a software tool for constructing and visualizing bibliometric networks.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一篇文主要聊VOSviewer的安装与使用。当然，VOSviewer并不是唯一可以实现文本的聚类分析与可视化以梳理文献的软件，还有比如Histcite、CiteSpace等也可以，这就不在本文要讲的范围内了。&lt;/p&gt;
+&lt;p&gt;&amp;lt;\div&amp;gt;&lt;/p&gt;&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="VOSviewer" scheme="https://peachrl.github.io/tags/VOSviewer/"/>
     
   </entry>
   
@@ -482,30 +509,6 @@
     
     
     <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LAMMPS中ReaxFF势有关的安装和运行</title>
-    <link href="https://peachrl.github.io/2020/04/20/LAMMPS%E4%B8%ADReaxFF%E5%8A%BF%E6%9C%89%E5%85%B3%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%BF%90%E8%A1%8C/"/>
-    <id>https://peachrl.github.io/2020/04/20/LAMMPS%E4%B8%ADReaxFF%E5%8A%BF%E6%9C%89%E5%85%B3%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%BF%90%E8%A1%8C/</id>
-    <published>2020-04-20T14:42:51.000Z</published>
-    <updated>2020-04-20T14:42:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>进入/src，安装package：</li></ul><pre class="language-shell" data-language="shell"><code class="language-shell">make yes-USER-REAXC</code></pre><a id="more"></a><p>可以make package-status命令查看安装情况：</p><pre class="language-shell" data-language="shell"><code class="language-shell">peachrl@peachrl-PC:~/LAMMPS/lammps-3Mar20/src$ make package-status...Installed YES: package USER-REAXC...</code></pre><p>看到YES说明安装成功。</p><p><code>注意：我在网上查找教程的时候很多都是说要先make lib-reax之类的，但是在lammps官网上显示USER-REAXC不需要lib：</code></p><p><img src="https://pic.downk.cc/item/5e9dc42fc2a9a83be5d4eb36.png" alt="lib-no！" loading="lazy"></p><p><code>大概是lammps改版了？总之我的lammps是“3Mar20”版本的。</code></p><ul><li><p>之后，还是在/src目录，重新make ubuntu（</p><p><a href="https://peachrl.github.io/2020/04/06/zai-deepin-xi-tong-an-zhuang-lammps-de-makefile.ubuntu/">之前make过的</a>）：</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo make ubuntu -j4</code></pre></li><li><p>移动和改个名：</p><pre class="language-shell" data-language="shell"><code class="language-shell">mv lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4.reaxc</code></pre></li><li><p>尝试运行一下example里reax文件里FeOH3那个例子：</p><pre class="language-shell" data-language="shell"><code class="language-shell">peachrl@peachrl-PC:~/LAMMPS/bin/reax/FeOH3$ mpirun -np 2 lmp4.reaxc &lt; in.FeOH3LAMMPS (3 Mar 2020)Reading data file ...  orthogonal box = (0 0 0) to (25 25 25)  1 by 1 by 2 MPI processor grid  reading atoms ...  105 atoms  read_data CPU = 0.0673389 secsReading potential file ffield.reax.Fe_O_C_H with DATE: 2011-02-18Neighbor list info ...  update every 10 steps, delay 0 steps, check no  max neighbors/atom: 2000, page size: 100000  master list distance cutoff = 12  ghost atom cutoff = 12  binsize = 6, bins = 5 5 5  2 neighbor lists, perpetual/occasional/extra = 2 0 0  (1) pair reax/c, perpetual      attributes: half, newton off, ghost      pair build: half/bin/newtoff/ghost      stencil: half/ghost/bin/3d/newtoff      bin: standard  (2) fix qeq/reax, perpetual, copy from (1)      attributes: half, newton off, ghost      pair build: copy      stencil: none      bin: noneSetting up Verlet run ...  Unit style    : real  Current step  : 0  Time step     : 0.25Per MPI rank memory allocation (min/avg/max) = 14.98 | 15.48 | 15.98 MbytesStep Temp E_pair E_mol TotEng Press        0            0   -9715.3326            0   -9715.3326   -139.61126     3000    533.69756   -9637.8194            0   -9472.3709    146.07633 Loop time of 10.2791 on 2 procs for 3000 steps with 105 atomsPerformance: 6.304 ns/day, 3.807 hours/ns, 291.855 timesteps/s92.8% CPU use with 2 MPI tasks x no OpenMP threadsMPI task timing breakdown:Section |  min time  |  avg time  |  max time  |%varavg| %total---------------------------------------------------------------Pair    | 8.8067     | 8.8202     | 8.8337     |   0.5 | 85.81Neigh   | 0.22447    | 0.23657    | 0.24867    |   2.5 |  2.30Comm    | 0.16772    | 0.18188    | 0.19605    |   3.3 |  1.77Output  | 3.4258e-05 | 4.9204e-05 | 6.4151e-05 |   0.0 |  0.00Modify  | 1.0178     | 1.0302     | 1.0426     |   1.2 | 10.02Other   |            | 0.01022    |            |       |  0.10Nlocal:    52.5 ave 64 max 41 minHistogram: 1 0 0 0 0 0 0 0 0 1Nghost:    511.5 ave 559 max 464 minHistogram: 1 0 0 0 0 0 0 0 0 1Neighs:    1976.5 ave 2428 max 1525 minHistogram: 1 0 0 0 0 0 0 0 0 1Total # of neighbors = 3953Ave neighs/atom = 37.6476Neighbor list builds = 300Dangerous builds not checkedPlease see the log.cite file for references relevant to this simulationTotal wall time: 0:00:10</code></pre></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;进入/src，安装package：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;make yes-USER-REAXC&lt;/code&gt;&lt;/pre&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
     
   </entry>
   

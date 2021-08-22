@@ -32,7 +32,7 @@ dump                    data allinAtom custom 10 Ar.${loop}.txt mol type x y z v
 
 从LAMMPS中输出了如下图所示的一系列txt文件，如何提取其中的数据并绘制成图像呢？
 
-![image-20210806000550332](https://pic.imgdb.cn/item/610c206d5132923bf8e315d8.png)
+![image-20210806000550332](https://s3.jpg.cm/2021/08/22/IboxPt.png)
 
 以下很多内容也是在网上百度学来，已经不清楚出处了。
 

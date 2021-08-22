@@ -63,7 +63,7 @@ export LAMMPS_PYTHON_TOOLS="/home/peachrl/lammps/tools/python/pizza"
 
 将需要处理的log文件（比如下图的log.lammps）和log2txt.py放在同一文件夹（当然也可以不放同一文件夹，写清楚路径也行）：
 
-![image-20210813181306806](https://pic.imgdb.cn/item/611660785132923bf86da656.png)
+![image-20210813181306806](https://s3.jpg.cm/2021/08/22/IboOMu.png)
 
 在终端运行：
 

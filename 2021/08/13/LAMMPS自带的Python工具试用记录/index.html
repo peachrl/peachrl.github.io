@@ -36,7 +36,7 @@
 <meta property="og:description" content="运行环境：deepin 20.2.2；python 3.7；lammps 30Jul2021    lammps安装包自带的python工具也在&#x2F;home&#x2F;peachrl&#x2F;lammps&#x2F;tools&#x2F;python目录内，有：  log2txt.py    convert thermo info in a LAMMPS log file to columns of numbers logplot">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pic.imgdb.cn/item/611660785132923bf86da638.png">
-<meta property="og:image" content="https://pic.imgdb.cn/item/611660785132923bf86da656.png">
+<meta property="og:image" content="https://s3.jpg.cm/2021/08/22/IboOMu.png">
 <meta property="og:image" content="https://pic.imgdb.cn/item/611660785132923bf86da662.png">
 <meta property="og:image" content="https://pic.imgdb.cn/item/611660785132923bf86da673.png">
 <meta property="og:image" content="https://pic.imgdb.cn/item/611660785132923bf86da68c.png">
@@ -79,7 +79,7 @@
 <h4 id="方式二：lammps安装包内的pizza文件夹"><a href="#方式二：lammps安装包内的pizza文件夹" class="headerlink" title="方式二：lammps安装包内的pizza文件夹"></a>方式二：lammps安装包内的pizza文件夹</h4><p>lammps安装包/home/peachrl/lammps/tools/python目录内有个pizza文件夹，包含lammps后处理所需的文件，直接在/home/peachrl/.bashrc中设置环境变量：</p>
 <pre class="language-shell" data-language="shell"><code class="language-shell">export LAMMPS_PYTHON_TOOLS="/home/peachrl/lammps/tools/python/pizza"</code></pre>
 <h3 id="log2txt-py"><a href="#log2txt-py" class="headerlink" title="log2txt.py"></a>log2txt.py</h3><p>将需要处理的log文件（比如下图的log.lammps）和log2txt.py放在同一文件夹（当然也可以不放同一文件夹，写清楚路径也行）：</p>
-<p><img src="https://pic.imgdb.cn/item/611660785132923bf86da656.png" alt="image-20210813181306806" loading="lazy"></p>
+<p><img src="https://s3.jpg.cm/2021/08/22/IboOMu.png" alt="image-20210813181306806" loading="lazy"></p>
 <p>在终端运行：</p>
 <pre class="language-shell" data-language="shell"><code class="language-shell">python log2txt.py log.lammps txt.lammps</code></pre>
 <p>即可得到全部数据的提取：</p>

@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://peachrl.github.io/
+url: https://wanyijizi.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -127,7 +127,7 @@ aplayer:
 backup:
   type: git
   theme: yun
-  message: change theme to yun, Back up my https://peachrl.github.io/ blog
+  message: 
   repository:
     origin: git@github.com:peachrl/peachrl.github.io.git,backup
     gitee: git@gitee.com:peachrl/peachrl.git,backup

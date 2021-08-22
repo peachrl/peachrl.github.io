@@ -3,11 +3,11 @@
   <title>万亿及秭</title>
   
   
-  <link href="https://peachrl.github.io/atom.xml" rel="self"/>
+  <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
-  <link href="https://peachrl.github.io/"/>
+  <link href="https://wanyijizi.com/"/>
   <updated>2021-08-21T15:08:30.000Z</updated>
-  <id>https://peachrl.github.io/</id>
+  <id>https://wanyijizi.com/</id>
   
   <author>
     <name>peachRL</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>VOSviewer的安装与使用——文本聚类分析与可视化</title>
-    <link href="https://peachrl.github.io/2021/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>https://peachrl.github.io/2021/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <link href="https://wanyijizi.com/2021/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://wanyijizi.com/2021/08/21/VOSviewer%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2021-08-21T15:08:30.000Z</published>
     <updated>2021-08-21T15:08:30.000Z</updated>
     
@@ -37,17 +37,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="VOSviewer" scheme="https://peachrl.github.io/tags/VOSviewer/"/>
+    <category term="VOSviewer" scheme="https://wanyijizi.com/tags/VOSviewer/"/>
     
   </entry>
   
   <entry>
     <title>用Atomsk给lammps建立data文件</title>
-    <link href="https://peachrl.github.io/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
-    <id>https://peachrl.github.io/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
+    <link href="https://wanyijizi.com/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
+    <id>https://wanyijizi.com/2021/08/18/%E7%94%A8Atomsk%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
     <published>2021-08-18T02:28:19.000Z</published>
     <updated>2021-08-18T02:28:19.000Z</updated>
     
@@ -58,19 +58,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
-    <category term="Atomsk" scheme="https://peachrl.github.io/tags/Atomsk/"/>
+    <category term="Atomsk" scheme="https://wanyijizi.com/tags/Atomsk/"/>
     
   </entry>
   
   <entry>
     <title>LAMMPS自带的Python工具试用记录</title>
-    <link href="https://peachrl.github.io/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>https://peachrl.github.io/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
+    <link href="https://wanyijizi.com/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://wanyijizi.com/2021/08/13/LAMMPS%E8%87%AA%E5%B8%A6%E7%9A%84Python%E5%B7%A5%E5%85%B7%E8%AF%95%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
     <published>2021-08-13T12:02:01.000Z</published>
     <updated>2021-08-13T12:02:01.000Z</updated>
     
@@ -99,19 +99,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Python" scheme="https://peachrl.github.io/tags/Python/"/>
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>Android手机向Deepin系统投屏</title>
-    <link href="https://peachrl.github.io/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/"/>
-    <id>https://peachrl.github.io/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/</id>
+    <link href="https://wanyijizi.com/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/"/>
+    <id>https://wanyijizi.com/2021/08/10/Android%E6%89%8B%E6%9C%BA%E5%90%91Deepin%E7%B3%BB%E7%BB%9F%E6%8A%95%E5%B1%8F/</id>
     <published>2021-08-10T05:39:57.000Z</published>
     <updated>2021-08-10T05:39:57.000Z</updated>
     
@@ -130,19 +130,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
-    <category term="Android" scheme="https://peachrl.github.io/tags/Android/"/>
+    <category term="Android" scheme="https://wanyijizi.com/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>LAMMPS最新版（30 Jul 2021）安装要点</title>
-    <link href="https://peachrl.github.io/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/"/>
-    <id>https://peachrl.github.io/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</id>
+    <link href="https://wanyijizi.com/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/"/>
+    <id>https://wanyijizi.com/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</id>
     <published>2021-08-05T13:47:13.000Z</published>
     <updated>2021-08-05T13:47:13.000Z</updated>
     
@@ -154,19 +154,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>python处理文本文件常用技巧</title>
-    <link href="https://peachrl.github.io/2021/08/01/python%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    <id>https://peachrl.github.io/2021/08/01/python%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
+    <link href="https://wanyijizi.com/2021/08/01/python%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://wanyijizi.com/2021/08/01/python%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
     <published>2021-08-01T00:57:22.000Z</published>
     <updated>2021-08-01T00:57:22.000Z</updated>
     
@@ -182,17 +182,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Python" scheme="https://peachrl.github.io/tags/Python/"/>
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>用MaterialStudio和Ovito给lammps建立data文件</title>
-    <link href="https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
-    <id>https://peachrl.github.io/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
+    <link href="https://wanyijizi.com/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/"/>
+    <id>https://wanyijizi.com/2021/06/18/%E7%94%A8MaterialStudio%E5%92%8COvito%E7%BB%99lammps%E5%BB%BA%E7%AB%8Bdata%E6%96%87%E4%BB%B6/</id>
     <published>2021-06-18T05:23:54.000Z</published>
     <updated>2021-06-18T05:23:54.000Z</updated>
     
@@ -209,21 +209,21 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
-    <category term="Material Studio" scheme="https://peachrl.github.io/tags/Material-Studio/"/>
+    <category term="Material Studio" scheme="https://wanyijizi.com/tags/Material-Studio/"/>
     
-    <category term="Ovito" scheme="https://peachrl.github.io/tags/Ovito/"/>
+    <category term="Ovito" scheme="https://wanyijizi.com/tags/Ovito/"/>
     
   </entry>
   
   <entry>
     <title>在lammps中计算压强</title>
-    <link href="https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/"/>
-    <id>https://peachrl.github.io/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/</id>
+    <link href="https://wanyijizi.com/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/"/>
+    <id>https://wanyijizi.com/2021/04/08/%E5%9C%A8lammps%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%8E%8B%E5%BC%BA/</id>
     <published>2021-04-08T15:31:01.000Z</published>
     <updated>2021-04-08T15:31:01.000Z</updated>
     
@@ -234,19 +234,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>LAMMPS中的条件与循环</title>
-    <link href="https://peachrl.github.io/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/"/>
-    <id>https://peachrl.github.io/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/</id>
+    <link href="https://wanyijizi.com/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/"/>
+    <id>https://wanyijizi.com/2021/03/13/LAMMPS%E4%B8%AD%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF/</id>
     <published>2021-03-13T05:06:45.000Z</published>
     <updated>2021-03-13T05:06:45.000Z</updated>
     
@@ -257,17 +257,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>Linux的ipv6地址没有中括号！</title>
-    <link href="https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
-    <id>https://peachrl.github.io/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</id>
+    <link href="https://wanyijizi.com/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/"/>
+    <id>https://wanyijizi.com/2021/03/11/Linux%E7%9A%84ipv6%E5%9C%B0%E5%9D%80%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%8B%AC%E5%8F%B7%EF%BC%81/</id>
     <published>2021-03-11T11:35:20.000Z</published>
     <updated>2021-03-11T11:35:20.000Z</updated>
     
@@ -278,17 +278,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>ABLabWordCloud文字云小程序第1版使用说明</title>
-    <link href="https://peachrl.github.io/2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
-    <id>https://peachrl.github.io/2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
+    <link href="https://wanyijizi.com/2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+    <id>https://wanyijizi.com/2021/01/20/ABLabWordCloud%E6%96%87%E5%AD%97%E4%BA%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC1%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
     <published>2021-01-20T11:37:18.000Z</published>
     <updated>2021-01-20T11:37:18.000Z</updated>
     
@@ -299,19 +299,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Python" scheme="https://peachrl.github.io/tags/Python/"/>
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
-    <category term="GUI" scheme="https://peachrl.github.io/tags/GUI/"/>
+    <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
     
   </entry>
   
   <entry>
     <title>ABLabPickME抽奖小程序第0版使用说明</title>
-    <link href="https://peachrl.github.io/2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
-    <id>https://peachrl.github.io/2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
+    <link href="https://wanyijizi.com/2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+    <id>https://wanyijizi.com/2021/01/16/ABLabPickME%E6%8A%BD%E5%A5%96%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%AC0%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
     <published>2021-01-15T16:02:57.000Z</published>
     <updated>2021-01-15T16:02:57.000Z</updated>
     
@@ -322,19 +322,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Python" scheme="https://peachrl.github.io/tags/Python/"/>
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
-    <category term="GUI" scheme="https://peachrl.github.io/tags/GUI/"/>
+    <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
     
   </entry>
   
   <entry>
     <title>用shell脚本做计算</title>
-    <link href="https://peachrl.github.io/2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/"/>
-    <id>https://peachrl.github.io/2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/</id>
+    <link href="https://wanyijizi.com/2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/"/>
+    <id>https://wanyijizi.com/2020/10/10/%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%81%9A%E8%AE%A1%E7%AE%97/</id>
     <published>2020-10-10T02:27:12.000Z</published>
     <updated>2020-10-10T02:27:12.000Z</updated>
     
@@ -345,17 +345,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Julia在win10环境的安装和解微分方程的例子</title>
-    <link href="https://peachrl.github.io/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/"/>
-    <id>https://peachrl.github.io/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/</id>
+    <link href="https://wanyijizi.com/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/"/>
+    <id>https://wanyijizi.com/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/</id>
     <published>2020-07-21T12:28:10.000Z</published>
     <updated>2020-07-21T12:28:10.000Z</updated>
     
@@ -372,17 +372,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Julia" scheme="https://peachrl.github.io/tags/Julia/"/>
+    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
     
   </entry>
   
   <entry>
     <title>LAMMPS中安装和使用KIM（Knowledgebase of Interatomic Models）</title>
-    <link href="https://peachrl.github.io/2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/"/>
-    <id>https://peachrl.github.io/2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/</id>
+    <link href="https://wanyijizi.com/2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/"/>
+    <id>https://wanyijizi.com/2020/06/28/LAMMPS%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8KIM%EF%BC%88Knowledgebase%20of%20Interatomic%20Models%EF%BC%89/</id>
     <published>2020-06-28T07:29:19.000Z</published>
     <updated>2020-06-28T07:29:19.000Z</updated>
     
@@ -399,17 +399,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>晶体表示方法</title>
-    <link href="https://peachrl.github.io/2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/"/>
-    <id>https://peachrl.github.io/2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</id>
+    <link href="https://wanyijizi.com/2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/"/>
+    <id>https://wanyijizi.com/2020/06/18/%E6%99%B6%E4%BD%93%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</id>
     <published>2020-06-18T08:22:53.000Z</published>
     <updated>2020-06-18T08:22:53.000Z</updated>
     
@@ -420,17 +420,17 @@
     
     
     
-    <category term="理论" scheme="https://peachrl.github.io/categories/%E7%90%86%E8%AE%BA/"/>
+    <category term="理论" scheme="https://wanyijizi.com/categories/%E7%90%86%E8%AE%BA/"/>
     
     
-    <category term="Materials" scheme="https://peachrl.github.io/tags/Materials/"/>
+    <category term="Materials" scheme="https://wanyijizi.com/tags/Materials/"/>
     
   </entry>
   
   <entry>
     <title>Win10系统中在vscode配置mpi开发环境</title>
-    <link href="https://peachrl.github.io/2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    <id>https://peachrl.github.io/2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
+    <link href="https://wanyijizi.com/2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>https://wanyijizi.com/2020/06/03/Win10%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%9C%A8vscode%E9%85%8D%E7%BD%AEmpi%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
     <published>2020-06-03T07:40:45.000Z</published>
     <updated>2020-06-03T07:40:45.000Z</updated>
     
@@ -441,19 +441,19 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="VSCode" scheme="https://peachrl.github.io/tags/VSCode/"/>
+    <category term="VSCode" scheme="https://wanyijizi.com/tags/VSCode/"/>
     
-    <category term="Windows" scheme="https://peachrl.github.io/tags/Windows/"/>
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>用reaxff势给石墨建模</title>
-    <link href="https://peachrl.github.io/2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/"/>
-    <id>https://peachrl.github.io/2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/</id>
+    <link href="https://wanyijizi.com/2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/"/>
+    <id>https://wanyijizi.com/2020/05/01/%E7%94%A8reaxff%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E5%BB%BA%E6%A8%A1/</id>
     <published>2020-05-01T10:53:19.000Z</published>
     <updated>2020-05-01T10:53:19.000Z</updated>
     
@@ -464,17 +464,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>用airebo/morse势给石墨烯建模</title>
-    <link href="https://peachrl.github.io/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/"/>
-    <id>https://peachrl.github.io/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/</id>
+    <link href="https://wanyijizi.com/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/"/>
+    <id>https://wanyijizi.com/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/</id>
     <published>2020-04-29T11:37:51.000Z</published>
     <updated>2020-04-29T11:37:51.000Z</updated>
     
@@ -485,17 +485,17 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://peachrl.github.io/tags/LAMMPS/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
   <entry>
     <title>虚拟机中设置共享文件夹</title>
-    <link href="https://peachrl.github.io/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
-    <id>https://peachrl.github.io/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
+    <link href="https://wanyijizi.com/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    <id>https://wanyijizi.com/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
     <published>2020-04-28T10:12:23.000Z</published>
     <updated>2020-04-28T10:12:23.000Z</updated>
     
@@ -506,10 +506,10 @@
     
     
     
-    <category term="软件" scheme="https://peachrl.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://peachrl.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   

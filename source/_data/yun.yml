@@ -176,7 +176,246 @@ comment:
   candidates:
     - valine
     #- minivaline
-    
+
+# enableQQ: false
+  requiredFields:
+    - nick
+   # - mail
+
+# minivaline:
+#   enable: true
+#   mversion: latest
+#   appId: 5Hnzahxh49Ww4Ycj8OH9ycWp-MdYXbMMI # 你的 leancloud application appid
+#   appKey: HjqrcbLC5SxvuTztFYyKNwn3 # 你的 leancloud application appkey
+#   mode: DesertsP # DesertsP 或 xCss 演示 -> https://minivaline.js.org/demo.html
+#   # 注意数组在这里面是yaml格式不是json格式，底下是表情数组的例子
+#   emoticonUrl:
+#     - https://cdn.jsdelivr.net/npm/alus@latest
+#     - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+#     - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+#     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+#     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+#     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+#   # 更多表情配置细节->https://minivaline.js.org/docs/en/#/Options?id=emoticonurl-string-array
+#   cdn: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
+
+#公告
+notice:
+  enable: true
+  content: 欢迎光临桃子的露天仓库！近期本博客有部分图片链接失效，正在排查中……30天内所有图片会转移至由又拍云提供的云储存服务，若在此期间对部分失效内容有紧急需求可以点击左侧边栏的邮件联系博主桃~ｍ(o・ω・o)ｍ
+
+#标签和目录的颜色
+tags:
+  VSCode: "#007bff"
+  Julia: "#8bc200"
+  Windows: "#ff54aa"
+  Python: "#de66ff"
+  Materials: "#545454"
+  LAMMPS: "#00bfc2"
+  GUI: "#bd0202"
+  Linux: "#2577b1"
+  Material Studio: "#009dff"
+  Ovito: "#faab00"
+  Android: "#006400"
+  Atomsk: "#FF6666"
+  VOSviewer: "#333399"
+
+categories:
+  软件: "#669933"
+  其他: "#CC9900"
+  理论: "#336666"
+
+#页面链接
+pages:
+
+#文章内容卡片
+# ---
+# title: xxx
+# type: bilibili
+# url: https://www.bilibili.com/video/av8153395/
+# hide: true
+# # hide: index
+# sitemap: false
+# indexing: false
+# ---
+    # hide:
+    # index: 设置为 index 时，将只在首页隐藏，归档中仍然展示。（譬如放一些没有必要放在首页的笔记，并在归档中方便自己查看。）
+    # true: 当设置为 true 时，该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片与归档中。
+post_card:
+  opacity: 0.8
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+
+#文章信息展示
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+  
+#文章目录深度
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 目录为空
+  collapse: false
+
+#预加载
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/utils.js
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  script:
+    - /js/sidebar.js
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+
+#打赏
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 求各位看官有钱的捧个钱场(>▽<)
+  methods:
+    - name: 支付宝
+      path: /images/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: /images/qqpay-qrcode.jpg
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: /images/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+
+#随机展示一句话
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: false
+
+#卡片与图片滚动浮现效果
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
+
+#侧边栏背景
+sidebar:
+  bg_image: /images/blurlight.jpg
+  dark_bg_image: /images/blurdark.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: true
+    amount: 20
+
+#社交
+social:
+  - name: GitHub
+    link: https://github.com/peachrl
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:peachrl@aliyun.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+#   - name: 微博
+#     link: https://weibo.com/2786787623/profile?rightmod=1&wvr=6&mod=personinfo
+#     icon: icon-weibo-line
+#     color: "#E6162D"
+#   - name: 豆瓣
+#     link: https://www.douban.com/people/232900436/
+#     icon: icon-douban-line
+#     color: "#007722"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/32878755/dynamic
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+
+#词语计数
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+#标签云：使用彩色词云替代原生标签云
+wordcloud:
+  enable: false
+  height: 350
+
+github_issues:
+  enable: false
+
+github_discussions:
+  enable: false
+
+#关闭跳转搜索，开启本地搜索
+engine_search:
+  enable: false
+# search
+# https://github.com/wzpan/hexo-generator-search
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+albums:
+  enable: false
+
+cursor:
+  enable: true
+
+baidu_push: true
+
+
 valine:
   enable: true
   appId: 5Hnzahxh49Ww4Ycj8OH9ycWp-MdYXbMMI # your leancloud application appid
@@ -845,241 +1084,3 @@ valine:
     Heybox94: Heybox/expression_heziji_7.png
     Heybox95: Heybox/expression_heziji_8.png
     Heybox96: Heybox/expression_heziji_9.png  
-
-# enableQQ: false
-  requiredFields:
-    - nick
-   # - mail
-
-# minivaline:
-#   enable: true
-#   mversion: latest
-#   appId: 5Hnzahxh49Ww4Ycj8OH9ycWp-MdYXbMMI # 你的 leancloud application appid
-#   appKey: HjqrcbLC5SxvuTztFYyKNwn3 # 你的 leancloud application appkey
-#   mode: DesertsP # DesertsP 或 xCss 演示 -> https://minivaline.js.org/demo.html
-#   # 注意数组在这里面是yaml格式不是json格式，底下是表情数组的例子
-#   emoticonUrl:
-#     - https://cdn.jsdelivr.net/npm/alus@latest
-#     - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
-#     - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-#     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
-#     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
-#     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
-#   # 更多表情配置细节->https://minivaline.js.org/docs/en/#/Options?id=emoticonurl-string-array
-#   cdn: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
-
-#公告
-notice:
-  enable: true
-  content: 欢迎光临桃子的露天仓库！
-
-#标签和目录的颜色
-tags:
-  VSCode: "#007bff"
-  Julia: "#8bc200"
-  Windows: "#ff54aa"
-  Python: "#de66ff"
-  Materials: "#545454"
-  LAMMPS: "#00bfc2"
-  GUI: "#bd0202"
-  Linux: "#2577b1"
-  Material Studio: "#009dff"
-  Ovito: "#faab00"
-  Android: "#006400"
-  Atomsk: "#FF6666"
-  VOSviewer: "#333399"
-
-categories:
-  软件: "#669933"
-  其他: "#CC9900"
-  理论: "#336666"
-
-#页面链接
-pages:
-
-#文章内容卡片
-# ---
-# title: xxx
-# type: bilibili
-# url: https://www.bilibili.com/video/av8153395/
-# hide: true
-# # hide: index
-# sitemap: false
-# indexing: false
-# ---
-    # hide:
-    # index: 设置为 index 时，将只在首页隐藏，归档中仍然展示。（譬如放一些没有必要放在首页的笔记，并在归档中方便自己查看。）
-    # true: 当设置为 true 时，该文章仍然会被渲染，你自己可以直接访问链接进行查看。但不会被显示在展示的文章卡片与归档中。
-post_card:
-  opacity: 0.8
-types:
-  link:
-    color: blue
-    icon: icon-external-link-line
-  bilibili:
-    color: "#FF8EB3"
-    icon: icon-bilibili-line
-  douban:
-    color: "#007722"
-    icon: icon-douban-line
-  github:
-    color: black
-    icon: icon-github-line
-  netease-cloud-music:
-    color: "#C10D0C"
-    icon: icon-netease-cloud-music-line
-  notion:
-    color: black
-    icon: icon-notion
-  twitter:
-    color: "#1da1f2"
-    icon: icon-twitter-line
-  wechat:
-    color: "#1AAD19"
-    icon: icon-wechat-2-line
-  weibo:
-    color: "#E6162D"
-    icon: icon-weibo-line
-  yuque:
-    color: "#25b864"
-    icon: icon-yuque
-  zhihu:
-    color: "#0084FF"
-    icon: icon-zhihu-line
-
-#文章信息展示
-post_meta:
-  item_text: false
-  created_at: true
-  updated_at: true
-  categories: true
-  tags: true
-  
-#文章目录深度
-toc:
-  list_number: true
-  max_depth: 6
-  min_depth: 1
-  placeholder: 目录为空
-  collapse: false
-
-#预加载
-preload:
-  style:
-    - /css/hexo-theme-yun.css
-  script:
-    - /js/utils.js
-    - /js/hexo-theme-yun.js
-
-prefetch:
-  script:
-    - /js/sidebar.js
-
-dns_prefetch:
-  - https://cos.yunyoujun.cn
-
-# do more(TCP handshake...) than dns-fetch
-preconnect:
-  - https://cdn.jsdelivr.net
-
-#打赏
-# If enable true, reward would be displayed in every posts and pages by default.
-# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
-reward:
-  enable: true
-  icon: icon-hand-coin-line
-  comment: 求各位看官有钱的捧个钱场(>▽<)
-  methods:
-    - name: 支付宝
-      path: /images/alipay-qrcode.jpg
-      color: "#00A3EE"
-      icon: icon-alipay-line
-    - name: QQ 支付
-      path: /images/qqpay-qrcode.jpg
-      color: "#12B7F5"
-      icon: icon-qq-line
-    - name: 微信支付
-      path: /images/wechatpay-qrcode.jpg
-      color: "#2DC100"
-      icon: icon-wechat-pay-line
-
-#随机展示一句话
-say:
-  enable: true
-  api: /data/sentences.json
-  src: /js/say.js
-  hitokoto:
-    enable: false
-
-#卡片与图片滚动浮现效果
-scrollreveal:
-  enable: true
-  targets:
-    - .post-card
-    - .post-content img
-
-#侧边栏背景
-sidebar:
-  bg_image: /images/blurlight.jpg
-  dark_bg_image: /images/blurdark.jpg
-  bg_position: bottom 3rem center
-  tagcloud:
-    enable: true
-    amount: 20
-
-#社交
-social:
-  - name: GitHub
-    link: https://github.com/peachrl
-    icon: icon-github-line
-    color: "#181717"
-  - name: E-Mail
-    link: mailto:peachrl@aliyun.com
-    icon: icon-mail-line
-    color: "#8E71C1"
-#   - name: 微博
-#     link: https://weibo.com/2786787623/profile?rightmod=1&wvr=6&mod=personinfo
-#     icon: icon-weibo-line
-#     color: "#E6162D"
-#   - name: 豆瓣
-#     link: https://www.douban.com/people/232900436/
-#     icon: icon-douban-line
-#     color: "#007722"
-  - name: 哔哩哔哩动画
-    link: https://space.bilibili.com/32878755/dynamic
-    icon: icon-bilibili-line
-    color: "#FF8EB3"
-
-#词语计数
-wordcount:
-  enable: true
-  count: true
-  time: true
-
-#标签云：使用彩色词云替代原生标签云
-wordcloud:
-  enable: false
-  height: 350
-
-github_issues:
-  enable: false
-
-github_discussions:
-  enable: false
-
-#关闭跳转搜索，开启本地搜索
-engine_search:
-  enable: false
-# search
-# https://github.com/wzpan/hexo-generator-search
-local_search:
-  enable: true
-  src: /js/search/local-search.js
-
-albums:
-  enable: false
-
-cursor:
-  enable: true
-
-baidu_push: true

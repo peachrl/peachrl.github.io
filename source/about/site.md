@@ -4,7 +4,7 @@ date: 2020-01-20 20:28:45
 updated: 2021-02-22 00:04:57
 type: "about"
 layout: "about"
-aplayer: false
+aplayer: true
 reward: false
 icon: icon-home-4-line
 ---
@@ -14,6 +14,8 @@ icon: icon-home-4-line
 >本站是peachRL的个人博客
 
 </div>
+
+{% meting "5407263313" "netease" "playlist" "theme:#99CC33" "mutex:true" "listmaxheight:340px" "preload:auto" %}
 
 ##  万亿及秭其名
 
@@ -27,6 +29,8 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 <details open>
 <summary>2021年</summary>
+
+&emsp;&emsp;**2021年8月25日**&emsp;本站在云服务器上部署完成。
 
 &emsp;&emsp;**2021年8月22日**&emsp;博主桃斥巨资在腾讯云买下二级域名wanyijizi.com一年，轻量应用服务器3年。
 

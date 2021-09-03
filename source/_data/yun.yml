@@ -88,8 +88,8 @@ fireworks:
 
 footer:
   beian:
-    enable: false
-    icp: 苏ICP备17038157号
+    enable: true
+    icp: 京ICP备2021027733号
   since: 2020
   icon:
     name: icon-open-arm-line

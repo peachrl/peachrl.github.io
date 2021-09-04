@@ -48,14 +48,15 @@ atomsk --create graphite 2.464 6.711 C -orthogonal-cell -duplicate 20 10 4 -cut 
 
 在终端中显示：
 
-![image-20210819104759688](https://pic.imgdb.cn/item/611dc9af4907e2d39cf256cd.png)
+![image-20210819104759688](https://image.wanyijizi.com/20210818/image-20210819104759688.png)
 
 查看生成的文件：
 
-![image-20210819110036133](https://pic.imgdb.cn/item/611dc9af4907e2d39cf256bd.png)
+![image-20210819110036133](https://image.wanyijizi.com/20210818/image-20210819110036133.png)
 
 在ovito中查看：
 
-![image-20210819104923195](https://pic.imgdb.cn/item/611dc9af4907e2d39cf256d5.png)
+![image-20210819104923195](https://image.wanyijizi.com/20210818/image-20210819104923195.png)
 
 非常容易。
+

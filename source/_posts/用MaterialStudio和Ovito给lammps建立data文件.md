@@ -37,19 +37,19 @@ lattice fcc 3.9242 &
 
 在 Material Studio 上建立Pt的(111)表面模型，首先去网上下一个Pt晶体的cif模型（比如下面这个从[网站](http://www.crystallography.net/cod/search.html)下载）：
 
-![image-20210806224807302](https://pic.imgdb.cn/item/610d51305132923bf8e2ae10.png)
+![image-20210806224807302](https://image.wanyijizi.com/20210618/image-20210806224807302.png)
 
 导入 Material Studio 中：
 
-![image-20210806225213902](https://pic.imgdb.cn/item/610d51305132923bf8e2ae15.png)
+![image-20210806225213902](https://image.wanyijizi.com/20210618/image-20210806225213902.png)
 
 切开(111)表面，并拓展和加真空层，得到超大晶胞：
 
-![image-20210806225438020](https://pic.imgdb.cn/item/610d51305132923bf8e2ae1b.png)
+![image-20210806225438020](https://image.wanyijizi.com/20210618/image-20210806225438020.png)
 
 导出成cif格式，再导入Ovito：
 
-![image-20210806230149609](https://pic.imgdb.cn/item/610d51305132923bf8e2ae09.png)
+![image-20210806230149609](https://image.wanyijizi.com/20210618/image-20210806230149609.png)
 
 File→Export File，可以直接导出lammps的data格式。
 

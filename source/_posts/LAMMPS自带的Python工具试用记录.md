@@ -43,7 +43,7 @@ lammps安装包自带的python工具也在/home/peachrl/lammps/tools/python目�
 
 #### 方式一：[下载Pizza.py的安装包](https://cs.sandia.gov/~sjplimp/download.html)
 
-![image-20210813170748222](https://pic.imgdb.cn/item/611660785132923bf86da638.png)
+![image-20210813170748222](https://image.wanyijizi.com/20210813/image-20210813170748222.png)
 
 解压并放到/home/peachrl/pizza目录下，其中的src文件夹在/home/peachrl/.bashrc中设置环境变量：
 
@@ -63,7 +63,7 @@ export LAMMPS_PYTHON_TOOLS="/home/peachrl/lammps/tools/python/pizza"
 
 将需要处理的log文件（比如下图的log.lammps）和log2txt.py放在同一文件夹（当然也可以不放同一文件夹，写清楚路径也行）：
 
-![image-20210813181306806](https://s3.jpg.cm/2021/08/22/IboOMu.png)
+![image-20210813181306806](https://image.wanyijizi.com/20210813/image-20210813181306806.png)
 
 在终端运行：
 
@@ -73,7 +73,7 @@ python log2txt.py log.lammps txt.lammps
 
 即可得到全部数据的提取：
 
-![image-20210813184856077](https://pic.imgdb.cn/item/611660785132923bf86da662.png)
+![image-20210813184856077](https://image.wanyijizi.com/20210813/image-20210813184856077.png)
 
 若在终端运行：
 
@@ -83,7 +83,7 @@ python log2txt.py log.lammps txt.lammps Press
 
 则提取的是Press这一列下所有数据：
 
-![image-20210813185132227](https://pic.imgdb.cn/item/611660785132923bf86da673.png)
+![image-20210813185132227](https://image.wanyijizi.com/20210813/image-20210813185132227.png)
 
 ### logplot.py
 
@@ -101,11 +101,11 @@ python -i logplot.py log.lammps Time Press
 
 得到以Time为X轴，Press为Y轴的图像：
 
-![image-20210813190815856](https://pic.imgdb.cn/item/611660785132923bf86da68c.png)
+![image-20210813190815856](https://image.wanyijizi.com/20210813/image-20210813190815856.png)
 
 此时终端会停留在python里：
 
-![image-20210813194317562](https://pic.imgdb.cn/item/6116607d5132923bf86db889.png)
+![image-20210813194317562](https://image.wanyijizi.com/20210813/image-20210813194317562.png)
 
 如果需要保存成png格式的图片，可以继续输入：
 
@@ -117,13 +117,13 @@ python -i logplot.py log.lammps Time Press
 
 文件夹里就会出现已保存的文件。
 
-![image-20210813194535719](https://pic.imgdb.cn/item/6116607d5132923bf86db8a0.png)
+![image-20210813194535719](https://image.wanyijizi.com/20210813/image-20210813194535719.png)
 
 ### dumpsort.py
 
 通过dump命令输出如下图所示的文件：
 
-![image-20210813195451445](https://pic.imgdb.cn/item/6116607d5132923bf86db8ac.png)
+![image-20210813195451445](https://image.wanyijizi.com/20210813/image-20210813195451445.png)
 
 与dumpsort.py放于同一文件夹内，在终端运行：
 
@@ -133,6 +133,6 @@ python dumpsort.py 265.txt 1 new265.txt
 
 得到：
 
-![image-20210813195708669](https://pic.imgdb.cn/item/6116607d5132923bf86db8ce.png)
+![image-20210813195708669](https://image.wanyijizi.com/20210813/image-20210813195708669.png)
 
 也就是按照命令中所输入的“1”（指`ITEM:ATOM`下面的第1列）进行从小到大排序。

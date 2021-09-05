@@ -29,7 +29,7 @@ aplayer: true
 
 https://www.microsoft.com/en-us/download/details.aspx?id=100593
 
-![image-20200603145823402.png](https://pic.downk.cc/item/5ed769f4c2a9a83be5630ec8.png)
+![image-20200603145823402.png](https://image.wanyijizi.com/20200603/image-20200603145823402.png)
 
 两种安装包二选一即可。
 
@@ -43,7 +43,7 @@ set MSMPI
 
 2. 显示如下图，则说明安装成功。后面所有相关目录均为安装后set MSMPI显示的相关目录，会根据安装时选择的文件夹而不同。
 
-![image-20200603150143671](https://pic.downk.cc/item/5ed769f4c2a9a83be5630ecb.png)
+![image-20200603150143671](https://image.wanyijizi.com/20200603/image-20200603150143671.png)
 
 ## 配置vscode
 
@@ -53,7 +53,7 @@ set MSMPI
 "D:/Microsoft SDKs/MPI/Include"
 ```
 
-![image-20200603150700159](https://pic.downk.cc/item/5ed769f4c2a9a83be5630ecd.png)
+![image-20200603150700159](https://image.wanyijizi.com/20200603/image-20200603150700159.png)
 
 ## 测试C++代码
 
@@ -84,7 +84,7 @@ int main(int argc,char* argv[])
 
 ### 在终端中编译运行，结果如下图：
 
-![image-20200603172554787](https://pic.downk.cc/item/5ed76ccac2a9a83be566863f.png)
+![image-20200603172554787](https://image.wanyijizi.com/20200603/image-20200603172554787.png)
 
 ## 附录
 
@@ -111,15 +111,15 @@ mpiexec -n 进程数 可执行文件文件名
 
 1. 打开扩展设置：
 
-![image-20200603151703517](https://pic.downk.cc/item/5ed769f4c2a9a83be5630ed2.png)
+![image-20200603151703517](https://image.wanyijizi.com/20200603/image-20200603151703517.png)
 
 2. 找到Executor Map，在settings.json中编辑：
 
-![image-20200603151828983](https://pic.downk.cc/item/5ed76a2ac2a9a83be56361ef.png)
+![image-20200603151828983](https://image.wanyijizi.com/20200603/image-20200603151828983.png)
 
 3. 在“code-runner.executorMap”中添加：
 
-![image-20200603151948873](https://pic.downk.cc/item/5ed76a2ac2a9a83be56361f1.png)
+![image-20200603151948873](https://image.wanyijizi.com/20200603/image-20200603151948873.png)
 
 ```json
 "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -fopenmp -l msmpi -L \"D:\\Microsoft SDKs\\MPI\\Lib\\x64\" -I \"D:\\Microsoft SDKs\\MPI\\Include\" && mpiexec -n 4 $fileNameWithoutExt",

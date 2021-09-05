@@ -39,7 +39,7 @@ Installed YES: package USER-REAXC
 
 `注意：我在网上查找教程的时候很多都是说要先make lib-reax之类的，但是在lammps官网上显示USER-REAXC不需要lib：`
 
-![lib-no！](https://pic.downk.cc/item/5e9dc42fc2a9a83be5d4eb36.png)
+![lib-no！](https://image.wanyijizi.com/20200420/1587392033417.png)
 
 `大概是lammps改版了？总之我的lammps是“3Mar20”版本的。`
 

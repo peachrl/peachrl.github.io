@@ -42,7 +42,7 @@ aplayer: true
 
 1. 在[CMake](https://cmake.org/download/)下载安装包。
 
-   ![1593324256673](https://pic.downk.cc/item/5ef847b714195aa594ba7425.png)
+   ![1593324256673](https://image.wanyijizi.com/20200628/1593324256673.png)
 
 2. 将安装包解压，进入cmake-3.18.0-rc2文件夹。
 
@@ -56,7 +56,7 @@ aplayer: true
 
 6. 查看安装情况```cmake --version```
 
-![image-20200628154236953](https://pic.downk.cc/item/5ef84a0814195aa594bb159c.png)
+![image-20200628154236953](https://image.wanyijizi.com/20200628/image-20200628154236953.png)
 
 ### 安装kim-api
 
@@ -100,7 +100,7 @@ $ mv lmp_ubuntu /home/peachrl/LAMMPS/bin/lmp4RMSPm.kim
 
 ```export PATH=/home/peachrl/LAMMPS/lammps-3Mar20/lib/kim/installed-kim-api-2.1.3/bin:$PATH```
 
-![1593327313369](https://pic.downk.cc/item/5ef847b714195aa594ba7427.png)
+![1593327313369](https://image.wanyijizi.com/20200628/1593327313369.png)
 
 ## 使用
 
@@ -115,7 +115,7 @@ $ source kim-api-activate
 $ kim-api-collections-management install user Sim_LAMMPS_ReaxFF_ChenowethVanDuinGoddard_2008_CHO__SM_584143153761_001
 ```
 
-![1593328174261](https://pic.downk.cc/item/5ef847b714195aa594ba7429.png)
+![1593328174261](https://image.wanyijizi.com/20200628/1593328174261.png)
 
 ### 改写in文件
 
@@ -141,8 +141,8 @@ timestep	0.25
 run		3000
 ```
 
-![1593328480356](https://pic.downk.cc/item/5ef847b714195aa594ba742c.png)
+![1593328480356](https://image.wanyijizi.com/20200628/1593328480356.png)
 
 ### 运行
 
-![1593328870265](https://pic.downk.cc/item/5ef847b714195aa594ba742e.png)
+![1593328870265](https://image.wanyijizi.com/20200628/1593328870265.png)

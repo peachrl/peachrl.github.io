@@ -25,7 +25,7 @@ dump ID group-ID style N file color diameter keyword value ...
 
 - ID：为这条dump指令起个名字
 - group-ID：哪几组粒子将被导出
-- style：image or movie
+- style：image or movie
 - N：每隔多少timesteps导出一张图
 - file：导出的文件名
 - color：由什么来区分粒子的颜色
@@ -36,9 +36,9 @@ dump ID group-ID style N file color diameter keyword value ...
     - type 4 = yellow
     - type 5 = aqua
     - type 6 = cyan
-    - 更多颜色就要由[dump_modify acolor](https://lammps.sandia.gov/doc/dump_modify.html) command来实现了
+    - 更多颜色就要由[dump_modify acolor](https://lammps.sandia.gov/doc/dump_modify.html) command来实现了
   - 再比如说vx：粒子在x方向的速度分量大小区间
-- diameter：由什么来区分粒子的大小，比如type。默认所有type的粒子直径1.0，更多设置由[dump_modify adiam](https://lammps.sandia.gov/doc/dump_modify.html) command来实现
+- diameter：由什么来区分粒子的大小，比如type。默认所有type的粒子直径1.0，更多设置由[dump_modify adiam](https://lammps.sandia.gov/doc/dump_modify.html) command来实现
 - keyword：其他设置，有atom、adiam、bond、line、tri、body、fix、size、view、center、up、zoom、persp、box、axes、subbox、shiny、ssao
 
 
@@ -71,8 +71,8 @@ dump_modify	3 pad 5
   
     
 
-<div align=center><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693dd.jpg" alt="image.00000" style="zoom:80%;" />
+<div align=center><img src="https://image.wanyijizi.com/20200407/image.00000.jpg" alt="image.00000" style="zoom:80%;" />
 
-<div align=center><img src="https://pic.downk.cc/item/5e9dc592c2a9a83be5d693e3.jpg" alt="image.10000" style="zoom:80%;" />
+<div align=center><img src="https://image.wanyijizi.com/20200407/image.10000.jpg" alt="image.10000" style="zoom:80%;" />
 <div align=center><iframe src="https://player.bilibili.com/player.html?aid=370317864&bvid=BV1XZ4y1x79o&cid=181211939&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe>
 

@@ -54,9 +54,9 @@ ABLabPickME使用自动储存，可用于每次抽取一人排除一人；使用
 
 界面由PySimpleGUI生成，ico为随手打的。
 
-<img src="https://img.imgdb.cn/item/6002e98b3ffa7d37b303e1e6.png" alt="界面" style="zoom:50%;" />
+<img src="https://image.wanyijizi.com/20210116/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210116211651.png" alt="界面" style="zoom:50%;" />
 
-<img src="https://img.imgdb.cn/item/6002e9bf3ffa7d37b303fafb.png" alt="ico" style="zoom:25%;" />
+<img src="https://image.wanyijizi.com/20210116/ablab.ico" alt="ico" style="zoom:25%;" />
 
 ## 维护者
 

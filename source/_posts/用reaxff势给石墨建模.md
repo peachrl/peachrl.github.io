@@ -25,7 +25,7 @@ aplayer: true
 
 ### 安装msi2lmp
 
-![1588299887184](https://pic.downk.cc/item/5eabf81ec2a9a83be565e510.png)
+![1588299887184](https://image.wanyijizi.com/20200501/1588299887184.png)
 
 安装完成在src出现msi2lmp.exe，用于将从Materials Studio等软件生成的模型中得到lammps需要的data文件。
 
@@ -33,13 +33,13 @@ aplayer: true
 
 ### 在Materials Studio中建模
 
-<img src="https://pic.downk.cc/item/5eabf81ec2a9a83be565e517.png" alt="1588300254517" style="zoom: 67%;" />
+<img src="https://image.wanyijizi.com/20200501/1588300254517.png" alt="1588300254517" style="zoom: 67%;" />
 
-<img src="https://pic.downk.cc/item/5eabf81ec2a9a83be565e519.png" alt="1588300275226" style="zoom:80%;" />
+<img src="https://image.wanyijizi.com/20200501/1588300275226.png" alt="1588300275226" style="zoom:80%;" />
 
 #### 在Modules→Forcite→Calculation中设置势函数：
 
-![1588300406711](https://pic.downk.cc/item/5eabf874c2a9a83be5663384.png)
+![1588300406711](https://image.wanyijizi.com/20200501/1588300406711.png)
 
 不需要Run，直接关闭窗口。
 
@@ -47,7 +47,7 @@ aplayer: true
 
 会生成car和mdf两个文件。
 
-![1588300531058](https://pic.downk.cc/item/5eabf874c2a9a83be5663388.png)
+![1588300531058](https://image.wanyijizi.com/20200501/1588300531058.png)
 
 ### 用msi2lmp转换：
 

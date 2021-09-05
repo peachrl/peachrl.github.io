@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.1"
+width="570"
+height="600">
+<defs>
+	<path id="cubefront" style="fill:none; stroke:#000; stroke-width:2px;"
+	d="M 100 10 v -100 l -100 -10 v 100 l 100 10 l 30 -30 v -100 l -100 -10 l -30 30 M 100 -90 l 30 -30" />
+	<path id="cubeback" style="fill:none; stroke:#888; stroke-width:2px;"
+	d="M 0 0 l 30 -30 v -100 M 30 -30 l 100 10" />
+</defs>
+<rect width="570" height="600" fill="#fff" />
+
+<use xlink:href="#cubeback" transform="translate(20 150)" />
+<path transform="translate(20 150)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 100 10 l 30 -30 l -100 -10 z" />
+<use xlink:href="#cubefront" transform="translate(20 150)" />
+
+<use xlink:href="#cubeback" transform="translate(220 150)" />
+<path transform="translate(220 150)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 100 10 v -100 l 30 -30 v 100 z" />
+<use xlink:href="#cubefront" transform="translate(220 150)" />
+
+<use xlink:href="#cubeback" transform="translate(420 150)" />
+<path transform="translate(420 150)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 30 -30 l 100 10 v -100 l -100 -10 z" />
+<use xlink:href="#cubefront" transform="translate(420 150)" />
+
+
+
+<use xlink:href="#cubeback" transform="translate(20 350)" />
+<path transform="translate(20 350)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 100 110 l 30 -30 l -100 -110 z" />
+<use xlink:href="#cubefront" transform="translate(20 350)" />
+
+<use xlink:href="#cubeback" transform="translate(220 350)" />
+<path transform="translate(220 350)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 30 -30 v -100 l 70 40 v 100 z" />
+<use xlink:href="#cubefront" transform="translate(220 350)" />
+
+<use xlink:href="#cubeback" transform="translate(420 350)" />
+<path transform="translate(420 350)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 100 10 l 30 70 l -100 -10 z" />
+<use xlink:href="#cubefront" transform="translate(420 350)" />
+
+
+
+<use xlink:href="#cubeback" transform="translate(20 550)" />
+<path transform="translate(20 550)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 100 110 l -70 -40 z M 30 -130 l 70 40 l 30 70 z" />
+<use xlink:href="#cubefront" transform="translate(20 550)" />
+
+<use xlink:href="#cubeback" transform="translate(220 550)" />
+<path transform="translate(220 550)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 0 l 30 -130 l 100 110 z" />
+<path transform="translate(220 550)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 100 110 l 30 -130 z" />
+<use xlink:href="#cubefront" transform="translate(220 550)" />
+
+<use xlink:href="#cubeback" transform="translate(420 550)" />
+<path transform="translate(420 550)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 -100 l 130 -20 l -100 90 z" />
+<path transform="translate(420 550)" style="fill:#777;fill-opacity:0.5;stroke:#000;stroke-width:1px;" d="M 0 0 l 100 -90 l 30 70 z" />
+<use xlink:href="#cubefront" transform="translate(420 550)" />
+
+<g id="texte" transform="translate(50 180)"
+ style="font-family:Sans; font-size:16px; font-weight:bold;">
+<text x="0" y="0" transform="rotate(5 0 0)">(001)</text>
+<text x="200" y="0" transform="rotate(5 200 0)">(100)</text>
+<text x="400" y="0" transform="rotate(5 400 0)">(010)</text>
+
+<text x="0" y="200" transform="rotate(5 0 200)">(101)</text>
+<text x="200" y="200" transform="rotate(5 200 200)">(110)</text>
+<text x="400" y="200" transform="rotate(5 400 200)">(011)</text>
+
+<text x="0" y="400" transform="rotate(5 0 400)">(111)</text>
+<text x="200" y="400" transform="rotate(5 200 400)">(111)<tspan dx="-1.7em" dy="-1.2em">_</tspan></text>
+<text x="400" y="400" transform="rotate(5 400 400)">(111)<tspan dx="-2.4em" dy="-1.2em">_</tspan></text>
+</g>
+</svg>

@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 界面由PySimpleGUI生成，没有ico。
 
-<img src="https://img.imgdb.cn/item/600e87503ffa7d37b3f79806.png" alt="界面" style="zoom:50%;" />
+<img src="https://image.wanyijizi.com/20210120/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210125165352.png" alt="界面" style="zoom:50%;" />
 
 ## 维护者
 

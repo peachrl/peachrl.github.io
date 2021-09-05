@@ -48,23 +48,23 @@ aplayer: true
 1. 安装了注册表才能安装General 注册表中记录的扩展包
 2. 打开julia.exe（或者在vscode中按F1,输入Julia: start REPL），按]，出现`(@v1.4) pkg>`
 3. 输入`registry add https://mirrors.bfsu.edu.cn/git/julia-general.git`（这是使用的BFSU北外镜像站安装，比从原始地址(Github)安装和更新要快一些）
-4. 安装完成![image-20200720235009760](https://pic.downk.cc/item/5f170a6714195aa594f1c043.png)
+4. 安装完成![image-20200720235009760](https://image.wanyijizi.com/20200721/image-20200720235009760.png)
 5. General 的更新会走对应的镜像，而其他数据的下载则通过官方服务器(Pkg server：https://pkg.julialang.org)
 
 ### 安装DifferentialEquations扩展包
 
 1. DifferentialEquations.jl是个解微分方程的扩展包：https://diffeq.sciml.ai/dev/
 2. 输入`add DifferentialEquations`
-3. 安装![image-20200721102807619](https://pic.downk.cc/item/5f170a6714195aa594f1c049.png)
-4. 安装完成![image-20200721102933940](https://pic.downk.cc/item/5f170a6714195aa594f1c04d.png)
+3. 安装![image-20200721102807619](https://image.wanyijizi.com/20200721/image-20200721102807619.png)
+4. 安装完成![image-20200721102933940](https://image.wanyijizi.com/20200721/image-20200721102933940.png)
 
 ### 安装DiffEqFlux扩展包
 
 1. DiffEqFlux.jl也是个解微分方程的扩展包：https://diffeqflux.sciml.ai/dev/
 2. 输入`add DuffEqFlux`
-3. 安装![image-20200720235749070](https://pic.downk.cc/item/5f170a6714195aa594f1c045.png)
+3. 安装![image-20200720235749070](https://image.wanyijizi.com/20200721/image-20200720235749070.png)
 4. 很长..很久之后…
-5. 安装完成![image-20200721100926196](https://pic.downk.cc/item/5f170a6714195aa594f1c047.png)
+5. 安装完成![image-20200721100926196](https://image.wanyijizi.com/20200721/image-20200721100926196.png)
 
 ### 其他
 
@@ -116,7 +116,7 @@ savefig("LV_ode.svg")
 
 可以在vscode或者cmd中输入`julia Lotka-Volterra`，或者在julia REPL中输入julia> `include("Lotka-Volterra.jl")`。
 
-![LV_ode](https://pics.images.ac.cn/image/5f170ff5072f6.html)
+![LV_ode](https://image.wanyijizi.com/20200721/LV_ode.svg)
 
 ### Julia解 Lorenz方程组
 
@@ -166,7 +166,7 @@ savefig("L2_ode.svg")
 
 
 
-![L2_ode](https://pic.downk.cc/item/5f170ed814195aa594f3304b.png)
+![L2_ode](https://image.wanyijizi.com/20200721/L2_ode.svg)
 
 ### Julia解二阶常微分方程
 
@@ -223,9 +223,9 @@ savefig("2nd-Order2.svg")
 [Done] exited with code=0 in 84.122 seconds
 ```
 
-![2nd-Order](https://pic.downk.cc/item/5f170ed814195aa594f3303c.png)
+![2nd-Order](https://image.wanyijizi.com/20200721/2nd-Order.svg)
 
-![2nd-Order2](https://pic.downk.cc/item/5f170ed814195aa594f3303f.png)
+![2nd-Order2](https://image.wanyijizi.com/20200721/2nd-Order2.svg)
 
 ### Julia解Hénon_Heiles方程组
 
@@ -280,7 +280,7 @@ savefig("HH_ode.svg")
 [Done] exited with code=0 in 68.487 seconds
 ```
 
-![HH_ode](https://pic.downk.cc/item/5f170ed814195aa594f33045.png)
+![HH_ode](https://image.wanyijizi.com/20200721/HH_ode.svg)
 
 以上例子出自：
 

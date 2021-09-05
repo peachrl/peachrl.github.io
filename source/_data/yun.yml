@@ -89,7 +89,7 @@ fireworks:
 footer:
   beian:
     enable: true
-    icp: 京ICP备2021027733号
+    icp: 京ICP备2021027733号-1
   since: 2020
   icon:
     name: icon-open-arm-line
@@ -102,7 +102,7 @@ footer:
   support:
     enable: true
     title: 又拍云
-    link: https://www.upyun.com
+    link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
     logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
     prefix: 本站由
     suffix: 提供CDN加速/云存储服务

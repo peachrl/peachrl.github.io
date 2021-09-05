@@ -105,7 +105,7 @@ footer:
     link: https://www.upyun.com
     logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
     prefix: 本站由
-    suffix: 提供云储存服务
+    suffix: 提供CDN加速/云存储服务
   live_time:
     enable: true
     prefix: 已运行

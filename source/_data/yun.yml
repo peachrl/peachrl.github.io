@@ -167,7 +167,7 @@ mourn:
 # tips: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
 # candidates: 候选评论系统，默认不启用。配置后可切换多个评论系统，默认第一位为默认显示的评论。（你须确保 candidates 中的评论对应 enable 已开启）
 comment:
-  enable: true
+  enable: false
   tips:
     - 可以使用Markdown写评论，可以输入数学公式。
     - 若您想及时得到博主的回复，可直接在左侧边栏点击邮箱进行联系。

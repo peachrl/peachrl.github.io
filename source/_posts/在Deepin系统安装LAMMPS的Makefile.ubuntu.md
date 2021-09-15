@@ -1,7 +1,7 @@
 ---
 title: 在Deepin系统安装LAMMPS的记录(Makefile.ubuntu)
 date: 2020-04-06 15:27:38
-updated: 2020-04-06 15:27:38
+updated: 2021-09-15 20:38:19
 author: peachRL
 email: 
 description: 
@@ -20,17 +20,24 @@ aplayer: true
 
 ## 安装之前
 
-<!-- more -->
-
 1. sudo apt-get install gcc
+
 2. sudo apt-get install g++
+
 3. sudo apt-get install gfortran
+
+   <!-- more -->
+
 4. 可能还有mpi-default-bin, mpi-default-dev,libfftw3-dev, libjpeg-dev and libpng12-dev这些，总之make的时候差什么补什么。具体可以参考/src/MAKE/MACHINES/Makefile.ubuntu里的注释：
+
 ```
 # you have to install the packages g++, mpi-default-bin, mpi-default-dev,
 # libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this
 ```
 
+**注1：**如果安装过程提示 fatal error: png.h: No such file or directory，则先`sudo apt-get install libpng-dev`
+
+**注2：**如果安装过程提示 makeinfo is missing on your system，可以先`sudo apt-get install texinfo`
 
 ## 准备安装包
 

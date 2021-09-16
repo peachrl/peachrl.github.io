@@ -131,3 +131,12 @@ backup:
   repository:
     origin: git@github.com:peachrl/peachrl.github.io.git,backup
     gitee: git@gitee.com:peachrl/peachrl.git,backup
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: false
+    hub:
+    content:
+    content_limit:
+    content_limit_delim: ' '

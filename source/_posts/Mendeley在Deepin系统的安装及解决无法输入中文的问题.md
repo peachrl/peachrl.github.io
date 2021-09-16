@@ -20,6 +20,12 @@ aplayer: true
 
 Mendeley在Linux系统无法输入中文注释的问题一直没有在官方的安装包中得到解决，但有网友提供的完美解决方法，在此记录。
 
+<div class="success">
+
+> 系统：Deepin 20.2.3
+
+</div>
+
 <!-- more -->
 
 ## Mendeley Desktop 安装

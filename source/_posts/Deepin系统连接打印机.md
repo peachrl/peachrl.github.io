@@ -1,5 +1,5 @@
 ---
-title: Android手机向Deepin系统投屏
+title: Deepin系统连接打印机
 date: 2021-09-15 23:10:35
 updated: 2021-09-15 23:10:35
 author: peachRL

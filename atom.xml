@@ -140,6 +140,27 @@
   </entry>
   
   <entry>
+    <title>Android手机向Deepin系统投屏</title>
+    <link href="https://wanyijizi.com/2021/08/10/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
+    <id>https://wanyijizi.com/2021/08/10/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/</id>
+    <published>2021-08-10T05:39:57.000Z</published>
+    <updated>2021-08-10T05:39:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LAMMPS最新版（30 Jul 2021）安装要点</title>
     <link href="https://wanyijizi.com/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/"/>
     <id>https://wanyijizi.com/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</id>
@@ -489,27 +510,6 @@
     
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>虚拟机中设置共享文件夹</title>
-    <link href="https://wanyijizi.com/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
-    <id>https://wanyijizi.com/2020/04/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
-    <published>2020-04-28T10:12:23.000Z</published>
-    <updated>2020-04-28T10:12:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>前提：在vmware中设置共享文件夹，会共享在 /mnt/hgfs里。本文针对找不到 /mnt/hgfs的情况。</strong></p><a id="more"></a><ul><li>物理机系统：win10</li><li>虚拟机系统：deepin 15</li><li>VMware：15，已安装VMware Tools</li></ul><h2 id="在vmware设置共享文件夹"><a href="#在vmware设置共享文件夹" class="headerlink" title="在vmware设置共享文件夹"></a>在vmware设置共享文件夹</h2><p><img src="https://image.wanyijizi.com/20200428/image-20200429172919311.png" alt="image-20200429172919311" loading="lazy"></p><h2 id="检查共享是否设置好"><a href="#检查共享是否设置好" class="headerlink" title="检查共享是否设置好"></a>检查共享是否设置好</h2><pre class="language-shell" data-language="shell"><code class="language-shell">sudo vmware-hgfsclient</code></pre><p><img src="https://image.wanyijizi.com/20200428/image-20200429174421649.png" alt="image-20200429174421649" loading="lazy"></p><p>能出现共享的文件夹名称说明之前都设置好了。</p><h2 id="安装一些必要的软件包"><a href="#安装一些必要的软件包" class="headerlink" title="安装一些必要的软件包"></a>安装一些必要的软件包</h2><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get install open-vm-tools</code></pre><p><img src="https://image.wanyijizi.com/20200428/image-20200429174722532.png" alt="image-20200429174722532" loading="lazy"></p><p>下面两个二选一，因为可能会遇到找不到软件包的情况。</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get install open-vm-dkmssudo apt-get install open-vm-tools-dkms</code></pre><p><img src="https://image.wanyijizi.com/20200428/image-20200429174912343.png" alt="image-20200429174912343" loading="lazy"></p><h2 id="设置挂载目录"><a href="#设置挂载目录" class="headerlink" title="设置挂载目录"></a>设置挂载目录</h2><p>可能有自动生成了可能没有，本文的前提是没有，于是设置一个。自动生成的叫/hgfs，换成别的名字也行</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo mkdir /mnt/hgfs</code></pre><p><img src="https://image.wanyijizi.com/20200428/image-20200429175436148.png" alt="image-20200429175436148" loading="lazy"></p><h2 id="挂载操作"><a href="#挂载操作" class="headerlink" title="挂载操作"></a>挂载操作</h2><p>会根据之前安装的软件包名称的不同而不同。</p><p>安装open-vm-dkms，则</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo mount -t vmhgfs .host:/ /mnt/hgfs</code></pre><p>安装open-vm-tools-dkms，则</p><pre class="language-shell" data-language="shell"><code class="language-shell">vmhgfs-fuse .host:/ /mnt/hgfs</code></pre><p>此时共享文件夹已经能在/hgfs里看到了。</p><p><img src="https://image.wanyijizi.com/20200428/image-20200429180017616.png" alt="image-20200429180017616" loading="lazy"></p><h2 id="有可能会遇到共享文件夹普通权限打不开"><a href="#有可能会遇到共享文件夹普通权限打不开" class="headerlink" title="有可能会遇到共享文件夹普通权限打不开"></a>有可能会遇到共享文件夹普通权限打不开</h2><p>建议重启虚拟机，重新进行挂载操作，改用命令（仅针对安装open-vm-tools-dkms，另一种没遇到不知道）：</p><pre class="language-shell" data-language="shell"><code class="language-shell">sudo vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other</code></pre><p>或者也可以选择root进去查看。</p><h2 id="每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢"><a href="#每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢" class="headerlink" title="每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢"></a>每次重启需要重新挂载，到底怎么开机自动挂载，还不知道呢</h2>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;前提：在vmware中设置共享文件夹，会共享在 /mnt/hgfs里。本文针对找不到 /mnt/hgfs的情况。&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   

@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/2021/08/10/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/</loc>
+    
+    <lastmod>2021-08-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</loc>
     
     <lastmod>2021-08-05</lastmod>
@@ -228,7 +235,7 @@
 
   <url>
     <loc>https://wanyijizi.com/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -236,91 +243,91 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/Python/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/GUI/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Linux/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Android/</loc>
-    <lastmod>2021-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/LAMMPS/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Julia/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/LAMMPS/</loc>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/VSCode/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Windows/</loc>
-    <lastmod>2021-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/Material-Studio/</loc>
-    <lastmod>2021-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/Ovito/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Atomsk/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Material-Studio/</loc>
+    <lastmod>2021-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Ovito/</loc>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/tags/Materials/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -329,21 +336,21 @@
   
   <url>
     <loc>https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/categories/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wanyijizi.com/categories/%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

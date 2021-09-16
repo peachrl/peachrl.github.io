@@ -110,6 +110,31 @@
     
     
     <entry>
+      <title>Android手机向Deepin系统投屏</title>
+      <link href="2021/08/10/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
+      <url>2021/08/10/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LAMMPS最新版（30 Jul 2021）安装要点</title>
       <link href="2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/"/>
       <url>2021/08/05/LAMMPS%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8830%20Jul%202021%EF%BC%89%E5%AE%89%E8%A3%85%E8%A6%81%E7%82%B9/</url>

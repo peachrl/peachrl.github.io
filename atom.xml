@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-09-15T15:10:35.000Z</updated>
+  <updated>2021-09-16T15:08:30.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mendeley在Deepin系统的安装及解决无法输入中文的问题</title>
+    <link href="https://wanyijizi.com/2021/09/16/Mendeley%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://wanyijizi.com/2021/09/16/Mendeley%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2021-09-16T15:08:30.000Z</published>
+    <updated>2021-09-16T15:08:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Mendeley在Linux系统无法输入中文注释的问题一直没有在官方的安装包中得到解决，但有网友提供的完美解决方法，在此记录。</p><a id="more"></a><h2 id="Mendeley-Desktop-安装"><a href="#Mendeley-Desktop-安装" class="headerlink" title="Mendeley Desktop 安装"></a>Mendeley Desktop 安装</h2><p>安装包从<a href="https://www.mendeley.com/download-desktop-new/">官网</a>下载，我下载的是<code>Download for generic Linux</code>。（不过Deepin系统内核是Debian，所以也许另一个也行？）</p><p>按照官方的<a href="https://www.mendeley.com/guides/download-mendeley-desktop/linux/instructions">安装教程</a>，下载解压进入bin就可以直接运行了。</p><p>如果需要在启动器中见到Mendeley，可以进入bin，如图运行shell脚本：</p><p><img src="https://image.wanyijizi.com/20210916/%E6%88%AA%E5%9B%BE_deepin-terminal_20210916153543.png" alt="截图_deepin-terminal_20210916153543" loading="lazy"></p><p>这样就可以在启动器中看到Mendeley的存在了：</p><img src="https://image.wanyijizi.com/20210916/截图_选择区域_20210916153641.png" alt="截图_选择区域_20210916153641" style="zoom:67%;" loading="lazy"><h2 id="解决中文输入问题"><a href="#解决中文输入问题" class="headerlink" title="解决中文输入问题"></a>解决中文输入问题</h2><p>下载由 yinflying 大佬提供的 libfcitxplatforminputcontextplugin.so 文件（从<a href="https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223">github下载</a>or从<a href="https://www.aliyundrive.com/s/fjPTN5MSCYk">阿里云盘下载</a>），放到<code>/data/home/peachrl/mendeley/lib/mendeleydesktop/plugins/platforminputcontexts</code>目录下即可。</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1]<a href="https://www.jianshu.com/p/1dac2892613b">https://www.jianshu.com/p/1dac2892613b</a></p><p>[2]<a href="https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223">https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Mendeley在Linux系统无法输入中文注释的问题一直没有在官方的安装包中得到解决，但有网友提供的完美解决方法，在此记录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
+    
+    <category term="Mendeley" scheme="https://wanyijizi.com/tags/Mendeley/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Deepin系统连接打印机</title>
     <link href="https://wanyijizi.com/2021/09/15/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
     <id>https://wanyijizi.com/2021/09/15/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/</id>
     <published>2021-09-15T15:10:35.000Z</published>
     <updated>2021-09-15T15:10:35.000Z</updated>
     
-    <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><div class="success"><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote></div><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
     
     
     <summary type="html">&lt;p&gt;最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。&lt;/p&gt;</summary>
@@ -482,27 +505,6 @@
     
     
     <summary type="html">&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt; LAMMPS + USER-REAXC  + MOLECULE packages&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用airebo/morse势给石墨烯建模</title>
-    <link href="https://wanyijizi.com/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/"/>
-    <id>https://wanyijizi.com/2020/04/29/%E7%94%A8AIREBO%E5%8A%BF%E7%BB%99%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BB%BA%E6%A8%A1/</id>
-    <published>2020-04-29T11:37:51.000Z</published>
-    <updated>2020-04-29T11:37:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p>LAMMPS+MANYBODY package</p><a id="more"></a><h2 id="data文件"><a href="#data文件" class="headerlink" title="data文件"></a>data文件</h2><p>来自examples→USER→phonon→4-Graphene→data.pos</p><pre class="language-none"><code class="language-none"># Graphene cell with dimension 10 x 10 x 1 and a = 2.522       200  atoms         1  atom types 0.    25.22000000000000  xlo xhi 0.    21.84116068344354  ylo yhi-10.   10.00000000000000  zlo zhi   12.61000000000000     0.00000000000000     0.00000000000000 xy xz yzAtoms1 1     0.00000000000000     0.00000000000000     0.000000000000002 1     1.26100000000000     0.72803868944812     0.000000000000003 1     2.52200000000000     0.00000000000000     0.000000000000004 1     3.78300000000000     0.72803868944812     0.000000000000005 1     5.04400000000000     0.00000000000000     0.000000000000006 1     6.30500000000000     0.72803868944812     0.000000000000007 1     7.56600000000000     0.00000000000000     0.00000000000000......</code></pre><h2 id="势文件"><a href="#势文件" class="headerlink" title="势文件"></a>势文件</h2><p>来自examples→airebo→CH.airebo-m</p><p>注：airebo/morse势是AIREBO的变形，将其中LJ势部分改用Morse势。</p><pre class="language-none"><code class="language-none"># DATE: 2016-03-15 CONTRIBUTOR: T.C. O'Connor CITATION: O'Connor, Andzelm, Robbins,  J. Chem. Phys. 142, 024903 (2015)# AIREBO-M of T.C. O'Connor, J.W. Andzelm, M.O. Robbins (2015)# Citation: J. Chem. Phys. 142, 024903 (2015); http://dx.doi.org/10.1063/1.4905549 # Based on AIREBO of S.J. Stuart, A.B. Tutein, J.A. Harrison (2000) # Citation: J. Chem. Phys. 112, 6472 (2000); http://dx.doi.org/10.1063/1.481208 1.7      rcmin_CC 1.3      rcmin_CH 1.1      rcmin_HH 2.0      rcmax_CC 1.8      rcmax_CH 1.7      rcmax_HH 2.0      rcmaxp_CC 1.6      rcmaxp_CH 1.7      rcmaxp_HH 0.1      smin 2.0      Nmin 3.0      Nmax 3.2      NCmin 3.7      NCmax 0.3134602960832605     Q_CC 0.3407757282257080     Q_CH 0.370     Q_HH 4.746539060659529    alpha_CC 4.102549828548784    alpha_CH ......</code></pre><h2 id="input脚本"><a href="#input脚本" class="headerlink" title="input脚本"></a>input脚本</h2><pre class="language-none"><code class="language-none">boundary     p p p #周期边界units        metal #单位，具体见备注atom_style   atomic #原子类型为默认值read_data data.pos #读取data文件mass*   12.0107 #C原子质量pair_style          airebo/morse 3.0 1 1 #势函数类型，3.0是截断半径；0/1表示打开或关闭Morse项；0/1表示打开或关闭扭转项，AIREBO势的各项见备注pair_coeff          * * CH.airebo-m C #用到的势文件中的Cvelocity            all create 300.0 761341 #针对所有原子，300温度，随机赋予速度fix                 1 all nve #每一步更新组内原子的位置和速度。V是体积，E是能量，二者保持恒定。timestep            0.0005 #步长dump   2 all xyz 10 dump.airebom.xyz #输出记录化学体系结构的.xyz文件run                 1000 #运行1000步</code></pre><h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><iframe src="https://player.bilibili.com/player.html?aid=752940447&amp;bvid=BV16k4y1r7eh&amp;cid=185315710&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 512px; height: 512px; max-width: 100%"> </iframe><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><h3 id="units单位："><a href="#units单位：" class="headerlink" title="units单位："></a>units单位：</h3><blockquote><p>For style <em>metal</em>, these are the units:</p><ul><li>mass = grams/mole</li><li>distance = Angstroms</li><li>time = picoseconds</li><li>energy = eV</li><li>velocity = Angstroms/picosecond</li><li>force = eV/Angstrom</li><li>torque = eV</li><li>temperature = Kelvin</li><li>pressure = bars</li><li>dynamic viscosity = Poise</li><li>charge = multiple of electron charge (1.0 is a proton)</li><li>dipole = charge*Angstroms</li><li>electric field = volts/Angstrom</li><li>density = gram/cm^dim</li></ul></blockquote><h3 id="AIREBO势的三个项："><a href="#AIREBO势的三个项：" class="headerlink" title="AIREBO势的三个项："></a>AIREBO势的三个项：</h3><p>$$<br>\begin{split}E &amp; = \frac{1}{2} \sum_i \sum_{j \neq i}<br>\left[ E^{\text{REBO}}<em>{ij} + E^{\text{LJ}}</em>{ij} +<br> \sum_{k \neq i,j} \sum_{l \neq i,j,k} E^{\text{TORSION}}_{kijl} \right] \\end{split}<br>$$</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前提条件&quot;&gt;&lt;a href=&quot;#前提条件&quot; class=&quot;headerlink&quot; title=&quot;前提条件&quot;&gt;&lt;/a&gt;前提条件&lt;/h2&gt;&lt;p&gt;LAMMPS+MANYBODY package&lt;/p&gt;</summary>
     
     
     

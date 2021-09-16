@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>Mendeley在Deepin系统的安装及解决无法输入中文的问题</title>
+      <link href="2021/09/16/Mendeley%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>2021/09/16/Mendeley%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>Mendeley在Linux系统无法输入中文注释的问题一直没有在官方的安装包中得到解决，但有网友提供的完美解决方法，在此记录。</p><a id="more"></a><h2 id="Mendeley-Desktop-安装"><a href="#Mendeley-Desktop-安装" class="headerlink" title="Mendeley Desktop 安装"></a>Mendeley Desktop 安装</h2><p>安装包从<a href="https://www.mendeley.com/download-desktop-new/">官网</a>下载，我下载的是<code>Download for generic Linux</code>。（不过Deepin系统内核是Debian，所以也许另一个也行？）</p><p>按照官方的<a href="https://www.mendeley.com/guides/download-mendeley-desktop/linux/instructions">安装教程</a>，下载解压进入bin就可以直接运行了。</p><p>如果需要在启动器中见到Mendeley，可以进入bin，如图运行shell脚本：</p><p><img src="https://image.wanyijizi.com/20210916/%E6%88%AA%E5%9B%BE_deepin-terminal_20210916153543.png" alt="截图_deepin-terminal_20210916153543" loading="lazy"></p><p>这样就可以在启动器中看到Mendeley的存在了：</p><img src="https://image.wanyijizi.com/20210916/截图_选择区域_20210916153641.png" alt="截图_选择区域_20210916153641" style="zoom:67%;" loading="lazy"><h2 id="解决中文输入问题"><a href="#解决中文输入问题" class="headerlink" title="解决中文输入问题"></a>解决中文输入问题</h2><p>下载由 yinflying 大佬提供的 libfcitxplatforminputcontextplugin.so 文件（从<a href="https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223">github下载</a>or从<a href="https://www.aliyundrive.com/s/fjPTN5MSCYk">阿里云盘下载</a>），放到<code>/data/home/peachrl/mendeley/lib/mendeleydesktop/plugins/platforminputcontexts</code>目录下即可。</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1]<a href="https://www.jianshu.com/p/1dac2892613b">https://www.jianshu.com/p/1dac2892613b</a></p><p>[2]<a href="https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223">https://github.com/yinflying/BlogSource/tree/master/lib-fcitx-plugin/debian.sid.20171223</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Mendeley </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Deepin系统连接打印机</title>
       <link href="2021/09/15/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
       <url>2021/09/15/Deepin%E7%B3%BB%E7%BB%9F%E8%BF%9E%E6%8E%A5%E6%89%93%E5%8D%B0%E6%9C%BA/</url>
       
-        <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<p>最近将实验室的电脑重装了系统，系统版本是Deepin 20.2.3，于是又需要重新安装各种软件以及连接打印机等。由于实验室的打印机位于实验室内部网络中，且更改了默认端口，因此无法直接搜索到，需要手动安装。本文记录了在Deepin系统连接实验室内网打印机的过程。</p><a id="more"></a><div class="success"><blockquote><p>（以下信息仅为示例，都是随便写的）</p><p>打印机网络地址：ab.lab.cn</p><p>端口：12345</p><p>型号：HP LaserJet MFP M30w</p></blockquote></div><ol><li><p>打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的<code>+</code>开始配置；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102311846.png" alt="image-20210916102311846" loading="lazy"></p></li><li><p>软件首先会进行自动查找，这个过程自动开始并很快完成，但显示的一些网络上的打印机都不是我们的，如图所示：</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102426299.png" alt="image-20210916102426299" loading="lazy"></p></li><li><p>点击进入<code>URI查找</code>，输入<code>socket://ab.lab.cn:12345</code>，如图所示，点击下一步；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102508312.png" alt="image-20210916102508312" loading="lazy"></p></li><li><p>接下来选择驱动来源，直接进入左边第三项<code>搜索打印机驱动</code>，输入型号<code>HP LaserJet MFP M30w</code>，点击<code>搜索</code>，选择搜索到的驱动中HP LaserJet MFP M28-M31那个，如图所示，点击安装驱动；</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102533030.png" alt="image-20210916102533030" loading="lazy"></p></li><li><p>已经成功了，可以查看打印机</p><p><img src="https://image.wanyijizi.com/20210915/image-20210916102600614.png" alt="image-20210916102600614" loading="lazy"></p></li></ol>]]></content>
       
       
       <categories>

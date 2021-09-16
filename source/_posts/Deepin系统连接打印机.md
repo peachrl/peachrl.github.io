@@ -21,6 +21,8 @@ aplayer: true
 
 <!-- more -->
 
+<div class="success">
+
 > （以下信息仅为示例，都是随便写的）
 >
 > 打印机网络地址：ab.lab.cn
@@ -28,6 +30,8 @@ aplayer: true
 > 端口：12345
 >
 > 型号：HP LaserJet MFP M30w
+
+</div>
 
 1. 打开Deepin系统默认的打印管理器（在启动器（相当于Win中的开始菜单）中搜索即可找到），如下图所示，点击打印机设备后面的`+`开始配置；
 

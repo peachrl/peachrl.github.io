@@ -36,7 +36,7 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 &emsp;&emsp;**2021年8月26日**&emsp;本站在云服务器上部署完成，并提交备案申请。由于备案的需要，网站改名“peachRL的小站”，“万亿及秭”降级为网站的标语。
 
-&emsp;&emsp;**2021年8月22日**&emsp;博主桃斥巨资在腾讯云买下二级域名wanyijizi.com一年，轻量应用服务器3年。
+&emsp;&emsp;**2021年8月22日**&emsp;博主桃斥巨资在腾讯云买下域名wanyijizi.com一年，轻量应用服务器3年。
 
 &emsp;&emsp;**2021年2月20日**&emsp;更换网站主题[Yun](https://github.com/YunYouJun/hexo-theme-yun)
 

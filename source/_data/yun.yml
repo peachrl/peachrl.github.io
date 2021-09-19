@@ -153,9 +153,9 @@ menu:
     #   icon: icon-cloud-line
     #   count: 你猜
   custom:
-    title: 留言板
+    title: 关于我
     path: /about
-    icon: icon-clipboard-line
+    icon: icon-user-line
 
 #默哀日期，网站变灰：月-日
 mourn:

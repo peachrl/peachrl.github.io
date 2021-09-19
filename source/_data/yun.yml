@@ -4,7 +4,7 @@ mode: auto
 #头像
 avatar:
   enable: true
-  url: /images/avatar.jpg
+  url: https://image.wanyijizi.com/00000000_封面/avatar.jpg
   rounded: true
   opacity: 1
   mickey_mouse: false
@@ -29,16 +29,16 @@ banner:
 #背景图片
 bg_image:
   enable: true
-  url: /images/blurlight.jpg
-  dark: /images/blurdark.jpg
+  url: https://image.wanyijizi.com/00000000_封面/blurlight.jpg
+  dark: https://image.wanyijizi.com/00000000_封面/blurdark.jpg
   # blur: 30px # 设置背景模糊程度
   opacity: 0.8
 
 #搜索背景
 search:
   modal: true
-  bg_image: /images/light.jpg
-  dark_bg_image: /images/dark.jpg
+  bg_image: https://image.wanyijizi.com/00000000_封面/light.jpg
+  dark_bg_image: https://image.wanyijizi.com/00000000_封面/dark.jpg
   # placeholder:
 
 #随即多边形背景
@@ -74,7 +74,7 @@ creative_commons:
   clipboard: false
 
 #网页icon
-favicon: /images/favicon.ico
+favicon: https://image.wanyijizi.com/00000000_封面/peachRLsite.ico
 
 #点击的烟花效果
 fireworks:
@@ -103,7 +103,7 @@ footer:
     enable: true
     title: 又拍云
     link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
-    logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+    logo: https://image.wanyijizi.com/00000000_封面/又拍云_logo2.png
     prefix: 本站由
     suffix: 提供CDN加速/云存储服务
   live_time:
@@ -322,15 +322,15 @@ reward:
   comment: 求各位看官有钱的捧个钱场(>▽<)
   methods:
     - name: 支付宝
-      path: /images/alipay-qrcode.jpg
+      path: https://image.wanyijizi.com/00000000_封面/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: icon-alipay-line
     - name: QQ 支付
-      path: /images/qqpay-qrcode.jpg
+      path: https://image.wanyijizi.com/00000000_封面/qqpay-qrcode.jpg
       color: "#12B7F5"
       icon: icon-qq-line
     - name: 微信支付
-      path: /images/wechatpay-qrcode.jpg
+      path: https://image.wanyijizi.com/00000000_封面/wechatpay-qrcode.jpg
       color: "#2DC100"
       icon: icon-wechat-pay-line
 
@@ -351,8 +351,8 @@ scrollreveal:
 
 #侧边栏背景
 sidebar:
-  bg_image: /images/blurlight.jpg
-  dark_bg_image: /images/blurdark.jpg
+  bg_image: https://image.wanyijizi.com/00000000_封面/blurlight.jpg
+  dark_bg_image: https://image.wanyijizi.com/00000000_封面/blurdark.jpg
   bg_position: bottom 3rem center
   tagcloud:
     enable: true

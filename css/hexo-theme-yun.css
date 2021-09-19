@@ -191,7 +191,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("/images/blurlight.jpg");
+  background-image: url("https://image.wanyijizi.com/00000000_封面/blurlight.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1761,7 +1761,7 @@ input {
   left: 0;
   width: 20rem;
   background-color: #fff;
-  background-image: url("/images/blurlight.jpg");
+  background-image: url("https://image.wanyijizi.com/00000000_封面/blurlight.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom 3rem center;
@@ -2115,7 +2115,7 @@ input {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("/images/blurdark.jpg");
+    background-image: url("https://image.wanyijizi.com/00000000_封面/blurdark.jpg");
   }
   :root:not([data-user-color-scheme]) .char {
     background-color: rgba(0,0,0,0.5);
@@ -2126,7 +2126,7 @@ input {
   }
   :root:not([data-user-color-scheme]) .sidebar {
     background-color: rgba(27,31,46,0.95);
-    background-image: url("/images/blurdark.jpg");
+    background-image: url("https://image.wanyijizi.com/00000000_封面/blurdark.jpg");
   }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
@@ -2183,7 +2183,7 @@ input {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("/images/blurdark.jpg");
+  background-image: url("https://image.wanyijizi.com/00000000_封面/blurdark.jpg");
 }
 [data-user-color-scheme='dark'] .char {
   background-color: rgba(0,0,0,0.5);
@@ -2194,7 +2194,7 @@ input {
 }
 [data-user-color-scheme='dark'] .sidebar {
   background-color: rgba(27,31,46,0.95);
-  background-image: url("/images/blurdark.jpg");
+  background-image: url("https://image.wanyijizi.com/00000000_封面/blurdark.jpg");
 }
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;

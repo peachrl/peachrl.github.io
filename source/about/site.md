@@ -30,6 +30,8 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 <details open>
 <summary>2021年</summary>
 
+&emsp;&emsp;**2021年9月26日**&emsp;公安备案通过。
+
 &emsp;&emsp;**2021年9月7日**&emsp;由于公安备案的需要（申请的非经营性备案），关闭Valine评论区。
 
 &emsp;&emsp;**2021年9月3日**&emsp;工信部备案通过。

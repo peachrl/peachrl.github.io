@@ -26,7 +26,7 @@ aplayer: true
 
 <!-- more -->
 
-## <span id="安装之前">安装之前</span>
+## <span id="PreInstall">安装之前</span>
 
 1. sudo apt-get install gcc
 
@@ -61,26 +61,26 @@ aplayer: true
 
 <div class="success">
 
->**注3：**2021年9月24日安装最新的lammps时发现，如果<a href='#安装之前'>安装之前</a>中提到的项目都安装了，openmpi和fftw3应该不用手动安装，但如果报错的话就还是自己手动安装吧。
+>**注3：**2021年9月24日安装最新的lammps时发现，如果<a href='#PreInstall'>安装之前</a>中提到的项目都安装了，openmpi和fftw3应该不用手动安装，但如果报错的话就还是自己手动安装吧。
 >
 >**注4：**通过官网教程上给出的命令从github下载lammps源码出错：
 >
 >```shell
-$ git clone -b unstable https://github.com/lammps/lammps.git mylammps
-fatal: unable to access 'https://github.com/lammps/lammps.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+>$ git clone -b unstable https://github.com/lammps/lammps.git mylammps
+>fatal: unable to access 'https://github.com/lammps/lammps.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
 >```
 >
 >网上都说是代理的问题，但是我新装的系统根本没有设置什么代理。尝试了下面的取消代理命令：
 >
 >```shell
-git config --global --unset http.proxy
-git config --global --unset https.proxy
+>git config --global --unset http.proxy
+>git config --global --unset https.proxy
 >```
 >
 >果然没有效果。后来将https改为http就能成功下载了：
 >
 >```shell
-git clone -b unstable http://github.com/lammps/lammps.git mylammps
+>git clone -b unstable http://github.com/lammps/lammps.git mylammps
 >```
 >
 >具体原因不知。

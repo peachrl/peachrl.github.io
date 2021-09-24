@@ -66,21 +66,21 @@ aplayer: true
 >**注4：**通过官网教程上给出的命令从github下载lammps源码出错：
 >
 >```shell
->$ git clone -b unstable https://github.com/lammps/lammps.git mylammps
->fatal: unable to access 'https://github.com/lammps/lammps.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+$ git clone -b unstable https://github.com/lammps/lammps.git mylammps
+fatal: unable to access 'https://github.com/lammps/lammps.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
 >```
 >
 >网上都说是代理的问题，但是我新装的系统根本没有设置什么代理。尝试了下面的取消代理命令：
 >
 >```shell
->git config --global --unset http.proxy
->git config --global --unset https.proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 >```
 >
 >果然没有效果。后来将https改为http就能成功下载了：
 >
 >```shell
->git clone -b unstable http://github.com/lammps/lammps.git mylammps
+git clone -b unstable http://github.com/lammps/lammps.git mylammps
 >```
 >
 >具体原因不知。
@@ -92,13 +92,13 @@ aplayer: true
 
 以下都是用的lammps的默认路径，为了make的时候方便。可以查看\lammps\src\MAKE\OPTIONS 路径下Makefile.fftw 文件和Makefile.g++\_openmpi_link文件里的路径。
 
-1. 这是fftw：（-j4 指调用4核编译）
+1. （如果直接安装lammps报错就手动安装一下）fftw：（-j4 指调用4核编译）
 ```shell
 sudo ./configure --prefix=/usr/local --enable-float
 sudo make -j4
 sudo make install
 ```
-2. openmpi：
+2. （如果直接安装lammps报错就手动安装一下）openmpi：
 ```shell
 sudo ./configure --prefix=/usr/local
 sudo make -j4

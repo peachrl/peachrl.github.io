@@ -1,7 +1,7 @@
 ---
-title: 在Deepin系统安装LAMMPS的记录(Makefile.ubuntu)
+title: 在Deepin系统安装LAMMPS的记录
 date: 2020-04-06 15:27:38
-updated: 2021-09-15 20:38:19
+updated: 2021-09-24 18:08:19
 author: peachRL
 email: 
 description: 
@@ -18,6 +18,14 @@ aplayer: true
 # indexing: false
 ---
 
+<div class="success">
+
+> 本记录最后一次修整在2021年9月24日，系统为`Deepin 20.2.3`，安装lammps的版本为`20 Sep 2021`，只适用类似Ubuntu的系统。
+
+</div>
+
+<!-- more -->
+
 ## 安装之前
 
 1. sudo apt-get install gcc
@@ -26,8 +34,6 @@ aplayer: true
 
 3. sudo apt-get install gfortran
 
-   <!-- more -->
-
 4. 可能还有mpi-default-bin, mpi-default-dev,libfftw3-dev, libjpeg-dev and libpng12-dev这些，总之make的时候差什么补什么。具体可以参考/src/MAKE/MACHINES/Makefile.ubuntu里的注释：
 
 ```
@@ -35,9 +41,13 @@ aplayer: true
 # libfftw3-dev, libjpeg-dev and libpng12-dev to compile LAMMPS with this
 ```
 
-**注1：**如果安装过程提示 fatal error: png.h: No such file or directory，则先`sudo apt-get install libpng-dev`
+<div class="success">
 
-**注2：**如果安装过程提示 makeinfo is missing on your system，可以先`sudo apt-get install texinfo`
+> **注1：**如果安装过程提示 fatal error: png.h: No such file or directory，则先`sudo apt-get install libpng-dev`  
+>
+> **注2：**如果安装过程提示 makeinfo is missing on your system，可以先`sudo apt-get install texinfo`
+
+</div>
 
 ## 准备安装包
 
@@ -49,6 +59,33 @@ aplayer: true
 
 因此准备安装包：fftw3、lammps、openmpi（openmpi和mpich2功能相似）
 
+<div class="success">
+
+>**注3：**2021年9月24日安装最新的lammps时发现，如果**安装之前**中提到的项目都安装了，openmpi和fftw3应该不用手动安装，但如果报错的话就还是自己手动安装吧。
+>
+>**注4：**通过官网教程上给出的命令从github下载lammps源码出错：
+>
+>```shell
+>$ git clone -b unstable https://github.com/lammps/lammps.git mylammps
+>fatal: unable to access 'https://github.com/lammps/lammps.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+>```
+>
+>网上都说是代理的问题，但是我新装的系统根本没有设置什么代理。尝试了下面的取消代理命令：
+>
+>```shell
+>git config --global --unset http.proxy
+>git config --global --unset https.proxy
+>```
+>
+>果然没有效果。后来将https改为http就能成功下载了：
+>
+>```shell
+>git clone -b unstable http://github.com/lammps/lammps.git mylammps
+>```
+>
+>具体原因不知。
+
+</div>
 
 ## 安装的时候注意路径
 ### 安装：

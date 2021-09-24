@@ -263,13 +263,6 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Julia/</loc>
-    <lastmod>2021-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/Linux/</loc>
     <lastmod>2021-09-24</lastmod>
     <changefreq>daily</changefreq>
@@ -291,7 +284,7 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Mendeley/</loc>
+    <loc>https://wanyijizi.com/tags/Julia/</loc>
     <lastmod>2021-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -299,6 +292,13 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
+    <lastmod>2021-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Mendeley/</loc>
     <lastmod>2021-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

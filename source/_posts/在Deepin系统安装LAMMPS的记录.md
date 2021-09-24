@@ -26,7 +26,7 @@ aplayer: true
 
 <!-- more -->
 
-## 安装之前
+## <span id="jump">安装之前</span>
 
 1. sudo apt-get install gcc
 
@@ -61,7 +61,7 @@ aplayer: true
 
 <div class="success">
 
->**注3：**2021年9月24日安装最新的lammps时发现，如果[安装之前](#安装之前)中提到的项目都安装了，openmpi和fftw3应该不用手动安装，但如果报错的话就还是自己手动安装吧。
+>**注3：**2021年9月24日安装最新的lammps时发现，如果<a href='#jump'>安装之前</a>中提到的项目都安装了，openmpi和fftw3应该不用手动安装，但如果报错的话就还是自己手动安装吧。
 >
 >**注4：**通过官网教程上给出的命令从github下载lammps源码出错：
 >

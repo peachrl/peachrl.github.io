@@ -587,19 +587,19 @@
   </entry>
   
   <entry>
-    <title>在Deepin系统安装LAMMPS的记录(Makefile.ubuntu)</title>
-    <link href="https://wanyijizi.com/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/"/>
-    <id>https://wanyijizi.com/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84Makefile.ubuntu/</id>
+    <title>在Deepin系统安装LAMMPS的记录</title>
+    <link href="https://wanyijizi.com/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
+    <id>https://wanyijizi.com/2020/04/06/%E5%9C%A8Deepin%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85LAMMPS%E7%9A%84%E8%AE%B0%E5%BD%95/</id>
     <published>2020-04-06T07:27:38.000Z</published>
-    <updated>2021-09-15T12:38:19.000Z</updated>
+    <updated>2021-09-24T10:08:19.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;安装之前&quot;&gt;&lt;a href=&quot;#安装之前&quot; class=&quot;headerlink&quot; title=&quot;安装之前&quot;&gt;&lt;/a&gt;安装之前&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;sudo apt-get install gcc&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sudo apt-get install g++&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sudo apt-get install gfortran&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary>
+    <summary type="html">&lt;div class=&quot;success&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本记录最后一次修整在2021年9月24日，系统为&lt;code&gt;Deepin 20.2.3&lt;/code&gt;，安装lammps的版本为&lt;code&gt;20 Sep 2021&lt;/code&gt;，只适用类似Ubuntu的系统。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;</summary>
     
     
     

@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     fixed: true,
     audio: [
       {
+        name: "时结",
+        artist: "周深",
+        url: "/musics/周深 - 时结.flac",
+        cover: "/musics/周深 - 时结.png",
+      },
+      {
         name: "错位时空",
         artist: "艾辰",
         url: "/musics/艾辰 - 错位时空.flac",
@@ -36,12 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
         artist: "Noria",
         url: "/musics/Noria - 瞳のこたえ.mp3",
         cover: "/musics/Noria - 瞳のこたえ.jpg",
-      },
-      {
-        name: "时结",
-        artist: "周深",
-        url: "/musics/周深 - 时结.flac",
-        cover: "/musics/周深 - 时结.png",
       },
     ],
   });

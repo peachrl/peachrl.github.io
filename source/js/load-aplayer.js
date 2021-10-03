@@ -37,6 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
         url: "/musics/Noria - 瞳のこたえ.mp3",
         cover: "/musics/Noria - 瞳のこたえ.jpg",
       },
+      {
+        name: "时结",
+        artist: "周深",
+        url: "/musics/周深 - 时结.flac",
+        cover: "/musics/周深 - 时结.png",
+      },
     ],
   });
 });

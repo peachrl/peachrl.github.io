@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-09-16T15:08:30.000Z</updated>
+  <updated>2021-10-10T14:36:30.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Python中调用Julia函数</title>
+    <link href="https://wanyijizi.com/2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/"/>
+    <id>https://wanyijizi.com/2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/</id>
+    <published>2021-10-10T14:36:30.000Z</published>
+    <updated>2021-10-10T14:36:30.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;运行环境：Win11，Python 3.8.5，Julia 1.5.3&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;没用过Julia语言的话..简介及安装步骤见&lt;a href=&quot;https://wanyijizi.com/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/&quot;&gt;另一篇文&lt;/a&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
+    
+  </entry>
   
   <entry>
     <title>Mendeley在Deepin系统的安装及解决无法输入中文的问题</title>

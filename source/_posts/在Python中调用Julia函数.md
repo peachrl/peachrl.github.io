@@ -18,6 +18,8 @@ aplayer: true
 # indexing: false
 ---
 
+<div class="success">
+
 > 运行环境：Win11，Python 3.8.5，Julia 1.5.3
 
 </div>

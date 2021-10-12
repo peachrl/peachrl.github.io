@@ -270,27 +270,6 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Julia/</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/Windows/</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/LAMMPS/</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/Python/</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>daily</changefreq>
@@ -305,6 +284,27 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/tags/Windows/</loc>
+    <lastmod>2021-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Julia/</loc>
+    <lastmod>2021-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/LAMMPS/</loc>
+    <lastmod>2021-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/tags/Mendeley/</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>daily</changefreq>
@@ -312,14 +312,14 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
+    <loc>https://wanyijizi.com/tags/VSCode/</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/VSCode/</loc>
+    <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

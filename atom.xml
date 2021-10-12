@@ -40,11 +40,11 @@
     
     <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
-    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
     <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
-    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
     
   </entry>
   
@@ -187,9 +187,9 @@
     
     <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
-    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
-    
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
   
@@ -375,11 +375,11 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
-    
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
     <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
+    
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
   </entry>
   
@@ -398,11 +398,11 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
-    
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
     <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
+    
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
   </entry>
   
@@ -446,9 +446,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
-    
     <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
+    <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
     
   </entry>
   

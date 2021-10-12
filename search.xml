@@ -22,11 +22,11 @@
             
             <tag> Linux </tag>
             
-            <tag> Julia </tag>
+            <tag> Python </tag>
             
             <tag> Windows </tag>
             
-            <tag> Python </tag>
+            <tag> Julia </tag>
             
         </tags>
       
@@ -161,9 +161,9 @@
             
             <tag> Linux </tag>
             
-            <tag> LAMMPS </tag>
-            
             <tag> Python </tag>
+            
+            <tag> LAMMPS </tag>
             
         </tags>
       
@@ -377,11 +377,11 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Python </tag>
             
             <tag> GUI </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -406,11 +406,11 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Python </tag>
             
             <tag> GUI </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -460,9 +460,9 @@
       
         <tags>
             
-            <tag> Julia </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Julia </tag>
             
         </tags>
       

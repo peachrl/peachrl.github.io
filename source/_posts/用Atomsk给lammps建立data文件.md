@@ -9,6 +9,7 @@ categories: 软件
 tags: 
 	- LAMMPS
 	- Atomsk
+	- Linux
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

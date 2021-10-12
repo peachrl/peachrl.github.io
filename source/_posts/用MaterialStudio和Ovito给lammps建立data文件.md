@@ -10,6 +10,7 @@ tags:
 	- LAMMPS
 	- Material Studio
 	- Ovito
+	- Windows
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

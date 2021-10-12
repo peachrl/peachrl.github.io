@@ -8,6 +8,7 @@ description:
 categories: 软件
 tags: 
 	- Julia
+	- Windows
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

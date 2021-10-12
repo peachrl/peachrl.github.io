@@ -9,6 +9,7 @@ categories: 软件
 tags: 
 	- Python
 	- GUI
+	- Windows
 aplayer: true
 #type: github
 #url: https://github.com/peachRL/ABLabWordCloud_GUI

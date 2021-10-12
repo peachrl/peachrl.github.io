@@ -1,12 +1,14 @@
 ---
 title: 在Python中调用Julia函数
 date: 2021-10-10 22:36:30
-updated: 2021-10-10 22:36:30
+updated: 2021-10-11 12:44:35
 author: peachRL
 email: 
 description: 
 categories: 软件
 tags: 
+	- Linux
+	- Windows
 	- Julia
 	- Python
 aplayer: true
@@ -20,7 +22,7 @@ aplayer: true
 
 <div class="success">
 
-> 运行环境：Win11，Python 3.8.5，Julia 1.5.3
+> 运行环境：Win11 or Deepin 20.2.3，Python 3.8.5，Julia 1.5.3
 
 </div>
 
@@ -89,4 +91,18 @@ from julia import Main
 Main.include("test.jl")
 print(Main.U(5))
 ```
+
+如果要在Deepin系统（或者其他Debian系统上，以及在Windows系统里用conda安装的Python）实现Python调用Julia的话，前面的操作是类似的，但可能最后会报错，说“Your Python interpreter is statically linked to libpython”。可以选择简单的，在Python前面加上两行，也就是：
+
+```python
+from julia.api import Julia
+jl = Julia(compiled_modules=False)
+
+from julia import Main
+
+Main.include("test.jl")
+print(Main.U(5))
+```
+
+这样会使程序变慢，更彻底的选择是自己重装Python，详细可以参考[官方手册上的说明](https://pyjulia.readthedocs.io/en/latest/troubleshooting.html)。
 

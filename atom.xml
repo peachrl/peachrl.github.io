@@ -42,9 +42,9 @@
     
     <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -144,9 +144,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="Atomsk" scheme="https://wanyijizi.com/tags/Atomsk/"/>
     
@@ -187,9 +187,9 @@
     
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -238,9 +238,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -314,9 +314,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -473,7 +473,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS - Linux" scheme="https://wanyijizi.com/tags/LAMMPS-Linux/"/>
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -592,9 +594,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   
@@ -656,9 +658,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
   </entry>
   

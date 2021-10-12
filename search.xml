@@ -24,9 +24,9 @@
             
             <tag> Windows </tag>
             
-            <tag> Linux </tag>
-            
             <tag> Julia </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -130,9 +130,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Atomsk </tag>
             
@@ -161,9 +161,9 @@
             
             <tag> Python </tag>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -215,9 +215,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -298,9 +298,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -487,7 +487,9 @@
       
         <tags>
             
-            <tag> LAMMPS - Linux </tag>
+            <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -639,9 +641,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -716,9 +718,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> LAMMPS </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       

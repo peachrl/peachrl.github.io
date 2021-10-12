@@ -8,7 +8,7 @@
       <link href="2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/"/>
       <url>2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<div class="success"><blockquote><p>运行环境：Win11，Python 3.8.5，Julia 1.5.3</p></blockquote></div><p>没用过Julia语言的话..简介及安装步骤见<a href="https://wanyijizi.com/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/">另一篇文</a>。</p><a id="more"></a><p>话说，博主桃超级开心在10月5日顺利装备上了Win11，虽然除了界面变得像果冻了一些，并没有感觉到很大差别🤣。</p><p>总之今天是第一篇建立在Win11环境上的博文啦~以后应该再不会有运行环境为Win10的文出现了😁</p><p>今日份的文起源是无聊(×)的我在找一个复杂又无聊的函数的极小值点的时候突发奇想要用Julia语言写，确实也写出来了：</p><pre class="language-Julia" data-language="Julia"><code class="language-Julia">using Optimusing Printfusing Plotsusing IntervalArithmetic, TaylorModelsa = 5b = 5n = 5function U(h)    u = zeros(Float64,n)    for i = -a:a        for j = -b:b            for k = 0:n-1                u[k+1] += 4 * 0.128736 * (3^12 * (2.773^2 * (i^2 + j^2 + i*j) + (h + k*2.26)^2)^(-6) - 3^6 * (2.773^2 * (i^2 + j^2 + i*j) + (h + k*2.26)^2)^(-3))            end        end    end    return sum(u)endres = optimize(U, 0.0, 12.5)Printf.@printf "极小值点 %.2f\n" Optim.minimizer(res)Printf.@printf "极小值 %.2f\n" Optim.minimum(res)############## 画图 ##############=h = range(0.0,stop=12.5,step=0.001)PES = Plots.plot(h,U.(h),xlims=(0,12.5),ylims=(-2,10),size=(1000,600),lw=5,lab="Potential-energy-curve at S-site",dpi=300,axis = font(20),legendfont=(20))y = 0Plots.hline!([0],ls=:dash,lw=3,lab="")Plots.scatter!([Optim.minimizer(res)], [U(Optim.minimizer(res))], lab="",ms=10)Plots.savefig(PES, "PES.png")=#</code></pre><p>就是上面这个U(h)，但是我其他处理数据的代码都是Python写的。现在想要调用U了，我还得在Python里面再输入一遍。。这怎么能行？重复劳动没前途，于是继续又开发了一下在Python中调用Julia函数的技能。</p><p>步骤很简单（所以我前面水了一堆废话）：</p><ol><li>命令行<code>pip3 install julia</code></li><li>Julia REPL，先输入<code>]</code>，进入pkg&gt;模式，输入<code>add PyCall</code></li><li>Python REPL&gt;&gt;&gt;<code>julia.install()</code></li></ol><p>然后Julia和Python就成功在一起啦！</p><p>在Python脚本调用test.jl文件中U(h)函数的方法：</p><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> julia <span class="token keyword">import</span> MainMain<span class="token punctuation">.</span>include<span class="token punctuation">(</span><span class="token string">"test.jl"</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span>U<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>]]></content>
+        <content type="html"><![CDATA[<div class="success"><blockquote><p>运行环境：Win11 or Deepin 20.2.3，Python 3.8.5，Julia 1.5.3</p></blockquote></div><p>没用过Julia语言的话..简介及安装步骤见<a href="https://wanyijizi.com/2020/07/21/Julia%E5%9C%A8win10%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E4%BE%8B%E5%AD%90/">另一篇文</a>。</p><a id="more"></a><p>话说，博主桃超级开心在10月5日顺利装备上了Win11，虽然除了界面变得像果冻了一些，并没有感觉到很大差别🤣。</p><p>总之今天是第一篇建立在Win11环境上的博文啦~以后应该再不会有运行环境为Win10的文出现了😁</p><p>今日份的文起源是无聊(×)的我在找一个复杂又无聊的函数的极小值点的时候突发奇想要用Julia语言写，确实也写出来了：</p><pre class="language-Julia" data-language="Julia"><code class="language-Julia">using Optimusing Printfusing Plotsusing IntervalArithmetic, TaylorModelsa = 5b = 5n = 5function U(h)    u = zeros(Float64,n)    for i = -a:a        for j = -b:b            for k = 0:n-1                u[k+1] += 4 * 0.128736 * (3^12 * (2.773^2 * (i^2 + j^2 + i*j) + (h + k*2.26)^2)^(-6) - 3^6 * (2.773^2 * (i^2 + j^2 + i*j) + (h + k*2.26)^2)^(-3))            end        end    end    return sum(u)endres = optimize(U, 0.0, 12.5)Printf.@printf "极小值点 %.2f\n" Optim.minimizer(res)Printf.@printf "极小值 %.2f\n" Optim.minimum(res)############## 画图 ##############=h = range(0.0,stop=12.5,step=0.001)PES = Plots.plot(h,U.(h),xlims=(0,12.5),ylims=(-2,10),size=(1000,600),lw=5,lab="Potential-energy-curve at S-site",dpi=300,axis = font(20),legendfont=(20))y = 0Plots.hline!([0],ls=:dash,lw=3,lab="")Plots.scatter!([Optim.minimizer(res)], [U(Optim.minimizer(res))], lab="",ms=10)Plots.savefig(PES, "PES.png")=#</code></pre><p>就是上面这个U(h)，但是我其他处理数据的代码都是Python写的。现在想要调用U了，我还得在Python里面再输入一遍。。这怎么能行？重复劳动没前途，于是继续又开发了一下在Python中调用Julia函数的技能。</p><p>步骤很简单（所以我前面水了一堆废话）：</p><ol><li>命令行<code>pip3 install julia</code></li><li>Julia REPL，先输入<code>]</code>，进入pkg&gt;模式，输入<code>add PyCall</code></li><li>Python REPL&gt;&gt;&gt;<code>julia.install()</code></li></ol><p>然后Julia和Python就成功在一起啦！</p><p>在Python脚本调用test.jl文件中U(h)函数的方法：</p><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> julia <span class="token keyword">import</span> MainMain<span class="token punctuation">.</span>include<span class="token punctuation">(</span><span class="token string">"test.jl"</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span>U<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre><p>如果要在Deepin系统（或者其他Debian系统上，以及在Windows系统里用conda安装的Python）实现Python调用Julia的话，前面的操作是类似的，但可能最后会报错，说“Your Python interpreter is statically linked to libpython”。可以选择简单的，在Python前面加上两行，也就是：</p><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> julia<span class="token punctuation">.</span>api <span class="token keyword">import</span> Juliajl <span class="token operator">=</span> Julia<span class="token punctuation">(</span>compiled_modules<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token keyword">from</span> julia <span class="token keyword">import</span> MainMain<span class="token punctuation">.</span>include<span class="token punctuation">(</span><span class="token string">"test.jl"</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>Main<span class="token punctuation">.</span>U<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre><p>这样会使程序变慢，更彻底的选择是自己重装Python，详细可以参考<a href="https://pyjulia.readthedocs.io/en/latest/troubleshooting.html">官方手册上的说明</a>。</p>]]></content>
       
       
       <categories>
@@ -21,6 +21,10 @@
         <tags>
             
             <tag> Python </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Julia </tag>
             
@@ -99,6 +103,8 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
             <tag> VOSviewer </tag>
             
         </tags>
@@ -123,6 +129,8 @@
       
       
         <tags>
+            
+            <tag> Linux </tag>
             
             <tag> LAMMPS </tag>
             
@@ -152,6 +160,8 @@
         <tags>
             
             <tag> Python </tag>
+            
+            <tag> Linux </tag>
             
             <tag> LAMMPS </tag>
             
@@ -257,6 +267,8 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
             <tag> LAMMPS </tag>
             
             <tag> Material Studio </tag>
@@ -313,6 +325,8 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
             <tag> LAMMPS </tag>
             
         </tags>
@@ -367,6 +381,8 @@
             
             <tag> GUI </tag>
             
+            <tag> Windows </tag>
+            
         </tags>
       
     </entry>
@@ -393,6 +409,8 @@
             <tag> Python </tag>
             
             <tag> GUI </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -442,6 +460,8 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
             <tag> Julia </tag>
             
         </tags>
@@ -467,7 +487,7 @@
       
         <tags>
             
-            <tag> LAMMPS </tag>
+            <tag> LAMMPS - Linux </tag>
             
         </tags>
       
@@ -517,9 +537,9 @@
       
         <tags>
             
-            <tag> VSCode </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> VSCode </tag>
             
         </tags>
       
@@ -544,7 +564,7 @@
       
         <tags>
             
-            <tag> LAMMPS </tag>
+            <tag> LAMMPS - Linux </tag>
             
         </tags>
       
@@ -618,6 +638,8 @@
       
       
         <tags>
+            
+            <tag> Linux </tag>
             
             <tag> LAMMPS </tag>
             

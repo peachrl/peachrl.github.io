@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-10-10T14:36:30.000Z</updated>
+  <updated>2021-10-11T04:44:35.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://wanyijizi.com/2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/"/>
     <id>https://wanyijizi.com/2021/10/10/%E5%9C%A8Python%E4%B8%AD%E8%B0%83%E7%94%A8Julia%E5%87%BD%E6%95%B0/</id>
     <published>2021-10-10T14:36:30.000Z</published>
-    <updated>2021-10-10T14:36:30.000Z</updated>
+    <updated>2021-10-11T04:44:35.000Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;success&quot;&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;运行环境：Win11，Python 3.8.5，Julia 1.5.3&lt;/p&gt;
+&lt;p&gt;运行环境：Win11 or Deepin 20.2.3，Python 3.8.5，Julia 1.5.3&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 
@@ -39,6 +39,10 @@
     
     
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
     
@@ -119,6 +123,8 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
     <category term="VOSviewer" scheme="https://wanyijizi.com/tags/VOSviewer/"/>
     
   </entry>
@@ -137,6 +143,8 @@
     
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
@@ -178,6 +186,8 @@
     
     
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
@@ -279,6 +289,8 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
     <category term="Material Studio" scheme="https://wanyijizi.com/tags/Material-Studio/"/>
@@ -323,6 +335,8 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     
   </entry>
@@ -365,6 +379,8 @@
     
     <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
     
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
   </entry>
   
   <entry>
@@ -385,6 +401,8 @@
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
     <category term="GUI" scheme="https://wanyijizi.com/tags/GUI/"/>
+    
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
   </entry>
   
@@ -428,6 +446,8 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
+    <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
     <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
     
   </entry>
@@ -453,7 +473,7 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    <category term="LAMMPS - Linux" scheme="https://wanyijizi.com/tags/LAMMPS-Linux/"/>
     
   </entry>
   
@@ -491,9 +511,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="VSCode" scheme="https://wanyijizi.com/tags/VSCode/"/>
-    
     <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
+    
+    <category term="VSCode" scheme="https://wanyijizi.com/tags/VSCode/"/>
     
   </entry>
   
@@ -512,7 +532,7 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    <category term="LAMMPS - Linux" scheme="https://wanyijizi.com/tags/LAMMPS-Linux/"/>
     
   </entry>
   
@@ -571,6 +591,8 @@
     
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     

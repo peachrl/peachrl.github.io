@@ -30,6 +30,8 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 <details open>
 <summary>2021年</summary>
 
+&emsp;&emsp;**2021年11月18日**&emsp;双十一活动，为域名wanyijizi.com续费到2025年8月22日。
+
 &emsp;&emsp;**2021年9月26日**&emsp;公安备案通过。
 
 &emsp;&emsp;**2021年9月7日**&emsp;由于公安备案的需要（申请的非经营性备案），关闭Valine评论区。
@@ -38,7 +40,7 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 &emsp;&emsp;**2021年8月26日**&emsp;本站在云服务器上部署完成，并提交备案申请。由于备案的需要，网站改名“peachRL的小站”，“万亿及秭”降级为网站的标语。
 
-&emsp;&emsp;**2021年8月22日**&emsp;博主桃斥巨资在腾讯云买下域名wanyijizi.com一年，轻量应用服务器3年。
+&emsp;&emsp;**2021年8月22日**&emsp;博主桃斥“巨资”在腾讯云买下域名wanyijizi.com一年，轻量应用服务器3年。
 
 &emsp;&emsp;**2021年2月20日**&emsp;更换网站主题[Yun](https://github.com/YunYouJun/hexo-theme-yun)
 

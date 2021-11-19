@@ -91,7 +91,7 @@
         <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 <p>nginx会将收到的所有请求都转发到”127.0.0.1:5678″端口上，即uWSGI服务器上。</p>
-<p>这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过<a target="_blank" rel="noopener" href="http://localhost/contact%E6%9D%A5%E8%AE%BF%E9%97%AE%E6%88%91%E4%BB%AC%E8%BF%99%E9%87%8C%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%8C%E5%88%99%E8%A6%81%E5%9C%A8nginx%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E5%8A%A0%E5%85%A5%60uwsgi_param">http://localhost/contact来访问我们这里所需要的应用，则要在nginx的配置文件中加入`uwsgi_param</a> SCRIPT_NAME /contact;`。</p>
+<p>这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过<a target="_blank" rel="noopener" href="http://localhost/contact%E6%9D%A5%E8%AE%BF%E9%97%AE%E6%88%91%E4%BB%AC%E8%BF%99%E9%87%8C%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%8C%E5%88%99%E8%A6%81%E5%9C%A8nginx%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E5%8A%A0%E5%85%A5">http://localhost/contact来访问我们这里所需要的应用，则要在nginx的配置文件中加入</a> <code>uwsgi_param SCRIPT_NAME /contact;</code>。</p>
 <p>另外uwsgi配置文件uwsgi.ini：</p>
 <pre class="language-none"><code class="language-none">[uwsgi]
 socket = 127.0.0.1:5678

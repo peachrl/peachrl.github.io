@@ -20,13 +20,42 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Python </tag>
             
             <tag> Windows </tag>
             
+            <tag> Linux </tag>
+            
             <tag> Julia </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Github+Webhook+Nginx实现网站自动化部署</title>
+      <link href="2021/09/22/Github+Webhook+Nginx%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+      <url>2021/09/22/Github+Webhook+Nginx%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</url>
+      
+        <content type="html"><![CDATA[<p>桃子的小站已经从Github Pages服务转移到了腾讯的云服务器上。这样就有了两个新问题：一是，再像以往直接用<code>hexo d -g</code>，能够将生成的静态网页推送到github上，但并不能直接放到云服务器上；二，云服务器上的静态网页怎么能够通过域名访问到？本文就来解决这两个问题。</p><a id="more"></a><p>未完待续…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Nginx </tag>
+            
+            <tag> Webhook </tag>
             
         </tags>
       
@@ -159,9 +188,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Linux </tag>
             
             <tag> LAMMPS </tag>
             

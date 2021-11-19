@@ -38,13 +38,36 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
     
     <category term="Windows" scheme="https://wanyijizi.com/tags/Windows/"/>
     
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
+    
     <category term="Julia" scheme="https://wanyijizi.com/tags/Julia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github+Webhook+Nginx实现网站自动化部署</title>
+    <link href="https://wanyijizi.com/2021/09/22/Github+Webhook+Nginx%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    <id>https://wanyijizi.com/2021/09/22/Github+Webhook+Nginx%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</id>
+    <published>2021-09-22T08:22:53.000Z</published>
+    <updated>2021-09-22T08:22:53.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;桃子的小站已经从Github Pages服务转移到了腾讯的云服务器上。这样就有了两个新问题：一是，再像以往直接用&lt;code&gt;hexo d -g&lt;/code&gt;，能够将生成的静态网页推送到github上，但并不能直接放到云服务器上；二，云服务器上的静态网页怎么能够通过域名访问到？本文就来解决这两个问题。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
+    
+    <category term="Nginx" scheme="https://wanyijizi.com/tags/Nginx/"/>
+    
+    <category term="Webhook" scheme="https://wanyijizi.com/tags/Webhook/"/>
     
   </entry>
   
@@ -185,9 +208,9 @@
     <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
-    
     <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
     

@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-10-11T04:44:35.000Z</updated>
+  <updated>2021-11-19T04:55:48.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python3+uWSGI+Nginx处理POST表单数据</title>
+    <link href="https://wanyijizi.com/2021/11/19/Python3+uWSGI+Nginx%E5%A4%84%E7%90%86POST%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/"/>
+    <id>https://wanyijizi.com/2021/11/19/Python3+uWSGI+Nginx%E5%A4%84%E7%90%86POST%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</id>
+    <published>2021-11-19T04:55:48.000Z</published>
+    <updated>2021-11-19T04:55:48.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;用Hexo套现成的主题做出的静态网页快是快，但是没什么意思。所以..本篇是博主桃的小站进阶学习记录～ ҉٩(&lt;em&gt;´︶`&lt;/em&gt;)۶҉!! 之处理POST表单数据。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Python" scheme="https://wanyijizi.com/tags/Python/"/>
+    
+    <category term="Nginx" scheme="https://wanyijizi.com/tags/Nginx/"/>
+    
+    <category term="uWSGI" scheme="https://wanyijizi.com/tags/uWSGI/"/>
+    
+  </entry>
   
   <entry>
     <title>在Python中调用Julia函数</title>

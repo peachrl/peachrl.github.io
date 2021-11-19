@@ -87,7 +87,7 @@ server {
 
 nginx会将收到的所有请求都转发到”127.0.0.1:5678″端口上，即uWSGI服务器上。
 
-这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过http://localhost/contact来访问我们这里所需要的应用，则要在nginx的配置文件中加入`uwsgi_param SCRIPT_NAME /contact;`。
+这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过http://localhost/contact来访问我们这里所需要的应用，则要在nginx的配置文件中加入 `uwsgi_param SCRIPT_NAME /contact;`。
 
 另外uwsgi配置文件uwsgi.ini：
 

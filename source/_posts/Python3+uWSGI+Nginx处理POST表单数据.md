@@ -122,7 +122,7 @@ uWSGI服务器由命令`uwsgi --ini /home/lighthouse/uwsgi/uwsgi.ini`启动，�
 
 前面将 http://127.0.0.1/contact 指向了/home/lighthouse/uwsgi/contact.py这个应用。在contact.py中使用了python3的urllib库进行数据处理。
 
-这里强烈推荐参考[【这篇文章】](https://wsgi.tutorial.codepoint.net/parsing-the-request-post)，很有启发。关键就是：
+这里强烈推荐参考[【Parsing the Request - Post】](https://wsgi.tutorial.codepoint.net/parsing-the-request-post)这篇文章，很有启发。关键就是：
 
 ```python
 request_body_size = int(environ.get('CONTENT_LENGTH', 0))

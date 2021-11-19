@@ -62,7 +62,7 @@ contact_name=%E6%A1%83%E5%AD%90&contact_email=peachrl%40aliyun.com&contact_messa
 
 ## nginx+uwsgi反向代理接收数据
 
-我们将数据发送到了网址 http://test.com/contact ，服务器端由nginx使用uwsgi_pass代理，nginx的配置文件：
+我们将数据发送到了网址 http://test.com/contact ，服务器端由nginx使用uwsgi_pass代理，nginx的配置文件：
 
 ```nginx
 server {
@@ -87,7 +87,7 @@ server {
 
 nginx会将收到的所有请求都转发到”127.0.0.1:5678″端口上，即uWSGI服务器上。
 
-这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过 http://localhost/contact 来访问我们这里所需要的应用，则要在nginx的配置文件中加入 `uwsgi_param SCRIPT_NAME /contact;`。
+这里SCRIPT_NAME是用来区分应用的。一个nginx中可以同时运行多个应用，如果想通过不同的路径来路由不同的应用，比如通过 http://localhost/contact 来访问我们这里所需要的应用，则要在nginx的配置文件中加入 `uwsgi_param SCRIPT_NAME /contact;`。
 
 另外uwsgi配置文件uwsgi.ini：
 
@@ -120,9 +120,9 @@ uWSGI服务器由命令`uwsgi --ini /home/lighthouse/uwsgi/uwsgi.ini`启动，�
 
 ## python3处理数据
 
-前面将 http://127.0.0.1/contact 指向了/home/lighthouse/uwsgi/contact.py这个应用。在contact.py中使用了python3的urllib库进行数据处理。
+前面将 http://127.0.0.1/contact 指向了/home/lighthouse/uwsgi/contact.py这个应用。在contact.py中使用了python3的urllib库进行数据处理。
 
-这里强烈推荐参考[文献](https://wsgi.tutorial.codepoint.net/parsing-the-request-post)，很有启发。关键就是：
+这里强烈推荐参考[【这篇文章】](https://wsgi.tutorial.codepoint.net/parsing-the-request-post)，很有启发。关键就是：
 
 ```python
 request_body_size = int(environ.get('CONTENT_LENGTH', 0))

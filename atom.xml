@@ -25,10 +25,10 @@
     
     
     <summary type="html">&lt;p&gt;仅针对&lt;strong&gt;中国科技云·超算云：BSCC-A 超算系统&lt;/strong&gt;，网址为 &lt;a href=&quot;https://scc.blsc.cn/&quot;&gt;https://scc.blsc.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本来超算上有预装一些开源软件，比如 lammps，可以用 module 工具加载。我最近需要一个比较新版本的 lammps，在超算里用 &lt;code&gt;module avail&lt;/code&gt; 命令找了找，只找到下面这一个：&lt;/p&gt;
+&lt;p&gt;本来超算上有预装一些开源软件，比如 lammps，可以用 module 工具加载。最近需要一个比较新版本的 lammps，在超算里用 &lt;code&gt;module avail&lt;/code&gt; 命令找了找，只找到下面这一个：&lt;/p&gt;
 &lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;source /public3/soft/modules/module.sh
 module load lammps/intel17/lammps-31Aug2021-public3&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可是我进到这个里面看了看，发现我需要的 reaxff 和 molecule 都没有装：&lt;/p&gt;
+&lt;p&gt;可是进到这个里面看了看，发现需要的 reaxff 和 molecule 都没有装：&lt;/p&gt;
 &lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;cd /public3/soft/lammps/intel17/lammps-31Aug2021
 cd src/
 make pi # lammps 查看已安装的 package 的命令&lt;/code&gt;&lt;/pre&gt;

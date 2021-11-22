@@ -21,14 +21,14 @@ aplayer: true
 
 仅针对**中国科技云·超算云：BSCC-A 超算系统**，网址为 https://scc.blsc.cn/
 
-本来超算上有预装一些开源软件，比如 lammps，可以用 module 工具加载。我最近需要一个比较新版本的 lammps，在超算里用 `module avail` 命令找了找，只找到下面这一个：
+本来超算上有预装一些开源软件，比如 lammps，可以用 module 工具加载。最近需要一个比较新版本的 lammps，在超算里用 `module avail` 命令找了找，只找到下面这一个：
 
 ```shell
 source /public3/soft/modules/module.sh
 module load lammps/intel17/lammps-31Aug2021-public3
 ```
 
-可是我进到这个里面看了看，发现我需要的 reaxff 和 molecule 都没有装：
+可是进到这个里面看了看，发现需要的 reaxff 和 molecule 都没有装：
 
 ```shell
 cd /public3/soft/lammps/intel17/lammps-31Aug2021

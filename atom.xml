@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-11-19T04:55:48.000Z</updated>
+  <updated>2021-11-22T08:43:01.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>超算上安装lammps的步骤</title>
+    <link href="https://wanyijizi.com/2021/11/22/%E8%B6%85%E7%AE%97%E4%B8%8A%E5%AE%89%E8%A3%85lammps%E7%9A%84%E6%AD%A5%E9%AA%A4/"/>
+    <id>https://wanyijizi.com/2021/11/22/%E8%B6%85%E7%AE%97%E4%B8%8A%E5%AE%89%E8%A3%85lammps%E7%9A%84%E6%AD%A5%E9%AA%A4/</id>
+    <published>2021-11-22T08:43:01.000Z</published>
+    <updated>2021-11-22T08:43:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;仅针对&lt;strong&gt;中国科技云·超算云：BSCC-A 超算系统&lt;/strong&gt;，网址为 &lt;a href=&quot;https://scc.blsc.cn/&quot;&gt;https://scc.blsc.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本来超算上有预装一些开源软件，比如 lammps，可以用 module 工具加载。我最近需要一个比较新版本的 lammps，在超算里用 &lt;code&gt;module avail&lt;/code&gt; 命令找了找，只找到下面这一个：&lt;/p&gt;
+&lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;source /public3/soft/modules/module.sh
+module load lammps/intel17/lammps-31Aug2021-public3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可是我进到这个里面看了看，发现我需要的 reaxff 和 molecule 都没有装：&lt;/p&gt;
+&lt;pre class=&quot;language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;cd /public3/soft/lammps/intel17/lammps-31Aug2021
+cd src/
+make pi # lammps 查看已安装的 package 的命令&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://image.wanyijizi.com/20211122/bc54475dcabeda5fb67b19789394ecf4.png&quot; alt=&quot;bc54475dcabeda5fb67b19789394ecf4.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;只好自己装一个了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="超算" scheme="https://wanyijizi.com/tags/%E8%B6%85%E7%AE%97/"/>
+    
+    <category term="Slurm" scheme="https://wanyijizi.com/tags/Slurm/"/>
+    
+    <category term="lammps" scheme="https://wanyijizi.com/tags/lammps/"/>
+    
+  </entry>
   
   <entry>
     <title>Python3+uWSGI+Nginx处理POST表单数据</title>

@@ -28,7 +28,7 @@ source /public3/soft/modules/module.sh
 module load lammps/intel17/lammps-31Aug2021-public3
 ```
 
-可是进到这个里面看了看，发现需要的 reaxff 和 molecule 都没有装：
+可是进到这个里面，发现需要的 reaxff 和 molecule 都没有装：
 
 ```shell
 cd /public3/soft/lammps/intel17/lammps-31Aug2021

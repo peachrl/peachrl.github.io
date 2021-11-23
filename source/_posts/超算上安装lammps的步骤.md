@@ -9,7 +9,7 @@ categories: 软件
 tags: 
 	- 超算
 	- Slurm
-	- lammps
+	- LAMMPS
 aplayer: true
 # type: bilibili
 # url: https://www.bilibili.com/video/av8153395/

@@ -270,20 +270,6 @@
 
   
   <url>
-    <loc>https://wanyijizi.com/tags/Linux/</loc>
-    <lastmod>2021-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/Android/</loc>
-    <lastmod>2021-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/Python/</loc>
     <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -305,6 +291,27 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/tags/Linux/</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Android/</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/Julia/</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/tags/Nginx/</loc>
     <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -319,13 +326,6 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Julia/</loc>
-    <lastmod>2021-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/LAMMPS/</loc>
     <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -333,14 +333,14 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/uWSGI/</loc>
+    <loc>https://wanyijizi.com/tags/Mendeley/</loc>
     <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Mendeley/</loc>
+    <loc>https://wanyijizi.com/tags/uWSGI/</loc>
     <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

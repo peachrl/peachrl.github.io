@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>反应力场如何提高并行计算效率</title>
+      <link href="2021/11/24/%E5%8F%8D%E5%BA%94%E5%8A%9B%E5%9C%BA%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E8%BF%90%E7%AE%97%E6%95%88%E7%8E%87%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>2021/11/24/%E5%8F%8D%E5%BA%94%E5%8A%9B%E5%9C%BA%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E8%BF%90%E7%AE%97%E6%95%88%E7%8E%87%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三种配置的模拟速度"><a href="#三种配置的模拟速度" class="headerlink" title="三种配置的模拟速度"></a>三种配置的模拟速度</h2><p>2000+ 个原子的模拟体系，时间步长 0.5 fs，以下是模拟 100 步的结果。</p><h3 id="桃子的小机器"><a href="#桃子的小机器" class="headerlink" title="桃子的小机器"></a>桃子的小机器</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><img src="https://image.wanyijizi.com/20211124/b9b32591a4b545b6133315c537a7a130.png" alt="b9b32591a4b545b6133315c537a7a130.png" loading="lazy"></p><h4 id="单核计算"><a href="#单核计算" class="headerlink" title="单核计算"></a>单核计算</h4><p>Preformance 一行显示的是最直观的速度，如下图，一天能模拟物理时间 0.127 ns，每秒钟模拟的 2.939 步。</p><p>MPI 表格里 Comm 一行显示的是多核并行计算核间通讯时间。</p><p><img src="https://image.wanyijizi.com/20211124/790da3b8e2f30b2263976addb00d267d.png" alt="790da3b8e2f30b2263976addb00d267d.png" loading="lazy"></p><h4 id="2核计算"><a href="#2核计算" class="headerlink" title="2核计算"></a>2核计算</h4><p><strong>加速比V<sub>8</sub>/V<sub>1</sub> = 1.68，加速效率V<sub>8</sub>/(pV<sub>1</sub>) = 83.75%</strong></p><p><img src="https://image.wanyijizi.com/20211124/acb8eec2baf0de4ad2b902fc641ad792.png" alt="acb8eec2baf0de4ad2b902fc641ad792.png" loading="lazy"></p><h4 id="4核计算"><a href="#4核计算" class="headerlink" title="4核计算"></a>4核计算</h4><p>通讯时间占比 26.43%，这才 4 核，略有点高。</p><p><strong>加速比V<sub>8</sub>/V<sub>1</sub> = 1.69，加速效率V<sub>8</sub>/(pV<sub>1</sub>) = 42.26%</strong></p><p><img src="https://image.wanyijizi.com/20211124/0342a3f7f3731eecb747487eba30ba64.png" alt="0342a3f7f3731eecb747487eba30ba64.png" loading="lazy"></p><h3 id="实验室的小机器（hpc5）"><a href="#实验室的小机器（hpc5）" class="headerlink" title="实验室的小机器（hpc5）"></a>实验室的小机器（hpc5）</h3><h4 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h4><p><img src="https://image.wanyijizi.com/20211124/dd32c97bc0c89ba106090624768a59db.png" alt="dd32c97bc0c89ba106090624768a59db.png" loading="lazy"></p><h4 id="单核计算-1"><a href="#单核计算-1" class="headerlink" title="单核计算"></a>单核计算</h4><p><img src="https://image.wanyijizi.com/20211124/c70a2f956e6647b68ec0d6d4adc85be2.png" alt="c70a2f956e6647b68ec0d6d4adc85be2.png" loading="lazy"></p><h4 id="8核计算"><a href="#8核计算" class="headerlink" title="8核计算"></a>8核计算</h4><p><strong>加速比V<sub>8</sub>/V<sub>1</sub> = 2.87，加速效率V<sub>8</sub>/(pV<sub>1</sub>) = 35.83%</strong></p><p><img src="https://image.wanyijizi.com/20211124/eee4a20eb5cd7e80baebaec317c22830.png" alt="eee4a20eb5cd7e80baebaec317c22830.png" loading="lazy"></p><h4 id="24核计算"><a href="#24核计算" class="headerlink" title="24核计算"></a>24核计算</h4><p><strong>加速比V<sub>24</sub>/V<sub>1</sub> = 4.20，加速效率V<sub>24</sub>/(pV<sub>1</sub>) = 17.5%</strong></p><p><img src="https://image.wanyijizi.com/20211124/6b6897539e7a8802b2d39e92b54463ea.png" alt="6b6897539e7a8802b2d39e92b54463ea.png" loading="lazy"></p><h3 id="中国科技云·超算云（BSCC-A系统）"><a href="#中国科技云·超算云（BSCC-A系统）" class="headerlink" title="中国科技云·超算云（BSCC-A系统）"></a>中国科技云·超算云（BSCC-A系统）</h3><h4 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h4><p>AMD EPYC 7452 32-Core Processor，64核，256G内存，节点间采用 ib 网互连。（从<a href="https://www.amd.com/zh-hans/products/cpu/amd-epyc-7452">AMD官网</a>上找到这款处理器的基准时钟频率是2.35GHz）</p><h4 id="单核计算-2"><a href="#单核计算-2" class="headerlink" title="单核计算"></a>单核计算</h4><p><img src="https://image.wanyijizi.com/20211124/907688eb223e414a77fb93df5b6b1892.png" alt="907688eb223e414a77fb93df5b6b1892.png" loading="lazy"></p><h4 id="32核计算"><a href="#32核计算" class="headerlink" title="32核计算"></a>32核计算</h4><p><strong>加速比V<sub>32</sub>/V<sub>1</sub> = 5.40，加速效率V<sub>32</sub>/(pV<sub>1</sub>) = 16.87%</strong></p><p><img src="https://image.wanyijizi.com/20211124/b5da55deafdefc14c80d150eef6e6135.png" alt="b5da55deafdefc14c80d150eef6e6135.png" loading="lazy"></p><h4 id="64核计算"><a href="#64核计算" class="headerlink" title="64核计算"></a>64核计算</h4><p>通讯时间占比 17.85%，64核，还是可以的。</p><p><strong>加速比V<sub>64</sub>/V<sub>1</sub> = 7.85，加速效率V<sub>64</sub>/(pV<sub>1</sub>) = 12.27%</strong></p><p><img src="https://image.wanyijizi.com/20211124/87d5fb6bfd284bf436390fe947e5e99e.png" alt="87d5fb6bfd284bf436390fe947e5e99e.png" loading="lazy"></p><h2 id="网络上关于“Reaxff模拟速度讨论”"><a href="#网络上关于“Reaxff模拟速度讨论”" class="headerlink" title="网络上关于“Reaxff模拟速度讨论”"></a>网络上关于“Reaxff模拟速度讨论”</h2><h4 id="来源网址：http-bbs-keinsci-com-thread-19592-1-1-html"><a href="#来源网址：http-bbs-keinsci-com-thread-19592-1-1-html" class="headerlink" title="来源网址：http://bbs.keinsci.com/thread-19592-1-1.html"></a>来源网址：<a href="http://bbs.keinsci.com/thread-19592-1-1.html">http://bbs.keinsci.com/thread-19592-1-1.html</a></h4><blockquote><ol><li> 单精度fftw库的18Sep20版本LAMMPS，用Reaxff跑10万原子体系。机器是40核128G内存，RTX2080一块（Reaxff用GPU需要Kokkos包，这里只是纯CPU跑）。时间步长0.25 fs，40 MPI*1 Openmp，平均每小时才跑3700步左右。跑Reaxff的HNS例子，才0.193 ns/day（例子中4核的benchmark是0.04 ns/day，也够慢的）。Reaxff跑每一步都要用Qeq方法计算电荷，比一般分子力场慢不少，但也不至于如此慢。。。</li><li> 另外GPU版LAMMPS在pcff力场下跑17000原子，速度是8.1 ns/day。</li><li> 两颗8173M+192G内存，10370个原子的反应动力学，0.1fs每步，没有使用Kokkos加速包，只有CPU，共跑200ps。最后是0.072ns/day，333.705hours/ns，8.324 timestep/s</li></ol></blockquote><h4 id="来源网址：https-github-com-Roy-Kid-lammpscn-issues-13"><a href="#来源网址：https-github-com-Roy-Kid-lammpscn-issues-13" class="headerlink" title="来源网址：https://github.com/Roy-Kid/lammpscn/issues/13"></a>来源网址：<a href="https://github.com/Roy-Kid/lammpscn/issues/13">https://github.com/Roy-Kid/lammpscn/issues/13</a></h4><blockquote><p>虽然ReaxFF从一定意义上来说属于经验力场，但是计算成本还是相当高，比如我一个4500个原子的model，使用武汉大学超算16核，计算速度大概时0.137ns/day。然后还不支持lammps_GPU加速，只支持KOKKOS和OMP加速。这个KOKKOS我尝试了一下，1066的显卡的计算速度大概等于8核的CPU，但是还是比不过16核的CPU，如果显卡的计算能力更强的话可能计算速度还可以更快。</p></blockquote><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ol><li> ReaxFF 并行计算是比较慢</li><li> lammps 中 ReaxFF 想要加速只能通过 KOKKOS 和 OMP</li></ol><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol><li> 没有化学反应参与，没有键的断开与生成，暂时可以改用别的势函数</li><li> 学习一下怎么对反应力场的计算进行加速，毕竟总用得到的，比如高速粒子怎么把壁面打穿之类的</li></ol><p><strong>未完待续……</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LAMMPS </tag>
+            
+            <tag> 超算 </tag>
+            
+            <tag> Slurm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>超算上安装lammps的步骤</title>
       <link href="2021/11/22/%E8%B6%85%E7%AE%97%E4%B8%8A%E5%AE%89%E8%A3%85lammps%E7%9A%84%E6%AD%A5%E9%AA%A4/"/>
       <url>2021/11/22/%E8%B6%85%E7%AE%97%E4%B8%8A%E5%AE%89%E8%A3%85lammps%E7%9A%84%E6%AD%A5%E9%AA%A4/</url>

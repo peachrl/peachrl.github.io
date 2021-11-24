@@ -61,3 +61,6 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 
 </details>
 
+## 特别感谢
+
+前往[贡献墙](https://journal.wanyijizi.com/)

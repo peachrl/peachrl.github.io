@@ -63,7 +63,6 @@ date: 2017-10-09 19:11:58
 comments: false
 type: tags
 ---
-
 ```
 
 ## Categories
@@ -85,7 +84,6 @@ date: 2017-10-12 10:47:16
 comments: false
 type: categories
 ---
-
 ```
 
 ::: tip
@@ -189,7 +187,6 @@ links:
 placeholder: I haven't thought about what to say # The default description of YouChain
 tip: Friendchain loading in progress ~ If it fails, please refresh and try again ~
 ---
-
 ```
 
 Let the friend chain display on the sidebar [sidebar-page link](/guide/config.html#pagelink)
@@ -214,6 +211,42 @@ description: Friends of Yunyou
 comments: true
 links: https://cdn.jsdelivr.net/gh/YunYouJun/friends@gh-pages/links.json
 random: true
+```
+
+When you try to customize JSON manually, make sure that the JSON file is formatted correctly.
+
+Create a new JSON file, e.g. `source/links.json`.
+
+Template:
+
+```json
+[
+  {
+    "url": "博客链接",
+    "avatar": "头像地址",
+    "name": "作者昵称",
+    "blog": "博客名称",
+    "desc": "描述",
+    "color": "主题色",
+    "email": "电子邮箱（非必需）"
+  }
+]
+```
+
+Example:
+
+```json
+[
+  {
+    "url": "https://www.yunyoujun.cn",
+    "avatar": "https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg",
+    "name": "云游君",
+    "blog": "云游君的小站",
+    "desc": "All at sea.",
+    "color": "#0078e7",
+    "email": "me@yunyoujun.cn"
+  }
+]
 ```
 
 > Note: Using jsdelivr may be delayed due to the CDN.
@@ -252,7 +285,6 @@ girls:
     url: character encyclopedia link
     reason: the reason for crushing
 ---
-
 ```
 
 Please refer to my [configuration](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/source/girls/index.md).
@@ -287,8 +319,8 @@ hexo new page albums
 Enter `source/albums/index.md`, set `type`, and add album link, cover, etc.
 
 - `caption`: album title
-- url`: album link`
-- cover`: album cover`
+- `url`: album link
+- `cover`: album cover (It's better to use the link form that begins with `http` or `https`)
 - `desc`: album description
 
 ```yaml {2}
@@ -300,7 +332,6 @@ albums:
     cover: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
     desc: 我想起那天夕阳下的奔跑
 ---
-
 ```
 
 ### Gallery
@@ -354,7 +385,6 @@ photos:
     src: https://i.picsum.photos/id/198/510/300.jpg
     desc: That is my lost youth
 ---
-
 ```
 
 > Why use album collection as `albums` and `gallery` as album?
@@ -388,7 +418,6 @@ slide:
     history: true
     mouseWheel: true
 ---
-
 ```
 
 Then start writing your Slides file with Markdown directly below.

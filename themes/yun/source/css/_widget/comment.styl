@@ -1,3 +1,21 @@
+// minivaline
+if (hexo-config('minivaline.enable')) {
+  :root {
+    --ohhho-color-p: var(--hty-text-color) !important;
+    --ohhho-color-text: var(--hty-secondary-text-color) !important;
+    --ohhho-color-card: var(--post-block-bg-color) !important;
+    --ohhho-color-block: var(--hty-bg-color) !important;
+  }
+}
+
+// waline
+if (hexo-config('waline.enable')) {
+  #waline {
+    --waline-theme-color: $colors.primary;
+    --waline-active-color: rgba($colors.primary, 0.8);
+  }
+}
+
 #comment {
   margin: 0 1rem;
   padding: 1rem;

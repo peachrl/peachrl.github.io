@@ -133,7 +133,7 @@
   },
   {
     "name": "喵二の小博客",
-    "url": "https://miaoermua.github.io/",
+    "url": "https://www.miaoer.xyz",
     "avatar": "https://cdn.jsdelivr.net/gh/miaoermua/miaoermua.github.io@latest/logo/weblogo.png",
     "desc": "喜欢分享一些东西 ୧(﹒ ᴗ﹒ )୨"
   },
@@ -146,8 +146,8 @@
   {
     "name": "星云荒原",
     "url": "http://wasteland.wifikun.top",
-    "avatar": "http://wasteland.wifikun.top/images/avatar.jpg",
-    "desc": "Heaven and earth, my guiding star."
+    "avatar": "https://wifikun-1257416258.cos.ap-shanghai.myqcloud.com/NebulaStarshipServer/avatar.jpg",
+    "desc": "✨Chase your passions, do what you love.✨"
   },
   {
     "name": "包子君的小站",
@@ -176,7 +176,7 @@
   {
     "name": "时前进的小站",
     "url": "https://www.eevee.fun/",
-    "avatar": "https://www.eevee.fun/touxiang.jpg",
+    "avatar": "https://www.eevee.fun/touxiang.PNG",
     "desc": "祝家人们天天开心，天天快乐就OK了。"
   },
   {
@@ -190,5 +190,71 @@
     "url": "https://kuuhaku.top",
     "avatar": "https://cdn.jsdelivr.net/gh/kuuhaku-w/blogimg/intro/avatar_ai.png",
     "desc": "永远是深夜该有多好"
+  },
+  {
+    "name": "大蛋糕的烘焙坊",
+    "url": "https://bigcake.cakemc.top",
+    "avatar": "https://cdn.jsdelivr.net/gh/Big-Cake-jpg/Image_For_My_Blog/tx.jpg",
+    "desc": "又是搞怪的一天（"
+  },
+  {
+    "name": "老哲的小站",
+    "url": "https://masle.top",
+    "avatar": "https://masle.gitee.io/maslebloglib/picture/TOUXIANG/touxiang.png",
+    "desc": "在人的一生，总是为了追寻生命中的光，而走在漫长的旅途上"
+  },
+  {
+    "name": "Adkinsm BLOG",
+    "url": "https://blog.adkimsm.asia/",
+    "avatar": "https://blog.adkimsm.asia/logo.svg",
+    "desc": "Adkinsm 的小站"
+  },
+  {
+    "name": "MleMoe",
+    "url": "https://blog.mle.moe/",
+    "avatar": "https://blog.mle.moe/images/girl.jpeg",
+    "desc": "鸽子的一百种做法"
+  },
+  {
+    "name": "七月流火",
+    "url": "https://qylh.xyz/",
+    "avatar": "https://qylh.xyz/avatar.jpg",
+    "desc": "记录一些学习过程，主要是软硬件开发"
+  },
+  {
+    "name": "泠风寒声的小窝",
+    "url": "https://lfhsheng.github.io/",
+    "avatar": "https://lfhsheng.github.io/images/lfhsheng.jpg",
+    "desc": "沉浸在Touch Fish的海洋中无法自拔"
+  },
+  {
+    "name": "Yuumi的烟波之路",
+    "url": "https://yuumi0221.github.io/",
+    "avatar": "https://cdn.jsdelivr.net/gh/Yuumi0221/Yuumi0221.github.io/images/settings/favicon.png",
+    "desc": "いつか伝えに行くよ"
+  },
+  {
+    "name": "你看起来很好吃",
+    "url": "https://Melanie618.github.io/",
+    "avatar": "https://melanie618.github.io/images/avatar.jpg",
+    "desc": "可可爱爱，没有脑袋"
+  },
+  {
+    "name": "落梅听风雪",
+    "url": "https://yuexiaoya.cn/",
+    "avatar": "https://www.yuexiaoya.cn/images/photo.jpg",
+    "desc": "这次一定不会让它停服了,来自头号玩家的碎碎念^_^"
+  },
+  {
+    "name": "小文的博客",
+    "url": "https://siquan-wen.github.io/",
+    "avatar": "https://github.com/SiQuan-Wen/SiQuan-Wen.github.io/blob/hexo/source/images/avatar.jpg",
+    "desc": "救赎之道，就在其中"
+  },
+  {
+    "name": "随风的小站",
+    "url": "https://awslnotbad.cn",
+    "avatar": "https://gitee.com/Awslnotbad/picture/raw/master/img/headpic.jpg",
+    "desc": "简单的个人Blog"
   }
 ]

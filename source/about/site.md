@@ -30,6 +30,8 @@ peachRL就是个普通的网名，博主我就是个普通的桃子，粉嫩嫩�
 <details open>
 <summary>2021年</summary>
 
+&emsp;&emsp;**2021年11月24日**&emsp;加入[十年之约](https://www.foreverblog.cn/)。
+
 &emsp;&emsp;**2021年11月18日**&emsp;双十一活动，为域名wanyijizi.com续费到2025年8月22日。
 
 &emsp;&emsp;**2021年9月26日**&emsp;公安备案通过。

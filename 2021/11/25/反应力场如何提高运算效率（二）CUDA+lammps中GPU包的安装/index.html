@@ -98,8 +98,8 @@ options nouveau modeset=0</code></pre>
 <p>然后运行以下命令：</p>
 <p><img src="https://image.wanyijizi.com/20211125/a96dceb117e84bf1b5bf7893e2f5a26b.png" alt="1e1407981f7f18268a622f311d3cd333.png" loading="lazy"></p>
 <p>然后重启。</p>
-<h3 id="下载-CUDA"><a href="#下载-CUDA" class="headerlink" title="下载 CUDA"></a>下载 CUDA</h3><pre class="language-none"><code class="language-none">wget https://developer.download.nvidia.com/compute/cuda/11.5.1/local_installers/cuda_11.5.1_495.29.05_linux.run</code></pre>
-<h3 id="安装-CUDA"><a href="#安装-CUDA" class="headerlink" title="安装 CUDA"></a>安装 CUDA</h3><pre class="language-none"><code class="language-none">sudo sh cuda_11.5.1_495.29.05_linux.run</code></pre>
+<h3 id="下载-CUDA"><a href="#下载-CUDA" class="headerlink" title="下载 CUDA"></a>下载 CUDA</h3><pre class="language-shell" data-language="shell"><code class="language-shell">wget https://developer.download.nvidia.com/compute/cuda/11.5.1/local_installers/cuda_11.5.1_495.29.05_linux.run</code></pre>
+<h3 id="安装-CUDA"><a href="#安装-CUDA" class="headerlink" title="安装 CUDA"></a>安装 CUDA</h3><pre class="language-shell" data-language="shell"><code class="language-shell">sudo sh cuda_11.5.1_495.29.05_linux.run</code></pre>
 <p>这个命令要等好久才有反应（不过也可能是这个机器 28 个核被师兄占了 26 个计算的原因？），然后问是否接受上面的条款：</p>
 <p><img src="https://image.wanyijizi.com/20211125/5aaf81a8132146ada3261370b5c1d040.png" alt="68038216d747e679ff5424a7c55c8a82.png" loading="lazy"></p>
 <p>当然 accept，</p>
@@ -113,8 +113,8 @@ options nouveau modeset=0</code></pre>
 <h4 id="插播掉坑记录"><a href="#插播掉坑记录" class="headerlink" title="插播掉坑记录"></a>插播掉坑记录</h4><p>因为之前疏忽了没有重启，而且也没有意识到停用 Nouveau 之后重启的必要性，所以按照上面提到的博文操作了以下手动安装驱动的流程。</p>
 <h5 id="下载对应-GPU-型号的驱动"><a href="#下载对应-GPU-型号的驱动" class="headerlink" title="下载对应 GPU 型号的驱动"></a>下载对应 GPU 型号的驱动</h5><p>网址：<a target="_blank" rel="noopener" href="https://www.nvidia.cn/Download/index.aspx?lang=cn">https://www.nvidia.cn/Download/index.aspx?lang=cn</a></p>
 <p>没有桌面的话，可以在命令行由 wget 命令下载。</p>
-<h5 id="卸载旧驱动"><a href="#卸载旧驱动" class="headerlink" title="卸载旧驱动"></a>卸载旧驱动</h5><pre class="language-none"><code class="language-none">sudo apt-get --purge remove nvidia-*</code></pre>
-<h5 id="安装新驱动"><a href="#安装新驱动" class="headerlink" title="安装新驱动"></a>安装新驱动</h5><pre class="language-none"><code class="language-none">sudo sh NVIDIA-Linux-x86_64-470.86.run</code></pre>
+<h5 id="卸载旧驱动"><a href="#卸载旧驱动" class="headerlink" title="卸载旧驱动"></a>卸载旧驱动</h5><pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt-get --purge remove nvidia-*</code></pre>
+<h5 id="安装新驱动"><a href="#安装新驱动" class="headerlink" title="安装新驱动"></a>安装新驱动</h5><pre class="language-shell" data-language="shell"><code class="language-shell">sudo sh NVIDIA-Linux-x86_64-470.86.run</code></pre>
 <p><img src="https://image.wanyijizi.com/20211125/4ebfae812ac544b3b1bcaa3e358eb170.png" alt="8be1806700461cc2d45b3d3c74a4eec7.png" loading="lazy"></p>
 <p>由于不太懂，先按照别人已成功的案例安装了再说，所以选 Continue installation，</p>
 <p><img src="https://image.wanyijizi.com/20211125/6ebeb958a41f48f98bfc310e6e57cab2.png" alt="409743dee8daaacf4397f773a26db045.png" loading="lazy"></p>
@@ -129,39 +129,39 @@ options nouveau modeset=0</code></pre>
 <p><img src="https://image.wanyijizi.com/20211125/552b0262cb024927a1ae34920a99a6bb.png" alt="9f38e9d0470358915ccd43d74799b420.png" loading="lazy"></p>
 <h5 id="查看是否安装成功"><a href="#查看是否安装成功" class="headerlink" title="查看是否安装成功"></a>查看是否安装成功</h5><p><img src="https://image.wanyijizi.com/20211125/326af8fb138146debd12db3137f247cf.png" alt="ad3a1cb16e5222e5094347f13cadbbfa.png" loading="lazy"></p>
 <h4 id="终于安装成功"><a href="#终于安装成功" class="headerlink" title="终于安装成功"></a>终于安装成功</h4><p>彻底删除旧的 CUDA，如果有的话：</p>
-<pre class="language-none"><code class="language-none">sudo apt autoremove cuda
+<pre class="language-shell" data-language="shell"><code class="language-shell">sudo apt autoremove cuda
 sudo apt --purge remove "*cublas*" "cuda*"</code></pre>
 <p>安装新的 CUDA：</p>
 <p><img src="https://image.wanyijizi.com/20211125/0d890bca58a84f1fa8319885ea4f018b.png" alt="f480e000288f63e960ad9729a6d9d111.png" loading="lazy"></p>
 <p>搞定！</p>
 <h3 id="添加-path"><a href="#添加-path" class="headerlink" title="添加 path"></a>添加 path</h3><p>按照上图的提示在 ~/.bashrc 添加路径：</p>
-<pre class="language-none"><code class="language-none">export PATH=$PATH:/usr/local/cuda-11.5/bin
+<pre class="language-shell" data-language="shell"><code class="language-shell">export PATH=$PATH:/usr/local/cuda-11.5/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-11.5/lib64</code></pre>
 <p>刷新一下：</p>
-<pre class="language-none"><code class="language-none">source ~/.bashrc</code></pre>
+<pre class="language-shell" data-language="shell"><code class="language-shell">source ~/.bashrc</code></pre>
 <h3 id="检查是否安装完成"><a href="#检查是否安装完成" class="headerlink" title="检查是否安装完成"></a>检查是否安装完成</h3><p><img src="https://image.wanyijizi.com/20211125/3e59183acede406eb175d53fa49887dd.png" alt="23676246ac530c1097289ed8e3431d1c.png" loading="lazy"></p>
 <p>大功告成～～</p>
 <h2 id="再在-lammps-中安装-GPU-包"><a href="#再在-lammps-中安装-GPU-包" class="headerlink" title="再在 lammps 中安装 GPU 包"></a>再在 lammps 中安装 GPU 包</h2><h3 id="lib-gpu-目录下首先编译-GPU-library"><a href="#lib-gpu-目录下首先编译-GPU-library" class="headerlink" title="lib/gpu 目录下首先编译 GPU library"></a>lib/gpu 目录下首先编译 GPU library</h3><p>修改文件 Makefile.linux：</p>
-<pre class="language-none"><code class="language-none">CUDA_HOME = /usr/local/cuda-11.5
-CUDA_ARCH = -arch=sm_50</code></pre>
+<pre class="language-makefile" data-language="makefile"><code class="language-makefile">CUDA_HOME <span class="token operator">=</span> /usr/local/cuda-11.5
+CUDA_ARCH <span class="token operator">=</span> -arch<span class="token operator">=</span>sm_50</code></pre>
 <p>上面一行是 CUDA 的路径。下面的 sm_50 是由 Compute Capability 决定的。NVIDIA <a target="_blank" rel="noopener" href="https://developer.nvidia.com/zh-cn/cuda-gpus">官网</a>上有一些类似下面这样的表格：</p>
 <p><img src="https://image.wanyijizi.com/20211125/b71712c60ed54008a54650b25c10f934.png" alt="feaef7de1790276de460d0a3e428b17d.png" loading="lazy"></p>
 <p>计算能力 7.5 就应该是sm_75。</p>
 <p>其他项可以看情况改，比如 CUDA_PRECISION 决定了 GPU 计算的精度。</p>
 <p>更改完执行：</p>
-<pre class="language-none"><code class="language-none">make -f Makefile.linux -j 24</code></pre>
+<pre class="language-shell" data-language="shell"><code class="language-shell">make -f Makefile.linux -j 24</code></pre>
 <p>如果再次修改，则编译前还需执行 <code>make -f Makefile.linux clean</code>。</p>
 <p>如果有必要，还需要修改文件 Makefile.lammps.standard（Makefile.linux 最上面 EXTRAMAKE 的值）：</p>
-<pre class="language-none"><code class="language-none">CUDA_HOME=/usr/local/cuda-11.5</code></pre>
-<h3 id="src-目录安装-GPU-包"><a href="#src-目录安装-GPU-包" class="headerlink" title="src 目录安装 GPU 包"></a>src 目录安装 GPU 包</h3><pre class="language-none"><code class="language-none">make yes-gpu</code></pre>
+<pre class="language-makefile" data-language="makefile"><code class="language-makefile">CUDA_HOME<span class="token operator">=</span>/usr/local/cuda-11.5</code></pre>
+<h3 id="src-目录安装-GPU-包"><a href="#src-目录安装-GPU-包" class="headerlink" title="src 目录安装 GPU 包"></a>src 目录安装 GPU 包</h3><pre class="language-shell" data-language="shell"><code class="language-shell">make yes-gpu</code></pre>
 <p>如果安装后又重新编译了 GPU library，则这里需要先 <code>make no-gpu</code>然后再重新 <code>make yes-gpu</code>。</p>
-<h3 id="重新编译-lammps"><a href="#重新编译-lammps" class="headerlink" title="重新编译 lammps"></a>重新编译 lammps</h3><pre class="language-none"><code class="language-none">make clean-all
+<h3 id="重新编译-lammps"><a href="#重新编译-lammps" class="headerlink" title="重新编译 lammps"></a>重新编译 lammps</h3><pre class="language-shell" data-language="shell"><code class="language-shell">make clean-all
 make peachrl -j 24</code></pre>
-<h3 id="试一试"><a href="#试一试" class="headerlink" title="试一试"></a>试一试</h3><pre class="language-none"><code class="language-none">mpirun -np 8 lmp_peachrl -in in.flow.couette</code></pre>
+<h3 id="试一试"><a href="#试一试" class="headerlink" title="试一试"></a>试一试</h3><pre class="language-shell" data-language="shell"><code class="language-shell">mpirun -np 8 lmp_peachrl -in in.flow.couette</code></pre>
 <p><img src="https://image.wanyijizi.com/20211125/8eca8d83f1c5402e82e0ae5a26dc6f83.png" alt="8eca8d83f1c5402e82e0ae5a26dc6f83.png" loading="lazy"></p>
-<pre class="language-none"><code class="language-none">mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 1 -in in.flow.couette</code></pre>
+<pre class="language-shell" data-language="shell"><code class="language-shell">mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 1 -in in.flow.couette</code></pre>
 <p><img src="https://image.wanyijizi.com/20211125/a677bbb0dc2e4c15a95640e49721d822.png" alt="a677bbb0dc2e4c15a95640e49721d822.png" loading="lazy"></p>
-<pre class="language-none"><code class="language-none">mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 2 -in in.flow.couette</code></pre>
+<pre class="language-shell" data-language="shell"><code class="language-shell">mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 2 -in in.flow.couette</code></pre>
 <p>这回 error 了。</p>
 <p><img src="https://image.wanyijizi.com/20211125/0ce9a99e79174fbd84148b9d3d980b41.png" alt="0ce9a99e79174fbd84148b9d3d980b41.png" loading="lazy"></p>
 <p>大概是我们的这台小机器只能支持 1 块 GPU？而且，这 1 块 GPU 的加速还看起来非常地不给力，完全比不上没有 GPU 加速的效率，这可能是 lammps example 自带的 in.flow.couette 例子太简单了，完全没有必要用 GPU 来自讨苦吃。</p>

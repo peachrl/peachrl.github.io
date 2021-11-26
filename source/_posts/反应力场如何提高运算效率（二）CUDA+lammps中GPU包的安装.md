@@ -23,8 +23,6 @@ aplayer: true
 
 <!-- more -->
 
-# CUDA+lammps中GPU包的安装
-
 我们在查看Kokkos包的安装时注意到几个前提：
 
 1.  Kokkos requires using a compiler that supports the c++14 standard. （这个容易达到）

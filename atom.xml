@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-11-25T04:06:43.000Z</updated>
+  <updated>2021-11-26T09:12:13.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>反应力场如何提高运算效率（三）lammps中Kokkos包和OpenMP包的安装</title>
+    <link href="https://wanyijizi.com/2021/11/26/%E5%8F%8D%E5%BA%94%E5%8A%9B%E5%9C%BA%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E8%BF%90%E7%AE%97%E6%95%88%E7%8E%87%EF%BC%88%E4%B8%89%EF%BC%89lammps%E4%B8%ADKokkos%E5%8C%85%E5%92%8COpenMP%E5%8C%85%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>https://wanyijizi.com/2021/11/26/%E5%8F%8D%E5%BA%94%E5%8A%9B%E5%9C%BA%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E8%BF%90%E7%AE%97%E6%95%88%E7%8E%87%EF%BC%88%E4%B8%89%EF%BC%89lammps%E4%B8%ADKokkos%E5%8C%85%E5%92%8COpenMP%E5%8C%85%E7%9A%84%E5%AE%89%E8%A3%85/</id>
+    <published>2021-11-26T09:12:13.000Z</published>
+    <updated>2021-11-26T09:12:13.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上次CUDA 已经装好，今天我们就要正式在 lammps 中 加装 KOKKOS 包和 OMP 包。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
+    
+    <category term="超算" scheme="https://wanyijizi.com/tags/%E8%B6%85%E7%AE%97/"/>
+    
+    <category term="Slurm" scheme="https://wanyijizi.com/tags/Slurm/"/>
+    
+  </entry>
   
   <entry>
     <title>反应力场如何提高运算效率（二）CUDA+lammps中GPU包的安装</title>

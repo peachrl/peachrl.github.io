@@ -78,13 +78,13 @@ options nouveau modeset=0
 
 ### 下载 CUDA
 
-```
+```shell
 wget https://developer.download.nvidia.com/compute/cuda/11.5.1/local_installers/cuda_11.5.1_495.29.05_linux.run
 ```
 
 ### 安装 CUDA
 
-```
+```shell
 sudo sh cuda_11.5.1_495.29.05_linux.run
 ```
 
@@ -120,13 +120,13 @@ sudo sh cuda_11.5.1_495.29.05_linux.run
 
 ##### 卸载旧驱动
 
-```
+```shell
 sudo apt-get --purge remove nvidia-*
 ```
 
 ##### 安装新驱动
 
-```
+```shell
 sudo sh NVIDIA-Linux-x86_64-470.86.run
 ```
 
@@ -162,7 +162,7 @@ sudo sh NVIDIA-Linux-x86_64-470.86.run
 
 彻底删除旧的 CUDA，如果有的话：
 
-```
+```shell
 sudo apt autoremove cuda
 sudo apt --purge remove "*cublas*" "cuda*"
 ```
@@ -177,14 +177,14 @@ sudo apt --purge remove "*cublas*" "cuda*"
 
 按照上图的提示在 ~/.bashrc 添加路径：
 
-```
+```shell
 export PATH=$PATH:/usr/local/cuda-11.5/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-11.5/lib64
 ```
 
 刷新一下：
 
-```
+```shell
 source ~/.bashrc
 ```
 
@@ -200,7 +200,7 @@ source ~/.bashrc
 
 修改文件 Makefile.linux：
 
-```
+```makefile
 CUDA_HOME = /usr/local/cuda-11.5
 CUDA_ARCH = -arch=sm_50
 ```
@@ -215,7 +215,7 @@ CUDA_ARCH = -arch=sm_50
 
 更改完执行：
 
-```
+```shell
 make -f Makefile.linux -j 24
 ```
 
@@ -223,13 +223,13 @@ make -f Makefile.linux -j 24
 
 如果有必要，还需要修改文件 Makefile.lammps.standard（Makefile.linux 最上面 EXTRAMAKE 的值）：
 
-```
+```makefile
 CUDA_HOME=/usr/local/cuda-11.5
 ```
 
 ### src 目录安装 GPU 包
 
-```
+```shell
 make yes-gpu
 ```
 
@@ -237,26 +237,26 @@ make yes-gpu
 
 ### 重新编译 lammps
 
-```
+```shell
 make clean-all
 make peachrl -j 24
 ```
 
 ### 试一试
 
-```
+```shell
 mpirun -np 8 lmp_peachrl -in in.flow.couette
 ```
 
 ![8eca8d83f1c5402e82e0ae5a26dc6f83.png](https://image.wanyijizi.com/20211125/8eca8d83f1c5402e82e0ae5a26dc6f83.png)
 
-```
+```shell
 mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 1 -in in.flow.couette
 ```
 
 ![a677bbb0dc2e4c15a95640e49721d822.png](https://image.wanyijizi.com/20211125/a677bbb0dc2e4c15a95640e49721d822.png)
 
-```
+```shell
 mpirun -np 8 lmp_peachrl -sf gpu -pk gpu 2 -in in.flow.couette
 ```
 

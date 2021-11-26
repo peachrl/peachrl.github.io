@@ -27,13 +27,13 @@ aplayer: true
 
 这个在 lammps 中非常简单：
 
-```
+```shell
 make yes-kokkos
 ```
 
 但是 lammps 的编译则需要注意，Makefile 里需要修改和添加一些值：
 
-```
+```makefile
 ……
 KOKKOS_ABSOLUTE_PATH = $(shell cd $(KOKKOS_PATH); pwd)
 export OMPI_CXX = $(KOKKOS_ABSOLUTE_PATH)/bin/nvcc_wrapper
@@ -62,13 +62,13 @@ HOSTARCH 参见[网址](https://ark.intel.com/content/www/us/en/ark.html#@Proces
 
 将新写的 Makefile.peachrl 放在 /src/MAKE 目录下，然后回到 /src 并运行以下命令进行编译：
 
-```
+```shell
 make peachrl -j 24
 ```
 
 还是先用 lammps example 自带的 in.flow.couette 例子试一试：
 
-```
+```shell
 mpirun -np 24 lmp_peachrl -k on g 1 -sf kk -in in.flow.couette
 ```
 
@@ -80,13 +80,13 @@ mpirun -np 24 lmp_peachrl -k on g 1 -sf kk -in in.flow.couette
 
 反应力场本就只有唯二两种加速方式，除了上文的 Kokkos，另一个可以加速的包是 OpenMP。同样是：
 
-```
+```shell
 make yes-openmp
 ```
 
 同样是Makefile 里需要修改和添加一些值：
 
-```
+```makefile
 CCFLAGS =	-g -O3 -fopenmp
 SHFLAGS =	-fPIC
 DEPFLAGS =	-M
@@ -97,7 +97,7 @@ LINKFLAGS =	-g -O -fopenmp
 
 还是先用 lammps example 自带的 in.flow.couette 例子试一试：
 
-```
+```shell
 mpirun -np 24 lmp_peachrl -sf omp -pk omp 4 -in in.flow.couette
 ```
 
@@ -109,7 +109,7 @@ mpirun -np 24 lmp_peachrl -sf omp -pk omp 4 -in in.flow.couette
 
 Kokkos 是可以和 OpenMP 一起配合使用的，调整 Makefile 如下：
 
-```
+```makefile
 # ubuntu = Ubuntu Linux box, g++, openmpi, FFTW3
 
 # you have to install the packages g++, mpi-default-bin, mpi-default-dev,
@@ -243,7 +243,7 @@ sinclude .depend
 
 lammps example 自带的 in.flow.couette 例子，24 MPI tasks/node，1 GPUs/node，8 OpenMP threads/task：
 
-```
+```shell
 mpirun -np 24 lmp_peachrl -k on g 1 t 2 -sf kk -in in.flow.couette
 ```
 

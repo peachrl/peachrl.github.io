@@ -33,7 +33,7 @@ icon: icon-user-line
 
 ![网站icon](https://image.wanyijizi.com/00000000_封面v1/logo-ico版.png)
 
-#### 横板 logo
+#### 横版 logo
 
 ![logo-横放完整版](https://image.wanyijizi.com/00000000_封面v1/logo-横放完整版.png)
 

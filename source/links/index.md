@@ -13,6 +13,13 @@ links:
     desc: 万亿及秭
     color: "#336600" # 代表色
     email: peachrl@aliyun.com
-placeholder: 这是我自己 # 默认对友链的描述
+  - url: https://www.xiashangfushengruomeng.com
+    avatar: https://www.xiashangfushengruomeng.com/skin/images/youqing.png
+    name: 
+    blog: 夏殇浮生若梦
+    desc: 记录青春迹事
+    color: "#7030A0" # 代表色
+    email: 
+placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

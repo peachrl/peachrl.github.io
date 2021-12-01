@@ -92,7 +92,7 @@ footer:
     icp: 京ICP备2021027733号-1
   since: 2020
   icon:
-    name: icon-open-arm-line
+    name: icon-user-line
     animated: true
     color: "#336600"
   powered:

@@ -228,6 +228,10 @@ categories:
 
 #页面链接
 pages:
+  - name: 桃子的小伙伴们
+    url: /links/
+    icon: icon-open-arm-line
+    color: "#336600"
 
 #文章内容卡片
 # ---

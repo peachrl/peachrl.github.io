@@ -20,6 +20,13 @@ links:
     desc: 记录青春迹事
     color: "#7030A0" # 代表色
     email: 
+  - url: https://blog.tomys.top/
+    avatar: https://public-cdn.tomys.top/head.png
+    name: 
+    blog: TomyJan
+    desc: 一只菜的要死还每天不努力只知道bbll娱乐至死的废柴
+    color: #00dddd
+    email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

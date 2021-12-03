@@ -25,7 +25,7 @@ links:
     name: 
     blog: TomyJan
     desc: 一只菜的要死还每天不努力只知道bbll娱乐至死的废柴
-    color: #00dddd
+    color: "#00dddd"
     email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……

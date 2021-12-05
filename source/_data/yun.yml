@@ -335,7 +335,7 @@ reward:
       color: "#12B7F5"
       icon: icon-qq-line
     - name: 微信支付
-      path: https://image.wanyijizi.com/00000000_封面/wechatpay-qrcode.jpg
+      path: https://image.wanyijizi.com/00000000_封面/wechatpay2-qrcode.jpg
       color: "#2DC100"
       icon: icon-wechat-pay-line
 

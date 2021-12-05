@@ -8,11 +8,11 @@ comments: true
 links:
   - url: https://wanyijizi.com
     avatar: https://image.wanyijizi.com/00000000_封面/avatar.jpg
-    name: 桃子
+    name: # 桃子
     blog: peachRL的小站
     desc: 万亿及秭
     color: "#336600" # 代表色
-    email: peachrl@aliyun.com
+    email: # peachrl@aliyun.com
   - url: https://www.xiashangfushengruomeng.com
     avatar: https://www.xiashangfushengruomeng.com/skin/images/youqing.png
     name: 

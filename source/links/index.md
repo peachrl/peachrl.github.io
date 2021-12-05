@@ -27,6 +27,13 @@ links:
     desc: 一只菜的要死还每天不努力只知道bbll娱乐至死的废柴
     color: "#00dddd"
     email: 
+  - url: https://www.5ibug.net/
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=1243894999&s=640
+    name: 
+    blog: 吾爱bug
+    desc: 一个程序员的博客
+    color: "#ffffff"
+    email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

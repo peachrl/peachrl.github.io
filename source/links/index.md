@@ -32,7 +32,7 @@ links:
     name: 
     blog: 吾爱bug
     desc: 一个程序员的博客
-    color: "#ffffff"
+    color: "#777"
     email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……

@@ -159,9 +159,9 @@ menu:
 
 #默哀日期，网站变灰：月-日
 mourn:
-  enable: false
+  enable: true
   days:
-    - "4-4"
+    - "12-13"
 
 #评论
 # enable: 默认开启（代表整体的评论区块，你开启任意类型评论系统都须保持其开启）

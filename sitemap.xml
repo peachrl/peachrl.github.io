@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wanyijizi.com/2021/12/07/%E5%90%84%E7%A7%8D%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A%E7%9A%84PPT%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A/</loc>
+    
+    <lastmod>2021-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/links/index.html</loc>
     
     <lastmod>2021-12-05</lastmod>
@@ -326,6 +333,13 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/tags/Android/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/tags/Nginx/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -354,13 +368,6 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/Android/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/Mendeley/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -368,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/uWSGI/</loc>
+    <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/VOSviewer/</loc>
+    <loc>https://wanyijizi.com/tags/uWSGI/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -397,6 +404,13 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/Slurm/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -434,6 +448,13 @@
   
   <url>
     <loc>https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

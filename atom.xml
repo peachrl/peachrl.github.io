@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-11-26T09:12:13.000Z</updated>
+  <updated>2021-12-07T12:54:43.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>各种学术报告的PPT应该怎么做</title>
+    <link href="https://wanyijizi.com/2021/12/07/%E5%90%84%E7%A7%8D%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A%E7%9A%84PPT%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A/"/>
+    <id>https://wanyijizi.com/2021/12/07/%E5%90%84%E7%A7%8D%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A%E7%9A%84PPT%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A/</id>
+    <published>2021-12-07T12:54:43.000Z</published>
+    <updated>2021-12-07T12:54:43.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这大概是桃子真正意义上第一篇被分类到“生活”的文？今天组会听了 sl 师兄预讲中期以及 yy 小师弟预讲开题的报告，感觉比我自己之前准备开题和转博报告的时候有更多的想法。我之前那些报告，有些地方今天才真正想通为什么当时被老师要求加上或者修改，一方面是因为当时确实认知不如现在，另一方面是身处其中反而不识全貌。（当然，大概也有可能，等我自己中期的时候回头来看这篇博文，感觉啪啪打脸）总之，以此文作为记录，希望等我中期报告的时候能够如持左券。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://wanyijizi.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="科研笔记" scheme="https://wanyijizi.com/tags/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>反应力场如何提高运算效率（三）lammps中Kokkos包和OpenMP包的安装</title>

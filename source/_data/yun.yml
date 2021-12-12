@@ -282,6 +282,9 @@ types:
   zhihu:
     color: "#0084FF"
     icon: icon-zhihu-line
+  academics:
+    color: "#73c7d0"
+    icon: icon-book-2-line
 
 #文章信息展示
 post_meta:

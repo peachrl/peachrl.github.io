@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const ap = new APlayer({
     container: document.getElementById("aplayer"),
     fixed: true,
+    lrcType: 3,
     audio: [
       {
         name: "时结",

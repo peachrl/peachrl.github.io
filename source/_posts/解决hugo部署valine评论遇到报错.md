@@ -22,7 +22,7 @@ aplayer: false
 
 <!-- more -->
 
-本次尝试了一个没有封面、图文并茂的简单主题 [dream](https://github.com/g1eny0ung/hugo-theme-dream)。hugo 的使用和 hexo 差不太多，随便搜和教程就好。
+本次尝试了一个没有封面、图文并茂的简单主题 [dream](https://github.com/g1eny0ung/hugo-theme-dream)。hugo 的使用和 hexo 差不太多，随便搜个教程就好。
 
 >这里遇到一个小小的坑，是因为我只推送到一个二级目录，结果出现了 css 都找不到路径的情况。只需要在 config.toml 文件里写清楚 baseURL 就行，比如默认 hugo 生成的文件都在 public 文件夹里，就应该写：
 >

@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         name: "不舍",
         artist: "徐佳莹",
-        url: "/musics/徐佳莹 - 不舍.mp3",
+        url: "/musics/徐佳莹 - 不舍.flac",
         cover: "/musics/徐佳莹 - 不舍.jpg",
         lrc: "/musics/徐佳莹 - 不舍.lrc",
       },
@@ -73,14 +73,14 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         name: "相拥各自不完整",
         artist: "张韶涵",
-        url: "/musics/张韶涵 - 相拥各自不完整.mp3",
+        url: "/musics/张韶涵 - 相拥各自不完整.flac",
         cover: "/musics/张韶涵 - 相拥各自不完整.jpg",
         lrc: "/musics/张韶涵 - 相拥各自不完整.lrc",
       },
       {
         name: "化身孤岛的鲸",
         artist: "周深",
-        url: "/musics/周深 - 化身孤岛的鲸.mp3",
+        url: "/musics/周深 - 化身孤岛的鲸.flac",
         cover: "/musics/周深 - 化身孤岛的鲸.jpg",
         lrc: "/musics/周深 - 化身孤岛的鲸.lrc",
       },

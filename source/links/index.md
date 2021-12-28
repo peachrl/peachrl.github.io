@@ -11,7 +11,7 @@ links:
     name: # 桃子
     blog: 友链申请
     desc: 
-    color: "#fff" # 代表色
+    color: "#000" # 代表色
     email: # peachrl@aliyun.com
   - url: https://www.xiashangfushengruomeng.com
     avatar: https://www.xiashangfushengruomeng.com/skin/images/youqing.png

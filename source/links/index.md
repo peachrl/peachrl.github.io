@@ -39,7 +39,7 @@ links:
     name: 孺子牛
     blog: 饮冰先生
     desc: 关于代码、生活、宇宙和一切。
-    color: "#3b4d57"
+    color: "#4074c0"
     email: 
   - url: https://www.gitmba.com/
     avatar: 

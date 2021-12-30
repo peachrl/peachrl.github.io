@@ -48,6 +48,13 @@ links:
     desc: 一个分享好用且实用软件及提供开发者学习的平台
     color: "#1c2c43"
     email: 
+  - url: https://blog.lkxin.cn
+    avatar: https://blog.lkxin.cn/logo-x.png #横板 https://blog.lkxin.cn/logo-h.png
+    name: 清酒
+    blog: 清酒踏月
+    desc: 成长的过程总是荆棘满路！
+    color: "#ffc152"
+    email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

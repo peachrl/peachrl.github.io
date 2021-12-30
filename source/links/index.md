@@ -58,7 +58,7 @@ links:
   - url: https://vian.top
     avatar: https://cdn.jsdelivr.net/gh/lazyboykk/picture/avatar.jpg
     name: Vian
-    blog: Vian的小站
+    blog: Vian
     desc: 想要的都拥有 得不到的都释怀
     color: "#2f4155"
     email: 

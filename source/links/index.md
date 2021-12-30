@@ -55,6 +55,14 @@ links:
     desc: 成长的过程总是荆棘满路！
     color: "#ffc152"
     email: 
+  - url: https://vian.top
+    avatar: https://cdn.jsdelivr.net/gh/lazyboykk/picture/avatar.jpg
+    name: Vian
+    blog: Vian的小站
+    desc: 想要的都拥有 得不到的都释怀
+    color: "#2f4155"
+    email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---
+

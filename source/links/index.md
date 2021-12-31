@@ -62,6 +62,20 @@ links:
     desc: 想要的都拥有 得不到的都释怀
     color: "#2f4155"
     email: 
+  - url: https://moc.qq.pcno.cn
+    avatar: https://moc.qq.pcno.cn/favicon.ico
+    name: 橘生淮北
+    blog: 我的日记
+    desc: 为了纪念 为了祭奠
+    color: "#34b2fe"
+    email: 
+  - url: https://blog.52cxwl.cn/
+    avatar: https://cravatar.cn/avatar/615dc73d38b9a4818fc20d41d11fe2d6?s=200&test=1&d=mp&r=1640876350
+    name: 初心
+    blog: 初心博客
+    desc: 快乐源于分享
+    color: "#f08a8b"
+    email: 
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

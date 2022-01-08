@@ -76,6 +76,12 @@ links:
     desc: 快乐源于分享
     color: "#f08a8b"
     email: 
+  - url: https://baipin.pw
+    avatar: https://baipin.pw/wp-content/uploads/2019/07/ABUIABACGAAg_bP2wwUorbiplQQwgAU4gAU.jpg
+    name: MX
+    blog: 百品博客
+    desc: 我欲穿花寻路，直入白云深处，浩气展虹霓。
+    color: "#FFEB3B"
 placeholder: #桃子的朋友~ # 默认对友链的描述
 tip: 友链加载ing……
 ---

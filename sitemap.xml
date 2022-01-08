@@ -417,6 +417,13 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/tags/VSCode/</loc>
+    <lastmod>2022-01-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/tags/%E5%8E%9F%E7%A5%9E/</loc>
     <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
@@ -432,13 +439,6 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/Slurm/</loc>
-    <lastmod>2022-01-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/VSCode/</loc>
     <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

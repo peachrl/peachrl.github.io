@@ -11,7 +11,7 @@ avatar:
   status:
     enable: true
     emoji: 😃
-    message: 欢迎光临桃子的露天仓库！
+    message: 欢迎光临桃子的露天仓库！恰逢建站 2 周年，本站内容迁至子域名 blog.wanyijizi.com，因此不再更新，请各位小伙伴们前往新地址看博文~
 
 #文字交错的首页
 banner:

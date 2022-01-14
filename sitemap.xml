@@ -368,6 +368,13 @@
   </url>
   
   <url>
+    <loc>https://wanyijizi.com/tags/Android/</loc>
+    <lastmod>2022-01-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanyijizi.com/tags/Nginx/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>daily</changefreq>
@@ -376,13 +383,6 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/Webhook/</loc>
-    <lastmod>2022-01-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanyijizi.com/tags/Android/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -438,13 +438,6 @@
   </url>
   
   <url>
-    <loc>https://wanyijizi.com/tags/%E5%8E%9F%E7%A5%9E/</loc>
-    <lastmod>2022-01-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanyijizi.com/tags/%E8%B6%85%E7%AE%97/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>daily</changefreq>
@@ -460,6 +453,13 @@
   
   <url>
     <loc>https://wanyijizi.com/tags/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-01-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanyijizi.com/tags/%E5%8E%9F%E7%A5%9E/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

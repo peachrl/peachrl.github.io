@@ -49,9 +49,11 @@ insert into t_metas(mid,name,slug,type,description,count,`order`,parent)
 insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 
         value(39,'吐槽','吐槽','tag',null,1,0,0);
 insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 
+        value(40,'Typecho','Typecho','tag',null,1,0,0);
+insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 
         value(11,'其他','其他','category',null,1,0,0);
 insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 
-        value(14,'软件','软件','category',null,33,0,0);
+        value(14,'软件','软件','category',null,34,0,0);
 insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 
         value(18,'理论','理论','category',null,1,0,0);
 insert into t_metas(mid,name,slug,type,description,count,`order`,parent) 

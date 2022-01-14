@@ -114,3 +114,5 @@ insert into t_relationships(mid,cid) value(38,48);
 insert into t_relationships(mid,cid) value(34,48);
 insert into t_relationships(mid,cid) value(39,49);
 insert into t_relationships(mid,cid) value(34,49);
+insert into t_relationships(mid,cid) value(40,50);
+insert into t_relationships(mid,cid) value(14,50);

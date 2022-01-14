@@ -17,7 +17,7 @@ aplayer: false
 # indexing: false
 ---
 
-想着写博客也要雨露均沾，上次写过 Hugo，这次便写写 Typecho。在[橘子大大](https://moc.qq.pcno.cn/)强烈要求下桃子最近尝试了 Typecho 建站，并且一眼看中了[泽泽的 Sinner 主题](https://blog.zezeshe.com/archives/sinner-typecho-theme.html)（泽泽这个名字感觉不怎么适合叫泽泽大大…），感觉 Sinner 这个主题功能丰富、多图、适合搞事。
+想着写博客也要雨露均沾，上次写过 Hugo，这次便写写 Typecho。在[橘子大大](https://moc.qq.pcno.cn/)强烈要求下桃子最近尝试了 Typecho 建站，并且一眼看中了[泽泽社长的 Sinner 主题](https://blog.zezeshe.com/archives/sinner-typecho-theme.html)，感觉 Sinner 这个主题功能丰富、多图、适合搞事。
 
 <!-- more -->
 
@@ -120,4 +120,4 @@ wget http://typecho.org/downloads/1.1-17.10.30-release.tar.gz && tar xvzf 1.1-17
 
 ![image-20220114154332977](https://image.wanyijizi.com/20220114/image-20220114154332977.png)
 
-后面的配置完全按照[泽泽的文档](https://www.yuque.com/qqdie/sinner)就可以，桃子就不写啦！
+后面的配置完全按照[泽泽社长的文档](https://www.yuque.com/qqdie/sinner)就可以，桃子就不写啦！

@@ -7,7 +7,7 @@ email:
 description: 
 categories: 生活
 tags: 
-	- 科研笔记
+	- PPT
 aplayer: false
 # type: academics
 # url: https://academics.wanyijizi.com/2021/12/07/%E5%90%84%E7%A7%8D%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A%E7%9A%84PPT%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A/

@@ -120,4 +120,13 @@ wget http://typecho.org/downloads/1.1-17.10.30-release.tar.gz && tar xvzf 1.1-17
 
 ![image-20220114154332977](https://image.wanyijizi.com/20220114/image-20220114154332977.png)
 
+Sinner 的首页cms布局的格式大概是这样：
+
+````
+0$最新博文$post$1
+6$最新链接$16x9$2
+````
+
+即`分类的mid$显示在首页的题目$样式$行数`。左上侧的分类点进去也是可以类似地设置排布的。
+
 后面的配置完全按照[泽泽社长的文档](https://www.yuque.com/qqdie/sinner)就可以，桃子就不写啦！

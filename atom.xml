@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2022-01-14T05:54:59.000Z</updated>
+  <updated>2022-01-19T16:00:00.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>站点装修通知</title>
+    <link href="https://wanyijizi.com/2022/01/20/%E7%AB%99%E7%82%B9%E8%A3%85%E4%BF%AE%E9%80%9A%E7%9F%A5/"/>
+    <id>https://wanyijizi.com/2022/01/20/%E7%AB%99%E7%82%B9%E8%A3%85%E4%BF%AE%E9%80%9A%E7%9F%A5/</id>
+    <published>2022-01-19T16:00:00.000Z</published>
+    <updated>2022-01-19T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;恰逢建站 2 周年，本站内容迁至子域名 blog.wanyijizi.com，因此不再更新，请各位小伙伴们前往新地址看博文~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="其他" scheme="https://wanyijizi.com/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Typecho主题Sinner建站记录</title>
@@ -135,7 +152,7 @@
     <category term="生活" scheme="https://wanyijizi.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="科研笔记" scheme="https://wanyijizi.com/tags/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/"/>
+    <category term="PPT" scheme="https://wanyijizi.com/tags/PPT/"/>
     
   </entry>
   
@@ -933,23 +950,6 @@ make pi # lammps 查看已安装的 package 的命令&lt;/code&gt;&lt;/pre&gt;
     <category term="Linux" scheme="https://wanyijizi.com/tags/Linux/"/>
     
     <category term="LAMMPS" scheme="https://wanyijizi.com/tags/LAMMPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试</title>
-    <link href="https://wanyijizi.com/2020/01/20/%E6%B5%8B%E8%AF%95/"/>
-    <id>https://wanyijizi.com/2020/01/20/%E6%B5%8B%E8%AF%95/</id>
-    <published>2020-01-20T14:22:53.000Z</published>
-    <updated>2021-02-19T16:21:49.000Z</updated>
-    
-    
-    <summary type="html">this is only a test.</summary>
-    
-    
-    
-    <category term="其他" scheme="https://wanyijizi.com/categories/%E5%85%B6%E4%BB%96/"/>
-    
     
   </entry>
   

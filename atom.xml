@@ -6,7 +6,7 @@
   <link href="https://wanyijizi.com/atom.xml" rel="self"/>
   
   <link href="https://wanyijizi.com/"/>
-  <updated>2021-12-30T10:10:16.000Z</updated>
+  <updated>2022-01-14T05:54:59.000Z</updated>
   <id>https://wanyijizi.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typecho主题Sinner建站记录</title>
+    <link href="https://wanyijizi.com/2022/01/14/Typecho%E4%B8%BB%E9%A2%98Sinner%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/"/>
+    <id>https://wanyijizi.com/2022/01/14/Typecho%E4%B8%BB%E9%A2%98Sinner%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-01-14T05:54:59.000Z</published>
+    <updated>2022-01-14T05:54:59.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;想着写博客也要雨露均沾，上次写过 Hugo，这次便写写 Typecho。在&lt;a href=&quot;https://moc.qq.pcno.cn/&quot;&gt;橘子大大&lt;/a&gt;强烈要求下桃子最近尝试了 Typecho 建站，并且一眼看中了&lt;a href=&quot;https://blog.zezeshe.com/archives/sinner-typecho-theme.html&quot;&gt;泽泽的 Sinner 主题&lt;/a&gt;（泽泽这个名字感觉不怎么适合叫泽泽大大…），感觉 Sinner 这个主题功能丰富、多图、适合搞事。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://wanyijizi.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Typecho" scheme="https://wanyijizi.com/tags/Typecho/"/>
+    
+  </entry>
   
   <entry>
     <title>学会信息检索真挺重要的</title>

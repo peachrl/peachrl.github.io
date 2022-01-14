@@ -14,7 +14,6 @@
   "dependencies": {
     "acorn": "^8.7.0",
     "hexo": "^5.0.0",
-    "hexo-2-typecho": "^1.0.3",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-flowchart": "^1.0.4",
     "hexo-filter-github-emojis": "^3.0.4",
